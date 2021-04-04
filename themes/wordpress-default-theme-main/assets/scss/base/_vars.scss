@@ -1,0 +1,71 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Quicksand:wght@500;700&display=swap");
+
+$Poppins: "Poppins", sans-serif;
+$Quicksand: "Quicksand", sans-serif;
+
+$mainFont: $Poppins;
+$secondaryFont: $Quicksand;
+
+$baseFontSize: 10px;
+
+$thinWeight: 100;
+$extraLightWeight: 200;
+$lightWeight: 300;
+$regularWeight: 400;
+$mediumWeight: 500;
+$semiBoldWeight: 600;
+$boldWeight: 700;
+$extraBoldWeight: 800;
+$blackWeight: 900;
+
+// Colors
+$white: #fff;
+$black: #000;
+$red: #d3222a;
+$lightBlack: #373f41;
+$grey: #5a5a5a;
+$grey2: #404040;
+$grey3: #4f4f4f;
+$grey4: #515151;
+$grey5: #737b7d;
+$lightGrey: #646464;
+$lightGrey2: #f5f5f5;
+$lightGrey3: #f0f0f0;
+$darkGrey: #333;
+$darkGrey2: #444;
+$darkGrey3: #171717;
+$darkGrey4: #242424;
+
+$gradient1: linear-gradient(152deg, #aaaaaa 12%, #818181 82%);
+$gradient2: linear-gradient(318deg, #cdcdcd 19%, #9d9d9d 89%);
+
+$titleColor: $lightBlack;
+$textColor: $lightGrey;
+$headerText: $grey5;
+$headerBg: $darkGrey4;
+$featuresText: $grey;
+$singleProdTitle: $grey2;
+$singleProdList: $darkGrey2;
+$prodBg: $lightGrey2;
+$reviewsName: $black;
+$reviewsProd: $black;
+$reviewsText: $grey4;
+$price: $darkGrey;
+$line: $darkGrey;
+$myAccount: $grey3;
+$btnBg: $red;
+$btnText: $white;
+$svgFill: $red;
+$bgHoverFeatures: $red;
+$bgFeatures: $lightGrey3;
+$bgBrands: rgba($darkGrey, 0.1);
+$bgFooter: $darkGrey3;
+
+// $processing: #009432;
+// $onhold: #f79f1f;
+// $failed: #ea2027;
+// $completed: #0652dd;
+// $canceled: #7f8c8d;
+// $pending: #7f8c8d;
+// $refunded: #7f8c8d;

@@ -1,0 +1,27 @@
+.brands {
+  padding: 25px 0;
+  background: $bgBrands;
+
+  &__wrapper {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__item {
+    max-width: 130px;
+    padding-bottom: 25px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}

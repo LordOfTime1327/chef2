@@ -1,0 +1,47 @@
+.intro {
+  margin-bottom: 69px;
+
+  &__bg {
+    display: none;
+  }
+
+  &__img-box {
+    flex: 1;
+    margin: 0 -15px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text-box {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+      90deg,
+      #f5f8f9 74%,
+      rgba(245, 248, 249, 0) 100%
+    );
+    margin: 0 -15px;
+    // margin-top: -50px;
+    padding: 15px;
+    padding-bottom: 34px;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: $boldWeight;
+    padding-bottom: 10px;
+  }
+  &__text {
+    font-size: 1.1rem;
+    font-weight: $lightWeight;
+    padding-bottom: 21px;
+  }
+}

@@ -1,0 +1,40 @@
+.intro {
+  // position: relative;
+
+  // &__bg {
+  //   display: block;
+  //   z-index: -1;
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
+
+  // &__img-box {
+  //   display: none;
+  // }
+
+  // &__text-box {
+  // align-items: flex-start;
+  // max-width: 50%;
+  // margin-left: auto;
+  // padding: 0;
+  // padding: 138px 0 230px;
+  // text-align: unset;
+  // background: unset;
+  // margin: 0;
+  // margin-left: auto;
+  // }
+
+  &__title {
+    font-size: 7.2rem;
+    // font-weight: $semiBoldWeight;
+    // padding-bottom: 26px;
+  }
+  &__text {
+    font-size: 1.8rem;
+    // padding-bottom: 55px;
+  }
+}
