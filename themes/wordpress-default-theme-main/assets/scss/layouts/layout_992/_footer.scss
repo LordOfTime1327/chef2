@@ -1,0 +1,19 @@
+.footer {
+  &__col {
+    margin-right: 100px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .footer {
+    &__col {
+      margin-left: 0;
+      margin-right: 100px;
+    }
+  }
+}

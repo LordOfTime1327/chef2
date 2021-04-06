@@ -11,22 +11,72 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'coelix' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'coelix' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'coelix' ), 'coelix', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="footer">
+		<div class="container">
+			<div class="wrapper footer__wrapper">
+				<div class="footer__col">
+					<a href="<?php home_url(); ?>" class="footer__logo-box">
+						<img src="<?= the_field( 'logo_footer', 'option' ); ?>" alt="" class="footer__logo">
+					</a>
+				</div>
+				<div class="footer__col">
+					<?php if( get_field( 'footer_title_second', 'option' ) ) { ?>
+						<p class="footer__menu-title"><?= the_field( 'footer_title_second', 'option' ); ?></p>
+					<?php } ?>
+					<?php 
+						wp_nav_menu([
+							'menu' => 'Footer menu 1',
+							'container' => '',
+							'items_wrap' => '<nav class="footer-menu"><ul class="footer-menu__list">%3$s</ul></nav>',
+						]); 
+					?>
+				</div>
+				<div class="footer__col">
+					<?php if( get_field( 'footer_title_third', 'option' ) ) { ?>
+						<p class="footer__menu-title"><?= the_field( 'footer_title_third', 'option' ); ?></p>
+					<?php } ?>
+					<?php 
+						wp_nav_menu([
+							'menu' => 'Footer menu 2',
+							'container' => '',
+							'items_wrap' => '<nav class="footer-menu"><ul class="footer-menu__list">%3$s</ul></nav>',
+						]); 
+					?>
+				</div>
+				<div class="footer__col">
+					<?php if( get_field( 'footer_title_fourth', 'option' ) ) { ?>
+						<p class="footer__menu-title"><?= the_field( 'footer_title_fourth', 'option' ); ?></p>
+					<?php } ?>
+					<?php 
+						wp_nav_menu([
+							'menu' => 'Footer menu 3',
+							'container' => '',
+							'items_wrap' => '<nav class="footer-menu"><ul class="footer-menu__list">%3$s</ul></nav>',
+						]); 
+					?>
+				</div>
+				<div class="footer__col">
+					<?php if( get_field( 'footer_title_fifth', 'option' ) ) { ?>
+						<p class="footer__menu-title"><?= the_field( 'footer_title_fifth', 'option' ); ?></p>
+					<?php } ?>
+					<div class="footer__soc-box">
+						<?php if( get_field( 'footer_instagram_link', 'option' ) ) { ?>
+							<a href="<?= the_field( 'footer_instagram_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
+								<img src="<?= the_field( 'footer_instagram_image', 'option' ) ?>" alt="">
+							</a>
+						<?php } ?>
+						<?php if( get_field( 'footer_facebook_link', 'option' ) ) { ?>
+							<a href="<?= the_field( 'footer_facebook_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
+								<img src="<?= the_field( 'footer_facebook_image', 'option' ) ?>" alt="">
+							</a>
+						<?php } ?>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+
 
 <?php wp_footer(); ?>
 

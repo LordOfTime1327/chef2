@@ -41,10 +41,9 @@ body {
 
 .title {
   font-size: 3rem;
-  font-weight: normal;
   line-height: 4rem;
-  color: $titleColor;
   letter-spacing: 0.2px;
+  color: $titleColor;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 10px;
@@ -93,7 +92,6 @@ body {
   }
   .title {
     font-size: 4rem;
-    line-height: 6rem;
     font-weight: $semiBoldWeight;
   }
 }
