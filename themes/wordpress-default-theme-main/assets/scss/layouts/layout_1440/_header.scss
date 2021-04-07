@@ -1,0 +1,36 @@
+.header {
+  &__cart {
+    margin-left: 40px;
+  }
+  &__btn-box {
+    margin-left: 50px;
+  }
+}
+
+.header-menu {
+  &__list {
+    li {
+      padding-left: 75px;
+    }
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .header {
+    &__cart {
+      margin-right: 40px;
+    }
+    &__btn-box {
+      margin-right: 50px;
+    }
+  }
+
+  .header-menu {
+    &__list {
+      li {
+        padding-right: 75px;
+      }
+    }
+  }
+}

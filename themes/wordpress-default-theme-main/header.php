@@ -23,37 +23,63 @@
 <body <?php body_class( 'rtl' ); ?>>
 <?php wp_body_open(); ?>
 
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'coelix' ); ?></a>
+	<header class="header">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$coelix_description = get_bloginfo( 'description', 'display' );
-			if ( $coelix_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $coelix_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		<?php if( get_field( 'promotion_text', 'option' ) ) { ?>
+			<div class="header__promotion-box">
+				<div class="container">
+					<p class="header__promotion-text"><?= the_field( 'promotion_text', 'option' ); ?></p>
+				</div>
+			</div>
+		<?php } ?>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'coelix' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		<div class="header__main">
+			<div class="container">
+				<div class="wrapper wrapper_row">
+					<div class="header__col">
+						<div class="header__burger">
+							<div class="header__burger-line"></div>
+							<div class="header__burger-line header__burger-line_middle"></div>
+							<div class="header__burger-line header__burger-line_last"></div>
+						</div>
+					</div>
+
+					<div class="header__logo-box">
+						<?php if( get_field( 'logo_header', 'option' ) ) { ?>
+							<a href="<?php home_url(); ?>" class="header__logo">
+								<img src="<?= the_field( 'logo_header', 'option' ); ?>" alt="" class='header__logo-img'>
+							</a>
+						<?php } ?>
+					</div>
+
+					<?php 
+						wp_nav_menu([
+							'menu' => 'Header menu',
+							'container' => '',
+							'items_wrap' => ' <nav class="header__nav header-menu">
+																	<ul class="header-menu__list">%3$s</ul>
+																	<div class="header__btn-box">
+																		<button class="header__btn header__btn-sign-in">Sign In</button>
+																		<button class="header__btn header__btn-sign-up">Sign Up</button>
+																	</div>	
+																</nav>',
+						]); 
+					?>
+
+					<div class='header__col header__col_end'>
+						<div class="header__search">
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/image/svg/search.svg' ) ?>
+						</div>
+						<div class="header__cart">
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/image/svg/cart.svg' ) ?>
+						</div>
+					</div>
+
+					<div class="header__btn-box">
+						<button class="header__btn header__btn-sign-in">Sign In</button>
+						<button class="header__btn header__btn-sign-up">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>

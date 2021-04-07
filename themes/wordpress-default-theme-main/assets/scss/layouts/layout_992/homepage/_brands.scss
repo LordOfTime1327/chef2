@@ -8,4 +8,13 @@
   &__item {
     max-width: 241px;
   }
+
+  &__img-box {
+    opacity: 0.1;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
