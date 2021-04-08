@@ -1,0 +1,59 @@
+.about {
+  padding-top: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 40px;
+
+    &:first-child .about__title {
+      font-size: 3.6rem;
+      line-height: 7.1rem;
+    }
+  }
+  &__img-box {
+    order: 2;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__text-box {
+    order: 1;
+
+    padding-bottom: 20px;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-weight: $lightWeight;
+    line-height: 2.4rem;
+    color: $textColor;
+
+    p {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      line-height: inherit;
+      color: inherit;
+      letter-spacing: inherit;
+
+      padding-bottom: 16px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__title {
+    font-weight: $semiBoldWeight;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.2px;
+    color: $titleColor;
+    padding-bottom: 10px;
+  }
+}

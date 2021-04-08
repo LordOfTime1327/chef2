@@ -1,0 +1,16 @@
+.about {
+  &__item {
+    &:first-child .about__title {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    line-height: 5.5rem;
+  }
+}
