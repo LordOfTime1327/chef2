@@ -62,17 +62,23 @@
 					<div class="footer__soc-box">
 						<?php if( get_field( 'footer_instagram_link', 'option' ) ) { ?>
 							<a href="<?= the_field( 'footer_instagram_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
-								<img src="<?= the_field( 'footer_instagram_image', 'option' ) ?>" alt="">
+								<?= file_get_contents( get_field( 'footer_instagram_image', 'option' ) ) ?>
 							</a>
 						<?php } ?>
 						<?php if( get_field( 'footer_facebook_link', 'option' ) ) { ?>
 							<a href="<?= the_field( 'footer_facebook_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
-								<img src="<?= the_field( 'footer_facebook_image', 'option' ) ?>" alt="">
+								<?= file_get_contents( get_field( 'footer_facebook_image', 'option' ) ) ?>
 							</a>
 						<?php } ?>
 					</div>
 					
 				</div>
+			</div>
+		</div>
+
+		<div class="footer__dev-box">
+			<div class="container">
+				<p class="footer__dev-text">Coelix @2021</p>
 			</div>
 		</div>
 	</footer>

@@ -52,19 +52,28 @@
 						<?php } ?>
 					</div>
 
-					<?php 
-						wp_nav_menu([
-							'menu' => 'Header menu',
-							'container' => '',
-							'items_wrap' => ' <nav class="header__nav header-menu">
-																	<ul class="header-menu__list">%3$s</ul>
-																	<div class="header__btn-box">
-																		<button class="header__btn header__btn-sign-in">Sign In</button>
-																		<button class="header__btn header__btn-sign-up">Sign Up</button>
-																	</div>	
-																</nav>',
-						]); 
-					?>
+					<nav class="header__nav header-menu">
+						<?php 
+							wp_nav_menu([
+								'menu' => 'Header menu',
+								'container' => '',
+								'items_wrap' => '<ul class="header-menu__list">%3$s</ul>',
+							]); 
+						?>
+						<?php if( is_user_logged_in() ) { ?>
+							<a href="#" class="header__logged-box">
+								<p class="header__logged-name">Marie Chief</p>
+								<div class="header__logged-img-box">
+									<?= file_get_contents( get_template_directory_uri() . '/assets/image/svg/user.svg' ) ?>
+								</div>
+							</a>
+						<?php } else { ?>	
+							<div class="header__btn-box">
+								<button class="header__btn header__btn-sign-in">Sign In</button>
+								<button class="header__btn header__btn-sign-up">Sign Up</button>
+							</div>
+						<?php } ?>
+					</nav>
 
 					<div class='header__col header__col_end'>
 						<div class="header__search">
@@ -75,10 +84,20 @@
 						</div>
 					</div>
 
-					<div class="header__btn-box">
-						<button class="header__btn header__btn-sign-in">Sign In</button>
-						<button class="header__btn header__btn-sign-up">Sign Up</button>
-					</div>
+					<?php if( is_user_logged_in() ) { ?>
+						<a href="#" class="header__logged-box">
+							<p class="header__logged-name">Marie Chief</p>
+							<div class="header__logged-img-box">
+								<?= file_get_contents( get_template_directory_uri() . '/assets/image/svg/user.svg' ) ?>
+							</div>
+						</a>
+					<?php } else { ?>	
+						<div class="header__btn-box">
+							<button class="header__btn header__btn-sign-in">Sign In</button>
+							<button class="header__btn header__btn-sign-up">Sign Up</button>
+						</div>
+					<?php } ?>
+
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,15 @@
 .header {
+  box-shadow: none;
+
   .wrapper {
     justify-content: flex-start;
     flex-wrap: nowrap;
+  }
+
+  &__promotion-text {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    letter-spacing: 6.3px;
   }
 
   &__main {
@@ -34,6 +42,24 @@
         fill: red;
       }
     }
+  }
+
+  &__logged-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 50px;
+  }
+  &__logged-img-box {
+    padding-left: 18px;
+  }
+  &__logged-name {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.3px;
+    color: $headerText;
   }
 
   &__btn-box {
@@ -75,6 +101,9 @@
   margin-left: 30px;
 
   .header {
+    &__logged-box {
+      display: none;
+    }
     &__btn-box {
       display: none;
     }
@@ -101,6 +130,16 @@
     &__cart {
       margin-left: 0;
     }
+
+    &__logged-box {
+      padding-left: 0px;
+      padding-right: 50px;
+    }
+    &__logged-img-box {
+      padding-left: 0px;
+      padding-right: 18px;
+    }
+
     &__btn-box {
       margin-left: 0;
       margin-right: 30px;

@@ -1,12 +1,18 @@
 .footer {
   background: $bgFooter;
-  padding: 50px 0;
+
+  &__wrapper {
+    padding: 50px 0;
+  }
 
   &__col {
     text-align: center;
     padding-bottom: 30px;
 
     &:first-child {
+      padding-bottom: 0;
+    }
+    &:last-child {
       padding-bottom: 0;
     }
   }
@@ -64,6 +70,17 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__dev-box {
+    padding: 15px 0;
+    background: $bgFooterDev;
+  }
+  &__dev-text {
+    font-size: 1rem;
+    font-weight: $lightWeight;
+    color: $white;
+    text-align: center;
   }
 }
 

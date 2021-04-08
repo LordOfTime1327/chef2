@@ -11,6 +11,10 @@
   &__list {
     li {
       padding-left: 75px;
+
+      &:first-child {
+        padding-left: 30px;
+      }
     }
   }
 }
@@ -30,6 +34,11 @@
     &__list {
       li {
         padding-right: 75px;
+
+        &:first-child {
+          padding-left: 0px;
+          padding-right: 30px;
+        }
       }
     }
   }

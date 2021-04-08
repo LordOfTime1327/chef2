@@ -1,4 +1,6 @@
 .header {
+  box-shadow: 0px 5px 25px 5px rgba($color: #424242, $alpha: 0.1);
+
   .wrapper {
     align-items: center;
     justify-content: space-between;
@@ -11,11 +13,8 @@
   &__promotion-text {
     font-size: 0.8rem;
     line-height: 1.6rem;
-    // font-size: 1.1rem;
-    // line-height: 2.2rem;
     text-align: center;
-    letter-spacing: 3px;
-    // letter-spacing: 6.3px;
+    letter-spacing: 2px;
     color: $headerPromText;
     text-transform: uppercase;
   }
@@ -90,6 +89,24 @@
   &__btn {
     cursor: pointer;
   }
+
+  &__logged-box {
+    display: none;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // align-items: center;
+    // text-decoration: none;
+    // padding-right: 50px;
+  }
+  // &__logged-img-box {
+  //   padding-right: 18px;
+  // }
+  // &__logged-name {
+  //   font-size: 1.8rem;
+  //   line-height: 2.2rem;
+  //   letter-spacing: 0.3px;
+  //   color: $headerText;
+  // }
 }
 
 .header-menu {
@@ -113,6 +130,28 @@
   }
 
   .header {
+    &__logged-box {
+      // display: none;
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      text-decoration: none;
+      // padding-right: 50px;
+
+      padding-top: 50px;
+      border-top: 1px solid $menuBorder;
+    }
+    &__logged-img-box {
+      padding-right: 18px;
+    }
+    &__logged-name {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.3px;
+      color: $headerText;
+    }
+
     &__btn-box {
       display: block;
       padding-top: 50px;
@@ -168,6 +207,11 @@
     &__cart {
       margin-left: 0;
       margin-right: 20px;
+    }
+
+    &__logged-img-box {
+      padding-right: 0px;
+      padding-left: 18px;
     }
   }
 
