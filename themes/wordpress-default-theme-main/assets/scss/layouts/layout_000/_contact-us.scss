@@ -1,0 +1,84 @@
+.contact-us {
+  padding: 28px 0 39px;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: $semiBoldWeight;
+    line-height: 7.1rem;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $titleColor;
+  }
+
+  &__img-box {
+    display: none;
+  }
+}
+
+.contact-form {
+  &__item {
+    padding-bottom: 30px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: $extraLightWeight;
+    line-height: 1.4rem;
+    color: $contactFormDark;
+    opacity: 0.6;
+    padding-bottom: 15px;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $contactFormBorderDark;
+    background: transparent;
+    padding: 0 20px 15px;
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: $lightWeight;
+    line-height: 1.8rem;
+    letter-spacing: 0.06rem;
+
+    &_textarea {
+      resize: vertical;
+      min-height: 40px;
+      max-height: 100px;
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      opacity: 0.5;
+    }
+  }
+
+  &__submit {
+    display: block;
+    margin: 0 auto;
+    font-family: $secondaryFont;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: $btnText;
+    text-decoration: none;
+    padding: 13px 31px;
+    border: none;
+    outline: none;
+    background: $btnBg;
+    border-radius: 8px;
+    box-shadow: 0 6px 30px rgba($black, 0.15);
+    cursor: pointer;
+  }
+}

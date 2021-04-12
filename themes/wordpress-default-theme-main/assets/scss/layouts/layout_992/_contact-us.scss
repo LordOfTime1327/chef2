@@ -1,0 +1,33 @@
+.contact-us {
+  padding: 72px 0;
+
+  &__item {
+    &:first-child {
+      margin-right: 50px;
+    }
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+  }
+
+  &__title {
+    font-size: 7.2rem;
+    padding-bottom: 66px;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .contact-us {
+    &__item {
+      &:first-child {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+      &:nth-child(2) {
+        margin-left: 0;
+        margin-right: 50px;
+      }
+    }
+  }
+}

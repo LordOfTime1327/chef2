@@ -1,0 +1,30 @@
+.contact-us {
+  &__item {
+    &:first-child {
+      margin-right: 100px;
+    }
+    &:nth-child(2) {
+      margin-left: 100px;
+    }
+  }
+}
+
+.contact-form {
+  padding: 80px 130px;
+  max-width: 100%;
+  width: 100%;
+}
+
+[dir="rtl"],
+.rtl {
+  .contact-us {
+    &__item {
+      &:first-child {
+        margin-left: 100px;
+      }
+      &:nth-child(2) {
+        margin-right: 100px;
+      }
+    }
+  }
+}

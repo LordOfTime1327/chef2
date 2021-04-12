@@ -1,0 +1,25 @@
+.contact-us {
+  &__item {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin-left: 0;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .contact-us {
+    &__item {
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+    &__title {
+      margin-right: 0;
+    }
+  }
+}
