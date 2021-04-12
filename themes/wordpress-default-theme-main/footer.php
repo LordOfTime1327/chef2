@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="wrapper footer__wrapper">
 				<div class="footer__col">
-					<a href="<?php home_url(); ?>" class="footer__logo-box">
+					<a href="<?= home_url(); ?>" class="footer__logo-box">
 						<img src="<?= the_field( 'logo_footer', 'option' ); ?>" alt="" class="footer__logo">
 					</a>
 				</div>

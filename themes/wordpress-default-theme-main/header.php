@@ -46,7 +46,7 @@
 
 					<div class="header__logo-box">
 						<?php if( get_field( 'logo_header', 'option' ) ) { ?>
-							<a href="<?php home_url(); ?>" class="header__logo">
+							<a href="<?= home_url(); ?>" class="header__logo">
 								<img src="<?= the_field( 'logo_header', 'option' ); ?>" alt="" class='header__logo-img'>
 							</a>
 						<?php } ?>
