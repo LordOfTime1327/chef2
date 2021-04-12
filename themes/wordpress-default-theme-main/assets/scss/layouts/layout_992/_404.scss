@@ -1,0 +1,16 @@
+.page-404 {
+  &__img-box {
+    padding-bottom: 0;
+  }
+  &__text-box {
+    transform: translateY(-70px);
+  }
+  &__title {
+    font-size: 5.5rem;
+    line-height: 7.9rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    padding-bottom: 47px;
+  }
+}

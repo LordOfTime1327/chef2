@@ -10,49 +10,30 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main class="site-main">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'coelix' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'coelix' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'coelix' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$coelix_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'coelix' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$coelix_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+		<section class="page-404">
+			<div class="container">
+				<div class="wrapper page-404__wrapper">
+					<?php if( get_field( '404_img', 'option' ) ) { ?>
+					<div class="page-404__img-box">
+						<img src="<?= the_field( '404_img', 'option' ); ?>" alt="" class="page-404__img">
+					</div>
+					<?php } ?>
+					<div class="page-404__text-box">
+						<?php if( get_field( '404_title', 'option' ) ) { ?>
+							<h2 class="page-404__title"><?= the_field( '404_title', 'option' ); ?></h2>
+						<?php } ?>
+						<?php if( get_field( '404_text', 'option' ) ) { ?>
+							<p class="page-404__text"><?= the_field( '404_text', 'option' ); ?></p>
+						<?php } ?>
+						<?php if( get_field( '404_btn', 'option' ) ) { ?>
+							<button class="page-404__btn btn" onclick='history.back()'><?= the_field( '404_btn', 'option' ); ?></button>
+						<?php } ?>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</main><!-- #main -->
 
