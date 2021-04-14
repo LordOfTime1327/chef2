@@ -1,0 +1,172 @@
+.faq {
+  padding-top: 16px;
+  padding-bottom: 30px;
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: $semiBoldWeight;
+    letter-spacing: 0.2px;
+    color: $textColor;
+    padding-bottom: 14px;
+  }
+
+  &__item {
+    padding-bottom: 17px;
+  }
+
+  &__question-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid $faqLines;
+    padding-bottom: 12px;
+
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  &__question {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: $questionText;
+
+    letter-spacing: 0.3px;
+
+    padding-right: 15px;
+  }
+
+  &__answer-box {
+    padding-top: 0;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    &.active {
+      height: 100%;
+      opacity: 1;
+      padding-top: 10px;
+      transform: translateY(0);
+    }
+  }
+  &__answer {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: $answerText;
+    letter-spacing: 0.3px;
+  }
+
+  &__btn-box {
+    position: relative;
+    flex: 0 0 21px;
+    height: 21px;
+
+    // transition: transform 0.25s;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $faqLines;
+
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    &:after {
+      transform: rotate(90deg);
+      transition: transform 0.2s;
+    }
+
+    &.active {
+      // transform: rotate(180deg);
+
+      &:after {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__img-box {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.faq-form {
+  &__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: $semiBoldWeight;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $titleColor;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: $lightWeight;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: $subtitleColor;
+    padding-bottom: 40px;
+  }
+
+  &__form {
+    background: $gradient2;
+    padding: 40px 22px 54px;
+    margin: 0 -15px;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: $contactFormLight;
+  }
+  &__input {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $contactFormLight;
+    border-bottom-color: $contactFormBorderWhite;
+  }
+
+  &__submit {
+    display: block;
+    max-width: 217px;
+    width: 100%;
+    color: $contactFormLight;
+    background: transparent;
+    border: 1px solid $contactFormBorderWhite;
+    padding: 18px 45px;
+    border-radius: 5px;
+  }
+
+  &__img-box {
+    display: none;
+    max-width: 767px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .faq {
+    &__question {
+      padding-right: 0px;
+      padding-left: 15px;
+    }
+  }
+}

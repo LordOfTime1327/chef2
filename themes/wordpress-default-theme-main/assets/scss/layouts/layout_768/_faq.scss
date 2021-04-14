@@ -1,0 +1,94 @@
+.faq {
+  padding-top: 40px;
+  padding-bottom: 90px;
+
+  &__box {
+    flex: 1;
+    padding-right: 50px;
+  }
+
+  &__title {
+    font-size: 5.5rem;
+    line-height: 6rem;
+    padding-bottom: 40px;
+  }
+
+  &__item {
+    padding-bottom: 30px;
+  }
+
+  &__question-box {
+    padding-bottom: 17px;
+  }
+  &__question {
+    font-size: 1.8rem;
+  }
+
+  &__answer {
+    font-size: 1.4rem;
+  }
+
+  &__img-box {
+    flex: 1;
+  }
+}
+
+.faq-form {
+  padding-bottom: 160px;
+
+  .wrapper {
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    padding-bottom: 18px;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+  }
+
+  &__form {
+    flex: 0 0 50%;
+    margin: 0;
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  &__input {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  &__submit {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__img-box {
+    display: block;
+    flex: 0 0 50%;
+    padding-right: 72px;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .faq {
+    &__box {
+      padding-right: 0;
+      padding-left: 50px;
+    }
+  }
+
+  .faq-box {
+    &__img-box {
+      padding-right: 0;
+      padding-left: 72px;
+    }
+  }
+}

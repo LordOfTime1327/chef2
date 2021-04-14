@@ -1,0 +1,25 @@
+.faq {
+  padding-bottom: 160px;
+
+  &__title {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    padding-bottom: 76px;
+  }
+
+  &__item {
+    padding-bottom: 42px;
+  }
+}
+
+.faq-form {
+  &__title {
+    font-size: 5.5rem;
+    line-height: 5.9rem;
+  }
+  &__subtitle {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    padding-bottom: 56px;
+  }
+}
