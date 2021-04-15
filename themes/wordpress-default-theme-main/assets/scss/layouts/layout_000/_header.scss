@@ -88,25 +88,12 @@
   }
   &__btn {
     cursor: pointer;
+    outline: none;
   }
 
   &__logged-box {
     display: none;
-    // display: flex;
-    // flex-flow: row nowrap;
-    // align-items: center;
-    // text-decoration: none;
-    // padding-right: 50px;
   }
-  // &__logged-img-box {
-  //   padding-right: 18px;
-  // }
-  // &__logged-name {
-  //   font-size: 1.8rem;
-  //   line-height: 2.2rem;
-  //   letter-spacing: 0.3px;
-  //   color: $headerText;
-  // }
 }
 
 .header-menu {
@@ -131,13 +118,11 @@
 
   .header {
     &__logged-box {
-      // display: none;
       display: flex;
       flex-flow: row-reverse nowrap;
       justify-content: flex-end;
       align-items: center;
       text-decoration: none;
-      // padding-right: 50px;
 
       padding-top: 50px;
       border-top: 1px solid $menuBorder;

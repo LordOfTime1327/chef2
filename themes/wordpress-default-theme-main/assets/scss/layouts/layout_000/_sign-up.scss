@@ -1,0 +1,181 @@
+.register-popup {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 972px;
+  width: calc(100% - 42px);
+  padding: 29px 0 0;
+
+  &.active {
+    display: block;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: $semiBoldWeight;
+    line-height: 1.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $signColor;
+    padding: 0 37px 11px;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 37px;
+  }
+
+  &__item {
+    flex: 1 1 344px;
+    position: relative;
+
+    padding: 0 15px;
+    margin-bottom: 12px;
+
+    &_agreement {
+      flex: 0 0 100%;
+
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &_submit {
+      flex: 0 0 100%;
+
+      padding-top: 15px;
+      margin-bottom: 30px;
+
+      display: inline-flex;
+      justify-content: flex-start;
+    }
+  }
+
+  &__checkbox-label {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: $lightWeight;
+    color: $signColor;
+
+    margin-left: 15px;
+  }
+
+  &__terms-link {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    font-weight: $semiBoldWeight;
+    text-decoration: none;
+  }
+
+  &__eye {
+    display: block;
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    top: calc(50% + 11px);
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__label {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: $lightWeight;
+    letter-spacing: 0.06em;
+    color: $signColor;
+    opacity: 0.5;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($signColor, 0.1);
+    outline: none;
+
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.06em;
+    color: $signColor;
+    padding: 10px 18px;
+
+    transition: border-bottom-color 0.2s;
+
+    &:hover,
+    &:focus,
+    &:valid {
+      border-bottom-color: rgba($signColor, 1);
+    }
+  }
+
+  &__submit {
+    display: block;
+    // width: 100%;
+    max-width: 344px;
+    width: 100%;
+
+    font-family: $secondaryFont;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: $boldWeight;
+    color: $signColor;
+    padding: 9px 18px;
+    background: transparent;
+    border: 1px solid $signColor;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__have-acc {
+    display: block;
+    background: rgba($black, 0.2);
+
+    text-align: center;
+    padding: 16px 37px;
+  }
+
+  &__have-acc-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: $lightWeight;
+    color: $signColor;
+  }
+
+  &__have-acc-link {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: $semiBoldWeight;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .register-popup {
+    &__checkbox-label {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+
+    &__eye {
+      right: auto;
+      left: 20px;
+    }
+  }
+}

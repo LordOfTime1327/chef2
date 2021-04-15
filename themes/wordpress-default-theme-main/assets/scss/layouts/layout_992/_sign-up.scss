@@ -1,0 +1,47 @@
+.register-popup {
+  padding-top: 65px;
+
+  &__title {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    padding: 0 120px;
+    padding-bottom: 42px;
+    text-align: unset;
+  }
+
+  &__form {
+    padding: 0 120px;
+  }
+
+  &__item {
+    margin-bottom: 35px;
+
+    &_submit {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__checkbox-label {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &__eye {
+    cursor: pointer;
+  }
+
+  &__label {
+    font-size: 1.4rem;
+  }
+
+  &__input {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding: 15px 25px;
+  }
+
+  &__submit {
+    font-size: 1.8rem;
+    padding: 20px 40px;
+  }
+}
