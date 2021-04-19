@@ -106,6 +106,34 @@ main {
   }
 }
 
+.close-btn {
+  position: absolute;
+  z-index: 999;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $signColor;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .wrapper {
     flex-flow: row nowrap;
@@ -132,5 +160,17 @@ main {
     // &:hover{
 
     // }
+  }
+
+  .close-btn {
+    top: 30px;
+    right: 30px;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
   }
 }

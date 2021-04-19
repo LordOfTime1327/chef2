@@ -105,3 +105,28 @@ function showPass(e) {
       : (this.parentNode.children[1].type = "password");
   }
 }
+
+// SUBSCRIBE POPUP
+let subscribePopup = document.querySelector(".subscribe-popup");
+let closeSubscribeBtn = document.querySelector(".close-btn_subscribe");
+
+setTimeout(showSubscribePopup, 5000);
+
+[("mousedown", "mouseup", "touchstart", "touchend")].forEach((event) => {
+  closeSubscribeBtn.addEventListener(event, closeSubscribePopup, false);
+});
+[("mousedown", "mouseup", "touchstart", "touchend")].forEach((event) => {
+  bgCover.addEventListener(event, closeSubscribePopup, false);
+});
+
+function showSubscribePopup() {
+  subscribePopup.classList.add("active");
+  bgCover.classList.add("active");
+  html.classList.add("stop-scrolling");
+}
+
+function closeSubscribePopup() {
+  subscribePopup.classList.remove("active");
+  bgCover.classList.remove("active");
+  html.classList.remove("stop-scrolling");
+}

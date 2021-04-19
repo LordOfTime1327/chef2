@@ -30,18 +30,6 @@
   }
 }
 
-.close-btn {
-  top: 30px;
-  right: 30px;
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: rotate(180deg);
-  }
-}
-
 [dir="rtl"],
 .rtl {
   .close-btn {
