@@ -64,7 +64,7 @@
 							<a href="#" class="header__logged-box">
 								<p class="header__logged-name">Marie Chief</p>
 								<div class="header__logged-img-box">
-									<?= file_get_contents( get_template_directory_uri() . '/assets/image/svg/user.svg' ) ?>
+									<?= file_get_contents( get_theme_file_path() . '/assets/image/svg/user.svg' ) ?>
 								</div>
 							</a>
 						<?php } else { ?>	
@@ -77,10 +77,10 @@
 
 					<div class='header__col header__col_end'>
 						<div class="header__search">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/image/svg/search.svg' ) ?>
+							<?php echo file_get_contents( get_theme_file_path() . '/assets/image/svg/search.svg' ) ?>
 						</div>
 						<div class="header__cart">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/image/svg/cart.svg' ) ?>
+							<?php echo file_get_contents( get_theme_file_path() . '/assets/image/svg/cart.svg' ) ?>
 						</div>
 					</div>
 
@@ -88,7 +88,7 @@
 						<a href="#" class="header__logged-box">
 							<p class="header__logged-name">Marie Chief</p>
 							<div class="header__logged-img-box">
-								<?= file_get_contents( get_template_directory_uri() . '/assets/image/svg/user.svg' ) ?>
+								<?= file_get_contents( get_theme_file_path() . '/assets/image/svg/user.svg' ) ?>
 							</div>
 						</a>
 					<?php } else { ?>	

@@ -51,7 +51,8 @@ get_header();
 					?>
 						<div class="features__item">
 							<div class="features__img-box">
-								<?= file_get_contents( $icon_features ); ?>
+							    <?php echo file_get_contents( get_attached_file( $icon_features ) ); ?>
+								
 							</div>
 							<div class="features__text-box">
 								<p class="features__text"><?= $text_features; ?></p>

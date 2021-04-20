@@ -27,7 +27,7 @@ if ( ! function_exists( 'coelix_setup' ) ) :
 		 * If you're building a theme based on coelix, use a find and replace
 		 * to change 'coelix' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'coelix', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'coelix', get_template_directory_uri() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -191,7 +191,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+	require get_template_directory_uri() . '/inc/jetpack.php';
 }
 
 /**

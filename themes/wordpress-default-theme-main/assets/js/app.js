@@ -112,12 +112,8 @@ let closeSubscribeBtn = document.querySelector(".close-btn_subscribe");
 
 setTimeout(showSubscribePopup, 5000);
 
-[("mousedown", "mouseup", "touchstart", "touchend")].forEach((event) => {
-  closeSubscribeBtn.addEventListener(event, closeSubscribePopup, false);
-});
-[("mousedown", "mouseup", "touchstart", "touchend")].forEach((event) => {
-  bgCover.addEventListener(event, closeSubscribePopup, false);
-});
+bgCover.addEventListener("click", closeSubscribePopup);
+closeSubscribeBtn.addEventListener("click", closeSubscribePopup);
 
 function showSubscribePopup() {
   subscribePopup.classList.add("active");
@@ -126,6 +122,7 @@ function showSubscribePopup() {
 }
 
 function closeSubscribePopup() {
+  console.log("ok");
   subscribePopup.classList.remove("active");
   bgCover.classList.remove("active");
   html.classList.remove("stop-scrolling");

@@ -62,12 +62,12 @@
 					<div class="footer__soc-box">
 						<?php if( get_field( 'footer_instagram_link', 'option' ) ) { ?>
 							<a href="<?= the_field( 'footer_instagram_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
-								<?= file_get_contents( get_field( 'footer_instagram_image', 'option' ) ) ?>
+						    	<?php echo file_get_contents( get_attached_file( get_field( 'footer_instagram_image', 'option' ) ) ); ?>
 							</a>
 						<?php } ?>
 						<?php if( get_field( 'footer_facebook_link', 'option' ) ) { ?>
 							<a href="<?= the_field( 'footer_facebook_link', 'option' ) ?>" target="_blank" class="footer__soc-link">
-								<?= file_get_contents( get_field( 'footer_facebook_image', 'option' ) ) ?>
+							<?php echo file_get_contents( get_attached_file( get_field( 'footer_facebook_image', 'option' ) ) ); ?>
 							</a>
 						<?php } ?>
 					</div>
@@ -178,6 +178,8 @@
 
 		<div class="close-btn close-btn_subscribe"></div>
 	</div>
+
+	
 
 
 <?php wp_footer(); ?>
