@@ -1,7 +1,112 @@
+// Base reset
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}
+
+// Font-size, line-height, letter-spacing
+@mixin font-size($fsz: $baseFontSize, $lh: normal, $ls: normal) {
+  font-size: rem($fsz * 1px);
+
+  @if $lh==normal {
+    line-height: normal;
+  } @else {
+    line-height: $lh / $fsz;
+  }
+
+  @if $ls==normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: #{$ls}px;
+  }
+}
+
+// Font inherit
+@mixin font-inherit {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+// Flex mixin
+@mixin flex($jc: flex-start, $ai: flex-start, $direction: null, $wrap: null) {
+  display: flex;
+
+  @if $direction == column {
+    flex-direction: column;
+  } @else {
+    flex-direction: row;
+  }
+
+  @if $wrap == nowrap {
+    flex-wrap: nowrap;
+  } @else {
+    flex-wrap: wrap;
+  }
+
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+// White sapce
+// $n - count of text lines
+// $lh - line height
+@mixin truncate($n, $lh: null) {
+  @if $n==1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  } @else {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-line-clamp: $n;
+    -moz-line-clamp: $n;
+    line-clamp: $n;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    line-height: $lh;
+    height: $lh * $n;
+  }
+}
+
+// User select
 @mixin noselect() {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+// Background cover
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+// Fluid image
+@mixin img-fluid {
+  display: block;
+  max-width: 100%;
+}
+
+// Cover image
+@mixin img-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

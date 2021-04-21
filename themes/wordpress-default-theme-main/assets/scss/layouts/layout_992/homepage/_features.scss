@@ -5,6 +5,7 @@
     margin-bottom: 20px;
   }
   &__text-box {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    @include font-size(18);
   }
 }

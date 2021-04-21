@@ -2,8 +2,9 @@
   padding-bottom: 160px;
 
   &__title {
-    font-size: 7.2rem;
-    line-height: 7.2rem;
+    // font-size: 7.2rem;
+    // line-height: 7.2rem;
+    @include font-size(72, 72);
     padding-bottom: 76px;
   }
 
@@ -14,12 +15,14 @@
 
 .faq-form {
   &__title {
-    font-size: 5.5rem;
+    // font-size: 5.5rem;
+    @include font-size(55);
     line-height: 5.9rem;
   }
   &__subtitle {
-    font-size: 2.4rem;
-    line-height: 2.6rem;
+    // font-size: 2.4rem;
+    // line-height: 2.6rem;
+    @include font-size(24, 26);
     padding-bottom: 56px;
   }
 }

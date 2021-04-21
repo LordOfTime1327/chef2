@@ -2,14 +2,15 @@
   position: relative;
 
   &__bg {
-    display: block;
+    // display: block;
     z-index: -1;
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    @include img-cover;
     transform: scale(-1, 1);
   }
 
@@ -18,7 +19,8 @@
   }
 
   &__text-box {
-    align-items: flex-start;
+    // align-items: flex-start;
+    @include flex("", flex-start);
     max-width: 50%;
     margin-left: auto;
     padding: 0;
@@ -29,12 +31,14 @@
   }
 
   &__title {
-    font-size: 5.5rem;
+    // font-size: 5.5rem;
+    @include font-size(55);
     font-weight: $semiBoldWeight;
     padding-bottom: 26px;
   }
   &__text {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    @include font-size(15);
     padding-bottom: 55px;
   }
 }

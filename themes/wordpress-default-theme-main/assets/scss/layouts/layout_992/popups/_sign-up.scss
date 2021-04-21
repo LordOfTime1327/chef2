@@ -2,8 +2,9 @@
   padding-top: 65px;
 
   &__title {
-    font-size: 7.2rem;
-    line-height: 7.2rem;
+    // font-size: 7.2rem;
+    // line-height: 7.2rem;
+    @include font-size(72, 72);
     padding: 0 120px;
     padding-bottom: 42px;
     text-align: unset;
@@ -22,8 +23,9 @@
   }
 
   &__checkbox-label {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    // font-size: 1.4rem;
+    // line-height: 2rem;
+    @include font-size(14, 20);
   }
 
   &__eye {
@@ -31,17 +33,20 @@
   }
 
   &__label {
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
+    @include font-size(14);
   }
 
   &__input {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    // font-size: 1.8rem;
+    // line-height: 1.8rem;
+    @include font-size(18, 18);
     padding: 15px 25px;
   }
 
   &__submit {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    @include font-size(18);
     padding: 20px 40px;
   }
 }

@@ -6,11 +6,13 @@
     transform: translateY(-70px);
   }
   &__title {
-    font-size: 5.5rem;
-    line-height: 7.9rem;
+    // font-size: 5.5rem;
+    // line-height: 7.9rem;
+    @include font-size(55, 79);
   }
   &__text {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    @include font-size(18);
     padding-bottom: 47px;
   }
 }

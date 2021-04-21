@@ -1,8 +1,10 @@
 .intro {
   &__title {
-    font-size: 7.2rem;
+    // font-size: 7.2rem;
+    @include font-size(72);
   }
   &__text {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    @include font-size(18);
   }
 }

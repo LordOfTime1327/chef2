@@ -1,16 +1,19 @@
 .about {
   &__item {
     &:first-child .about__title {
-      font-size: 5.5rem;
+      // font-size: 5.5rem;
+      @include font-size(55);
     }
   }
 
   &__text {
-    font-size: 1.7rem;
+    // font-size: 1.7rem;
+    @include font-size(17);
   }
 
   &__title {
-    font-size: 3.6rem;
-    line-height: 5.5rem;
+    // font-size: 3.6rem;
+    // line-height: 5.5rem;
+    @include font-size(36, 55);
   }
 }

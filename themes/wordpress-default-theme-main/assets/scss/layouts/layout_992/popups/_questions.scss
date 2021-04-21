@@ -2,13 +2,15 @@
   padding-top: 67px;
 
   &__title {
-    font-size: 2.9rem;
+    // font-size: 2.9rem;
+    @include font-size(29);
     padding: 0 117px 8px;
     text-align: unset;
   }
 
   &__subtitle {
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
+    @include font-size(14);
     padding: 0 117px 35px;
     text-align: unset;
   }

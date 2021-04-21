@@ -2,8 +2,9 @@
   box-shadow: 0px 5px 25px 5px rgba($color: #424242, $alpha: 0.1);
 
   .wrapper {
-    align-items: center;
-    justify-content: space-between;
+    // align-items: center;
+    // justify-content: space-between;
+    @include flex(space-between, center);
   }
 
   &__promotion-box {
@@ -11,10 +12,11 @@
     padding: 10px 0;
   }
   &__promotion-text {
-    font-size: 0.8rem;
-    line-height: 1.6rem;
+    @include font-size(8, 16, 2);
+    // font-size: 0.8rem;
+    // line-height: 1.6rem;
     text-align: center;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
     color: $headerPromText;
     text-transform: uppercase;
   }
@@ -25,11 +27,13 @@
 
   &__col {
     width: 25%;
-    display: flex;
-    justify-content: flex-start;
+    // display: flex;
+    // justify-content: flex-start;
+    @include flex(flex-start);
 
     &_end {
-      justify-content: flex-end;
+      // justify-content: flex-end;
+      @include flex(flex-end);
     }
   }
 
@@ -118,10 +122,11 @@
 
   .header {
     &__logged-box {
-      display: flex;
-      flex-flow: row-reverse nowrap;
-      justify-content: flex-end;
-      align-items: center;
+      // display: flex;
+      // flex-flow: row-reverse nowrap;
+      // justify-content: flex-end;
+      // align-items: center;
+      @include flex(flex-end, center, row-reverse, nowrap);
       text-decoration: none;
 
       padding-top: 50px;
@@ -131,9 +136,10 @@
       padding-right: 18px;
     }
     &__logged-name {
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      letter-spacing: 0.3px;
+      // font-size: 1.8rem;
+      // line-height: 2.2rem;
+      // letter-spacing: 0.3px;
+      @include font-size(18, 22, 0.3);
       color: $headerText;
     }
 
@@ -146,8 +152,9 @@
       display: block;
       border: none;
       background: transparent;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
+      // font-size: 1.8rem;
+      // line-height: 2.2rem;
+      @include font-size(18, 22);
       color: $headerText;
       margin: 0;
       margin-bottom: 22px;
@@ -161,18 +168,20 @@
   &__list {
     list-style: none;
     padding: 0;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    letter-spacing: 0.3px;
+    // font-size: 1.8rem;
+    // line-height: 2.2rem;
+    // letter-spacing: 0.3px;
+    @include font-size(18, 22, 0.3);
     color: $headerText;
 
     li,
     a {
-      font-family: inherit;
-      font-size: inherit;
-      font-style: inherit;
-      font-weight: inherit;
-      color: inherit;
+      // font-family: inherit;
+      // font-size: inherit;
+      // font-style: inherit;
+      // font-weight: inherit;
+      // color: inherit;
+      @include font-inherit;
     }
     li {
       padding-bottom: 24px;

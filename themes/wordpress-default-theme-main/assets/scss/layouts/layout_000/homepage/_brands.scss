@@ -3,8 +3,9 @@
   background: $bgBrands;
 
   &__wrapper {
-    justify-content: space-around;
-    align-items: center;
+    // justify-content: space-around;
+    // align-items: center;
+    @include flex(space-around, center);
   }
 
   &__title {
@@ -21,7 +22,6 @@
   }
 
   &__img {
-    display: block;
-    width: 100%;
+    @include img-fluid;
   }
 }

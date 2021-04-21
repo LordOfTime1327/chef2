@@ -46,18 +46,14 @@
     }
   }
   &__text-box {
-    line-height: 1.4rem;
+    // line-height: 1.4rem;
+    @include font-size(10, 14);
     color: $featuresText;
     text-align: center;
     @include noselect;
     transition: color 0.5s;
   }
   &__text {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-style: inherit;
-    color: inherit;
-    line-height: inherit;
+    @include font-inherit;
   }
 }
