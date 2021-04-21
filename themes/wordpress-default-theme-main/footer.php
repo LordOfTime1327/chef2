@@ -113,10 +113,9 @@
 			<div class="close-btn close-btn_login"></div>
 	</div>
 
-	<!-- <div class="popup-wrapper"> -->
-		<div class="register-popup" style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'sign_up_bg', 'option' ) ?>)'>
+	<div class="register-popup" style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'sign_up_bg', 'option' ) ?>)'>
 		<h2 class="register-popup__title">Sign Up</h2>
-	
+
 		<form action="" class="register-popup__form">
 			<div class="register-popup__item">
 				<label for="email" class="register-popup__label">Full name</label>
@@ -156,7 +155,6 @@
 
 		<div class="close-btn close-btn_register"></div>
 	</div>
-	<!-- </div> -->
 	
 
 	<div class="subscribe-popup" style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'subscribe_bg', 'option' ) ?>)'>

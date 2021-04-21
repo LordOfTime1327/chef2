@@ -11,6 +11,8 @@
   background-repeat: no-repeat;
   max-width: 972px;
   width: calc(100% - 42px);
+  max-height: calc(100% - 100px);
+  overflow-y: auto;
   padding: 29px 0 0;
 
   &.active {
