@@ -1,0 +1,103 @@
+.question-popup {
+  display: none;
+
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 969px;
+  width: calc(100% - 42px);
+  padding: 36px 0 0;
+
+  &.active {
+    display: block;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: $mediumWeight;
+    letter-spacing: 0.06em;
+    color: $signColor;
+    padding: 0 37px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: $lightWeight;
+    text-align: center;
+    color: $signColor;
+    padding: 0 37px;
+    padding-bottom: 20px;
+  }
+
+  &__form {
+    padding: 0 37px 35px;
+  }
+
+  &__item {
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__input {
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($signColor, 0.1);
+    outline: none;
+
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.06em;
+    color: $signColor;
+    padding: 10px 18px;
+
+    transition: border-bottom-color 0.2s;
+
+    &:hover,
+    &:focus,
+    &:valid {
+      border-bottom-color: rgba($signColor, 1);
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      line-height: inherit;
+      color: inherit;
+      opacity: 0.5;
+    }
+  }
+
+  &__submit {
+    display: block;
+    max-width: 217px;
+    width: 100%;
+
+    font-family: $secondaryFont;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: $boldWeight;
+    color: $signColor;
+    padding: 9px 18px;
+    background: transparent;
+    border: 1px solid $signColor;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+}

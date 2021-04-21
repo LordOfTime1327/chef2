@@ -110,7 +110,7 @@ function showPass(e) {
 let subscribePopup = document.querySelector(".subscribe-popup");
 let closeSubscribeBtn = document.querySelector(".close-btn_subscribe");
 
-setTimeout(showSubscribePopup, 5000);
+// setTimeout(showSubscribePopup, 5000);
 
 bgCover.addEventListener("click", closeSubscribePopup);
 closeSubscribeBtn.addEventListener("click", closeSubscribePopup);
@@ -122,8 +122,28 @@ function showSubscribePopup() {
 }
 
 function closeSubscribePopup() {
-  console.log("ok");
   subscribePopup.classList.remove("active");
+  bgCover.classList.remove("active");
+  html.classList.remove("stop-scrolling");
+}
+
+// QUESTION POPUP
+let qPopup = document.querySelector(".question-popup"),
+  closeBtnQ = document.querySelector(".close-btn_question");
+
+// setTimeout(showQPopup, 5000);
+
+bgCover.addEventListener("click", closeQePopup);
+closeBtnQ.addEventListener("click", closeQePopup);
+
+function showQPopup() {
+  qPopup.classList.add("active");
+  bgCover.classList.add("active");
+  html.classList.add("stop-scrolling");
+}
+
+function closeQePopup() {
+  qPopup.classList.remove("active");
   bgCover.classList.remove("active");
   html.classList.remove("stop-scrolling");
 }
