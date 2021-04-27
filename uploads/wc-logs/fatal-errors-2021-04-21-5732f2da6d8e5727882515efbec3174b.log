@@ -1,0 +1,220 @@
+2021-04-21T14:53:31+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 278
+
+2021-04-21T14:53:32+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 278
+
+2021-04-21T18:56:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T18:57:16+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T18:57:19+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T18:57:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T18:57:41+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:00:09+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 28
+
+2021-04-21T19:00:10+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 28
+
+2021-04-21T19:00:14+00:00 CRITICAL syntax error, unexpected '=', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 28
+
+2021-04-21T19:01:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:02:21+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:02:28+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:02:56+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:02:59+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:06:03+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 29
+
+2021-04-21T19:06:34+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:30
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 30
+
+2021-04-21T19:08:26+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:30
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 30
+
+2021-04-21T19:08:32+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:31
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 31
+
+2021-04-21T19:08:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php:32
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php on line 32
+
+2021-04-21T19:37:00+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:23
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 23
+
+2021-04-21T19:37:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:24
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 24
+
+2021-04-21T19:39:22+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T19:39:33+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T19:39:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:26
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 26
+
+2021-04-21T19:39:50+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:26
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 26
+
+2021-04-21T19:42:23+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T19:42:40+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T19:48:00+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 30
+
+2021-04-21T19:51:46+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 30
+
+2021-04-21T19:52:32+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 29
+
+2021-04-21T19:53:42+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T20:12:39+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T20:14:42+00:00 CRITICAL Uncaught Error: Call to a member function get_title_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+
+2021-04-21T20:14:54+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\single-product.php on line 27
+

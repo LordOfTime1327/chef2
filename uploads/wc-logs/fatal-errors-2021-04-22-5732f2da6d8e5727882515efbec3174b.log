@@ -1,0 +1,183 @@
+2021-04-22T07:35:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:36:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:36:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:36:53+00:00 CRITICAL Uncaught Error: Call to undefined function the_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:37:20+00:00 CRITICAL Uncaught Error: Call to a member function get_product_price() on null in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:37:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_product_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:37
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 37
+
+2021-04-22T07:53:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_short_description() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:48
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 48
+
+2021-04-22T09:01:54+00:00 CRITICAL syntax error, unexpected '?>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 54
+
+2021-04-22T09:02:06+00:00 CRITICAL syntax error, unexpected '?>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 54
+
+2021-04-22T09:02:31+00:00 CRITICAL syntax error, unexpected '?>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 54
+
+2021-04-22T09:05:36+00:00 CRITICAL syntax error, unexpected '?>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 54
+
+2021-04-22T09:28:00+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php on line 43
+
+2021-04-22T12:01:11+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_reviews() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:73
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 73
+
+2021-04-22T12:01:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:73
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 73
+
+2021-04-22T12:03:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:73
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 73
+
+2021-04-22T12:03:08+00:00 CRITICAL syntax error, unexpected '/' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 73
+
+2021-04-22T12:03:12+00:00 CRITICAL syntax error, unexpected '?>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 73
+
+2021-04-22T12:05:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_product_reviews() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 74
+
+2021-04-22T12:09:59+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 74
+
+2021-04-22T12:10:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 74
+
+2021-04-22T12:11:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:75
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 75
+
+2021-04-22T12:11:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:75
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 75
+
+2021-04-22T12:14:05+00:00 CRITICAL Cannot redeclare chef_woocommerce_template_single_add_to_cart() (previously declared in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php:272) in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 280
+
+2021-04-22T12:14:06+00:00 CRITICAL Cannot redeclare chef_woocommerce_template_single_add_to_cart() (previously declared in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php:272) in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 280
+

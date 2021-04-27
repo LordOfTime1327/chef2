@@ -141,15 +141,18 @@ add_action( 'widgets_init', 'coelix_widgets_init' );
 
 
 function coelix_scripts() {
-
+	wp_enqueue_style( 'coelix-swiper-styles', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.7/swiper-bundle.min.css' );
+	// wp_enqueue_style( 'coelix-swiper-styles', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
 	// wp_enqueue_style( 'coelix-rubik', 'https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap' );
 	// wp_enqueue_style( 'coelix-main-fullpage-styles', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css' );
 
-	// wp_enqueue_style( 'coelix-slick-styles', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
+	wp_enqueue_style( 'coelix-slick-styles', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
 	// wp_enqueue_style( 'coelix-animate-styles', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css' );
 
+	wp_enqueue_script( 'coelix-swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.7/swiper-bundle.min.js', array(), '20151215', true );
+	// wp_enqueue_script( 'coelix-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '20151215', true );
 	// wp_enqueue_script( 'coelix-fullpage', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js', array(), '20151215', true );
-	// wp_enqueue_script( 'coelix-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'coelix-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array(), '20151215', true );
 	// wp_enqueue_script( 'coelix-wow', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), '20151215', true );
 	
 	if ( !is_admin() ) {
@@ -251,3 +254,22 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 }
+
+///
+remove_action('woocommerce_single_product_summary' , 'woocommerce_template_single_rating', 10);
+add_action('showRatingStars', 'chef_woocommerce_template_single_rating', 10 );
+function chef_woocommerce_template_single_rating() {
+	wc_get_template( 'single-product/rating.php' );
+}
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+add_action('addToCartForm', 'chef_woocommerce_template_single_add_to_cart', 30 );
+function chef_woocommerce_template_single_add_to_cart(){
+	wc_get_template( 'single-product/add-to-cart/simple.php' );
+}
+
+// remove_action( 'woocommerce_review_before_comment_meta', 'woocommerce_review_display_rating', 10 );
+// add_action( 'test', 'chef_woocommerce_review_display_rating' );
+// function chef_woocommerce_review_display_rating(){
+// 	wc_get_template( 'single-product/review.php' );
+// }

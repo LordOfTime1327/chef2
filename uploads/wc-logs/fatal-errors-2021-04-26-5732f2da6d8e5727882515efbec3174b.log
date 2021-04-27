@@ -1,0 +1,66 @@
+2021-04-26T20:14:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_rating_html(), 0 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 119 and at least 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php:3496
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(119): wc_get_rating_html()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\inde in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 3496
+
+2021-04-26T20:14:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_rating_html(), 0 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 119 and at least 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php:3496
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(119): wc_get_rating_html()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\inde in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 3496
+
+2021-04-26T20:15:50+00:00 CRITICAL Uncaught Error: Call to undefined function wc_single_product_ratings() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:113
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 113
+
+2021-04-26T20:22:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_comment_meta(), 0 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 119 and at least 1 expected in W:\domains\Chef\wp-includes\comment.php:501
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(119): get_comment_meta()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 { in W:\domains\Chef\wp-includes\comment.php on line 501
+
+2021-04-26T20:23:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_comment_meta(), 0 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 119 and at least 1 expected in W:\domains\Chef\wp-includes\comment.php:501
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(119): get_comment_meta()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 { in W:\domains\Chef\wp-includes\comment.php on line 501
+
+2021-04-26T20:23:19+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_comment_meta(), 0 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 112 and at least 1 expected in W:\domains\Chef\wp-includes\comment.php:501
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(112): get_comment_meta()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 { in W:\domains\Chef\wp-includes\comment.php on line 501
+
+2021-04-26T20:52:35+00:00 CRITICAL syntax error, unexpected '}' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 125
+

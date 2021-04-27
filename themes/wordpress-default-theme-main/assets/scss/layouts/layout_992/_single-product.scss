@@ -1,0 +1,157 @@
+.product {
+  &__info-box {
+    padding-bottom: 120px;
+
+    .wrapper {
+      @include flex("", "", row);
+    }
+  }
+
+  &__slider-box {
+    padding: 0;
+    margin: 0;
+    max-width: unset;
+    // max-width: 770px;
+    flex: 2;
+    height: 436px;
+
+    @include flex(flex-start, center, row, nowrap);
+  }
+
+  &__slider {
+    max-width: 578px;
+    flex: 1;
+    padding: 0;
+  }
+
+  &__slider-thumbs {
+    flex: 0 0 109px;
+    height: inherit;
+    order: -1;
+    padding: 0;
+    margin-right: 82px;
+  }
+
+  &__slider-pagination {
+    display: none;
+  }
+
+  &__slider-slide {
+    width: inherit !important;
+  }
+
+  &__info {
+    flex: 1;
+    padding-left: 30px;
+
+    &_mob {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include font-size(36);
+    padding-bottom: 32px;
+
+    &_desc {
+      display: block;
+    }
+  }
+
+  &__short-description {
+    @include font-size(24);
+
+    &_desc {
+      display: block;
+    }
+  }
+
+  &__price {
+    ins {
+      @include font-size(36);
+    }
+
+    &_desc {
+      display: block;
+    }
+  }
+}
+
+.description {
+  padding-bottom: 136px;
+
+  &__title {
+    @include font-size(36);
+    text-align: unset;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+
+    &:after {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &__text-box {
+    @include font-size(18, 32);
+  }
+}
+
+.reviews {
+  padding-bottom: 100px;
+
+  &__title {
+    @include font-size(36);
+    text-align: unset;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+
+    &:after {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+.related {
+  &__title {
+    @include font-size(36);
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .product {
+    &__slider-thumbs {
+      margin-right: 0;
+      margin-left: 82px;
+    }
+
+    &__info {
+      padding-left: 0;
+      padding-right: 30px;
+    }
+  }
+
+  .description {
+    &__title {
+      &:after {
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .reviews {
+    &__title {
+      &:after {
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}

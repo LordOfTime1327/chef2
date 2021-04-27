@@ -1,0 +1,72 @@
+2021-04-25T19:15:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function _n(), 2 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php on line 38 and at least 3 expected in W:\domains\Chef\wp-includes\l10n.php:466
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php(38): _n(3, 'woocommerce')
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php(264): wc_get_template('single-product/...')
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_woocommerce_template_single_rating('')
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(86): do_action in W:\domains\Chef\wp-includes\l10n.php on line 466
+
+2021-04-25T19:15:56+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php on line 38
+
+2021-04-25T19:16:29+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php on line 38
+
+2021-04-25T19:16:57+00:00 CRITICAL syntax error, unexpected 'esc_html' (T_STRING) in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product\rating.php on line 38
+
+2021-04-25T20:27:42+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:112
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 112
+
+2021-04-25T21:01:46+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on null in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-widget-reviews.php:29
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php(280): wc_get_template('content-widget-...')
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_woocommerce_after_single_product_summary('')
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php(113): do_action('test')
+#6 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#7 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#8 W:\dom in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-widget-reviews.php on line 29
+
+2021-04-25T21:35:29+00:00 CRITICAL Uncaught Error: Method name must be a string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:112
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 112
+
+2021-04-25T21:35:43+00:00 CRITICAL Uncaught Error: Method name must be a string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:112
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 112
+
+2021-04-25T21:36:44+00:00 CRITICAL Uncaught Error: Method name must be a string in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php:112
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-single-product.php on line 112
+

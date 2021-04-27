@@ -131,7 +131,7 @@ function closeSubscribePopup() {
 let qPopup = document.querySelector(".question-popup"),
   closeBtnQ = document.querySelector(".close-btn_question");
 
-// setTimeout(showQPopup, 5000);
+// setTimeout(showQPopup, 10000);
 
 bgCover.addEventListener("click", closeQePopup);
 closeBtnQ.addEventListener("click", closeQePopup);
@@ -147,3 +147,41 @@ function closeQePopup() {
   bgCover.classList.remove("active");
   html.classList.remove("stop-scrolling");
 }
+
+//
+function initThumbs(direction) {
+  return new Swiper(".product__slider-thumbs", {
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    direction: direction,
+  });
+}
+
+let prodThumbs =
+  window.innerWidth < 992 ? initThumbs("horizontal") : initThumbs("vertical");
+
+let prodSlider = new Swiper(".product__slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  thumbs: {
+    swiper: prodThumbs,
+  },
+
+  effect: "flip",
+
+  lazy: true,
+
+  keyboard: {
+    enabled: true,
+  },
+
+  pagination: {
+    el: ".product__slider-pagination",
+    clickable: true,
+  },
+});
