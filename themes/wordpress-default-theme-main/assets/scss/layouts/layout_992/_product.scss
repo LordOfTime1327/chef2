@@ -1,0 +1,55 @@
+.products {
+  &__card {
+    flex: 0 0 calc(25% - 16px);
+    transition: background 0.3s;
+  }
+
+  &__card-img-box {
+    max-width: 255px;
+    padding-bottom: 40px;
+  }
+
+  &__card-info-box {
+    padding: 0 30px;
+  }
+
+  &__card-title {
+    @include font-size(18, 24);
+    margin-bottom: 10px;
+  }
+
+  &__card-description {
+    @include font-size(12, 20);
+    margin-bottom: 33px;
+  }
+
+  &__card-price {
+    @include font-size(22);
+    padding-bottom: 25px;
+
+    del {
+      @include font-size(16);
+    }
+  }
+
+  &__card-link {
+    @include font-size(14, 18, 0.3);
+    padding: 12px 50px;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
+
+.products__card:hover {
+  background: #f5f5f5;
+
+  .products {
+    &__card-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

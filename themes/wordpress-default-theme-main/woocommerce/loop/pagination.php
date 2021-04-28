@@ -39,11 +39,12 @@ if ( $total <= 1 ) {
 				'add_args'  => false,
 				'current'   => max( 1, $current ),
 				'total'     => $total,
-				'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
-				'next_text' => is_rtl() ? '&larr;' : '&rarr;',
-				'type'      => 'list',
-				'end_size'  => 3,
-				'mid_size'  => 3,
+				'prev_next' => false,
+				// 'prev_text' => is_rtl() ? '&rarr;' : '&larr;',
+				// 'next_text' => is_rtl() ? '&larr;' : '&rarr;',
+				'type'      => 'plain',
+				'end_size'  => 1,
+				'mid_size'  => 2,
 			)
 		)
 	);

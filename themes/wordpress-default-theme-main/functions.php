@@ -273,3 +273,5 @@ function chef_woocommerce_template_single_add_to_cart(){
 // function chef_woocommerce_review_display_rating(){
 // 	wc_get_template( 'single-product/review.php' );
 // }
+
+remove_action( 'woocommerce_after_shop_loop_item_title',  'woocommerce_template_loop_rating', 5);

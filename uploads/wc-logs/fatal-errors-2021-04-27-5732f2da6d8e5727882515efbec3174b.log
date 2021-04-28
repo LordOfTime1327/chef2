@@ -61,3 +61,21 @@ Stack trace:
 #5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
 #6 W:\domains\C in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 877
 
+2021-04-27T12:40:16+00:00 CRITICAL syntax error, unexpected 'do_action' (T_STRING), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php on line 35
+
+2021-04-27T12:41:53+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 277
+
+2021-04-27T12:41:54+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 277
+
+2021-04-27T18:45:54+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 285
+
+2021-04-27T18:45:55+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 285
+
+2021-04-27T18:48:25+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 287
+
+2021-04-27T18:48:26+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 287
+
+2021-04-27T18:58:10+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 279
+
+2021-04-27T18:58:11+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 279
+

@@ -19,4 +19,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-</ul>
+<!-- </ul> -->
+</div>

@@ -1,0 +1,22 @@
+2021-04-28T08:05:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php:35
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(660): wc_get_template_part('content', 'product')
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(100): WC_Shortcode_Products->product_loop()
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(283): WC_Shortcode_Products->get_content()
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::products(Array, '', 'products')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(produc. in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php on line 35
+
+2021-04-28T08:05:54+00:00 CRITICAL Uncaught Error: Call to undefined function get_price() in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php:35
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(660): wc_get_template_part('content', 'product')
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(100): WC_Shortcode_Products->product_loop()
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(283): WC_Shortcode_Products->get_content()
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::products(Array, '', 'products')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(produc. in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php on line 35
+

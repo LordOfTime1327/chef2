@@ -41,6 +41,7 @@ $darkGrey2: #444;
 $darkGrey3: #171717;
 $darkGrey4: #242424;
 $darkGrey5: #d2d2d2;
+$darkGrey6: #6a6a6a;
 
 $gradient1: linear-gradient(152deg, #aaaaaa 12%, #818181 82%);
 $gradient2: linear-gradient(318deg, #cdcdcd 19%, #9d9d9d 89%);
@@ -89,6 +90,10 @@ $signColor: $white;
 $reviewsColor: $grey7;
 
 $sliderDots: $lightGrey5;
+
+$pagination: $darkGrey6;
+$paginationCurrent: $white;
+$paginationBorder: $lightGrey4;
 
 // $processing: #009432;
 // $onhold: #f79f1f;

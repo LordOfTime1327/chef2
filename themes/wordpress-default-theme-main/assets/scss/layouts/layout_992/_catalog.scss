@@ -1,0 +1,11 @@
+.catalog {
+  &__title {
+    @include font-size(72, 72, 0.2);
+    text-align: unset;
+    margin-bottom: 70px;
+
+    &:after {
+      display: none;
+    }
+  }
+}

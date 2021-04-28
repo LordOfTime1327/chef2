@@ -148,7 +148,7 @@ function closeQePopup() {
   html.classList.remove("stop-scrolling");
 }
 
-//
+// SINGLE PRODUCT SLIDER
 function initThumbs(direction) {
   return new Swiper(".product__slider-thumbs", {
     slidesPerView: 4,

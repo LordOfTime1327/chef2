@@ -134,6 +134,56 @@ main {
   }
 }
 
+.woocommerce-pagination {
+  @include flex(center, center, row, nowrap);
+  padding-bottom: 20px;
+
+  .page-numbers {
+    @include flex(center, center, row, nowrap);
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+    border: 1px solid $paginationBorder;
+    border-radius: 5px;
+
+    @include font-size(14, 24);
+    font-weight: $lightWeight;
+    text-decoration: none;
+    color: $pagination;
+
+    transition: background 0.2s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $paginationBorder;
+    }
+
+    &.current {
+      background: $gradient3;
+      border: none;
+      color: $paginationCurrent;
+      font-weight: $semiBoldWeight;
+    }
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .woocommerce-pagination {
+    .page-numbers {
+      margin-right: 0;
+      margin-left: 15px;
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .wrapper {
     flex-flow: row nowrap;
@@ -172,6 +222,25 @@ main {
 
     &:hover {
       transform: rotate(180deg);
+    }
+  }
+
+  .woocommerce-pagination {
+    padding-bottom: 110px;
+
+    .page-numbers {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+
+  [dir="rtl"],
+  .rtl {
+    .woocommerce-pagination {
+      .page-numbers {
+        margin-left: 20px;
+      }
     }
   }
 }
