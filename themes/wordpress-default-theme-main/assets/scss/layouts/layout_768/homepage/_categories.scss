@@ -1,0 +1,11 @@
+.categories {
+  padding-bottom: 54px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__cat-title {
+    @include font-size(24, 36, 0.3);
+  }
+}

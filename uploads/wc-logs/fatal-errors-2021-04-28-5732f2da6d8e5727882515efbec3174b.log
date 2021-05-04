@@ -20,3 +20,11 @@ Stack trace:
 #6 [internal function]: do_shortcode_tag(Array)
 #7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(produc. in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\content-product.php on line 35
 
+2021-04-28T15:08:14+00:00 CRITICAL syntax error, unexpected '$category' (T_VARIABLE), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\templates\homepage.php on line 54
+
+2021-04-28T15:13:17+00:00 CRITICAL syntax error, unexpected '$image' (T_VARIABLE), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\templates\homepage.php on line 57
+
+2021-04-28T15:16:47+00:00 CRITICAL syntax error, unexpected '.' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\templates\homepage.php on line 57
+
+2021-04-28T15:17:02+00:00 CRITICAL syntax error, unexpected 'the_category_thumbnail' (T_STRING), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\templates\homepage.php on line 57
+

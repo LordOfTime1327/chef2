@@ -1,0 +1,50 @@
+.categories {
+  padding-bottom: 34px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    @include flex(space-between, stretch, row, wrap);
+  }
+
+  &__cat-card {
+    flex: 0 0 calc(50% - 14px);
+    background: #f7fafb;
+    border-radius: 8px;
+    margin: 7px;
+  }
+
+  &__cat-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    padding: 34px 17px;
+  }
+
+  &__cat-text-box {
+    width: 100%;
+  }
+
+  &__cat-title {
+    font-family: $Quicksand;
+    @include font-size(16, 18, 0.3);
+    font-weight: $boldWeight;
+    text-align: center;
+    color: $titleColor;
+    padding-bottom: 10px;
+  }
+
+  &__cat-img-box {
+    margin-top: auto;
+    max-width: 321px;
+  }
+
+  &__cat-img {
+    @include img-fluid;
+  }
+}
