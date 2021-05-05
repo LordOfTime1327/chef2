@@ -30,7 +30,7 @@ get_header();
 						<p class="intro__text"><?= the_field( 'text_intro' ); ?></p>
 					<?php } ?>
 					<?php if ( get_field( 'title_intro' ) ) { ?>
-						<a href='<?php home_url( '/catalog' ); ?>' class="btn"><?= the_field( 'button_intro' ); ?></a>
+						<a href='<?= home_url( '/catalog' ); ?>' class="btn"><?= the_field( 'button_intro' ); ?></a>
 					<?php } ?>
 				</div>
 			</div>
@@ -99,13 +99,13 @@ get_header();
 		</div>
 	</section>
 
-	<section class="catalog">
+	<section class="catalog-home">
 		<div class="container">
-			<h1>Catalog</h1>
-			<div class="wrapper">
-				<?= do_shortcode( '[products limit="4" sort_by="popularity"]' ); ?>
+			<?php if( get_field('catalog_title') ) { ?>
+				<h2 class='title decor catalog-home__title'><?= get_field('catalog_title'); ?></h2>
+			<?php } ?>
+			<?= do_shortcode( '[products limit="4" sort_by="popularity"]' ); ?>
 			</div>
-		</div>
 	</section>
 
 	<section class="brands">
