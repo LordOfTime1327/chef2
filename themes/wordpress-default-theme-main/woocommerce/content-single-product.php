@@ -152,13 +152,21 @@ if ( post_password_required() ) {
 								<p><?php comment_text(); ?></p>
 							</div>
 						<?php } 
+
+						if( !$comments ) {
+							echo '<p>Empty</p>';
+						}
 				  ?>
 				</div>
 			</div>
 		</section>
 
 		<!-- RELATED PRODUCTS -->
-		<?php woocommerce_output_related_products(); ?>
+		<section class='related'>
+			<div class="container">
+				<?php woocommerce_output_related_products(); ?>
+			</div>
+		</section>
 
 	<?php
 	/**

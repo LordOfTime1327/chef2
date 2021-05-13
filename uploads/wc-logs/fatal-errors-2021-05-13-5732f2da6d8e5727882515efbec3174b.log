@@ -1,0 +1,4 @@
+2021-05-13T16:06:39+00:00 CRITICAL syntax error, unexpected '<' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\global\breadcrumb.php on line 31
+
+2021-05-13T19:04:03+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) in W:\domains\Chef\wp-includes\rest-api\class-wp-rest-server.php on line 1414
+

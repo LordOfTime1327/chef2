@@ -49,28 +49,41 @@ $gradient3: linear-gradient(152deg, #cdcdcd 12%, #9d9d9d 82%);
 
 $menuBgMob: $white;
 $menuBorder: $lightGrey4;
+
 $titleColor: $lightBlack;
 $subtitleColor: $grey2;
 $textColor: $lightGrey;
+
 $headerText: $grey5;
 $headerPromBg: $darkGrey4;
 $headerPromText: $white;
+
+$catsTitleHover: $white;
+$catsBgHover: $darkGrey;
+
 $featuresText: $grey;
+$bgFeatures: $lightGrey3;
+$bgHoverFeatures: $red;
+
 $singleProdTitle: $grey2;
 $singleProdList: $darkGrey2;
 $prodBg: $lightGrey2;
+
 $reviewsName: $black;
 $reviewsProd: $black;
 $reviewsText: $grey4;
+$reviewsColor: $grey7;
+
 $price: $darkGrey;
 $line: $darkGrey;
-$myAccount: $grey3;
+
 $btnBg: $red;
 $btnText: $white;
+
 $svgFill: $red;
-$bgHoverFeatures: $red;
-$bgFeatures: $lightGrey3;
+
 $bgBrands: rgba($darkGrey, 0.1);
+
 $bgFooter: $darkGrey3;
 $bgFooterDev: $black;
 $textFooter: $white;
@@ -87,16 +100,15 @@ $answerText: $lightGrey;
 
 $signColor: $white;
 
-$reviewsColor: $grey7;
-
 $sliderDots: $lightGrey5;
 
 $pagination: $darkGrey6;
 $paginationCurrent: $white;
 $paginationBorder: $lightGrey4;
 
-$catsTitleHover: $white;
-$catsBgHover: $darkGrey;
+$cartItemBorder: $darkGrey5;
+
+$myAccount: $grey3;
 
 // $processing: #009432;
 // $onhold: #f79f1f;

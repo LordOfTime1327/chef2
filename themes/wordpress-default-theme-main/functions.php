@@ -268,10 +268,23 @@ function chef_woocommerce_template_single_add_to_cart(){
 	wc_get_template( 'single-product/add-to-cart/simple.php' );
 }
 
-// remove_action( 'woocommerce_review_before_comment_meta', 'woocommerce_review_display_rating', 10 );
-// add_action( 'test', 'chef_woocommerce_review_display_rating' );
-// function chef_woocommerce_review_display_rating(){
-// 	wc_get_template( 'single-product/review.php' );
-// }
-
 remove_action( 'woocommerce_after_shop_loop_item_title',  'woocommerce_template_loop_rating', 5);
+
+add_filter ( 'woocommerce_account_menu_items', 'chef_remove_my_account_links' );
+function chef_remove_my_account_links( $menu_links ){
+  unset( $menu_links['dashboard'] ); // Remove Dashboard
+  unset( $menu_links['payment-methods'] ); // Remove Payment Methods
+  unset( $menu_links['downloads'] ); // Disable Downloads
+  
+  return $menu_links;
+}
+
+add_filter ( 'woocommerce_account_menu_items', 'chef_rename_account_links' );
+function chef_rename_account_links( $menu_links ){
+	$menu_links['orders'] = 'Your Orders'; 
+	$menu_links['edit-account'] = 'Settings';
+ 
+	return $menu_links;
+}
+
+remove_action( 'woocommerce_cart_coupon', 'action_woocommerce_cart_coupon', 10); 

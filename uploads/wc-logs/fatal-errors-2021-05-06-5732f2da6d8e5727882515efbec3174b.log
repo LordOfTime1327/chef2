@@ -1,0 +1,35 @@
+2021-05-06T08:34:25+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on null in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\cart\cart.php:27
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(292): do_shortcode('[woocommerc in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\cart\cart.php on line 27
+
+2021-05-06T11:56:23+00:00 CRITICAL syntax error, unexpected '>' in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\woocommerce\cart\cart.php on line 177
+
+2021-05-06T18:52:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 290 and at least 2 expected in W:\domains\Chef\wp-includes\plugin.php:590
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php(290): remove_action('woocommerce_car...')
+#1 W:\domains\Chef\wp-settings.php(528): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-config.php(90): require_once('W:\\domains\\Chef...')
+#3 W:\domains\Chef\wp-load.php(37): require_once('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(13): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-includes\plugin.php on line 590
+
+2021-05-06T18:52:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php on line 290 and at least 2 expected in W:\domains\Chef\wp-includes\plugin.php:590
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\wordpress-default-theme-main\functions.php(290): remove_action('woocommerce_car...')
+#1 W:\domains\Chef\wp-settings.php(528): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-config.php(90): require_once('W:\\domains\\Chef...')
+#3 W:\domains\Chef\wp-load.php(37): require_once('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(13): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-includes\plugin.php on line 590
+

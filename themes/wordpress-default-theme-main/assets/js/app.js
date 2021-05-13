@@ -185,3 +185,9 @@ let prodSlider = new Swiper(".product__slider", {
     clickable: true,
   },
 });
+
+$(document).ready(function () {
+  $(document).on("change", '.quantity input[type="number"]', function (e) {
+    $('button[name="update_cart"]').trigger("click");
+  });
+});
