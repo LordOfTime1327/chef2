@@ -57,6 +57,7 @@ main {
   text-align: center;
   padding-bottom: 10px;
 }
+
 .decor {
   position: relative;
 
@@ -72,6 +73,12 @@ main {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.page-title {
+  @include font-size(24, 45, 0.2);
+  color: $titleColor;
+  text-transform: uppercase;
 }
 
 .btn {

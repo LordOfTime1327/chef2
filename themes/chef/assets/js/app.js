@@ -186,8 +186,38 @@ let prodSlider = new Swiper(".product__slider", {
   },
 });
 
+// cart
 $(document).ready(function () {
-  $(document).on("change", '.quantity input[type="number"]', function (e) {
+  $(document).on("click", ".cart-form__quantity-btn_plus", function (e) {
+    e.preventDefault();
+    let inp = this.parentNode.children[1].children[1],
+      count = +inp.value,
+      max = inp.getAttribute("max");
+
+    if (count == max) {
+      return;
+    } else {
+      count += 1;
+      inp.setAttribute("value", count);
+    }
+
+    $(".qty").trigger("change");
+    $('button[name="update_cart"]').trigger("click");
+  });
+  $(document).on("click", ".cart-form__quantity-btn_minus", function (e) {
+    e.preventDefault();
+    let inp = this.parentNode.children[1].children[1],
+      count = +inp.value,
+      min = inp.getAttribute("min");
+
+    if (count == min) {
+      return;
+    } else {
+      count -= 1;
+      inp.setAttribute("value", count);
+    }
+
+    $(".qty").trigger("change");
     $('button[name="update_cart"]').trigger("click");
   });
 });

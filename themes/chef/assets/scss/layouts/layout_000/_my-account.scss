@@ -1,0 +1,35 @@
+.my-account {
+  padding-top: 30px;
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    @include flex(flex-start, flex-start, column);
+  }
+
+  &__nav {
+    padding-bottom: 33px;
+  }
+  &__nav-list {
+    list-style: none;
+  }
+  &__nav-item {
+    @include font-size(16, 20);
+    color: $myAccountNav;
+    padding-bottom: 25px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.is-active {
+      color: $myAccountNavActive;
+    }
+  }
+  &__nav-link {
+    @include font-inherit;
+    text-decoration: none;
+  }
+}

@@ -65,6 +65,9 @@ get_header();
                 </div>
 
                 <div class="product-quantity cart-form__quantity-box" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+
+                  <button class="cart-form__quantity-btn cart-form__quantity-btn_plus">+</button>
+                  
                   <?php
                     if ( $_product->is_sold_individually() ) {
                       $product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -84,6 +87,8 @@ get_header();
 
                     echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
                   ?>
+
+                  <button class="cart-form__quantity-btn cart-form__quantity-btn_minus">-</button>
                 </div>
 
                 <div class="product-price cart-form__product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">

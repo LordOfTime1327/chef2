@@ -288,3 +288,11 @@ function chef_rename_account_links( $menu_links ){
 }
 
 remove_action( 'woocommerce_cart_coupon', 'action_woocommerce_cart_coupon', 10); 
+
+add_action('template_redirect', 'chef_redirect_to_orders_from_dashboard' );
+function chef_redirect_to_orders_from_dashboard(){
+	if( is_account_page() && empty( WC()->query->get_current_endpoint() ) ){
+		wp_safe_redirect( wc_get_account_endpoint_url( 'orders' ) );
+		exit;
+	}
+}
