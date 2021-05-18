@@ -92,7 +92,22 @@ main {
   outline: none;
   background: $btnBg;
   border-radius: 8px;
-  box-shadow: 0 6px 30px rgba($black, 0.15);
+  cursor: pointer;
+}
+
+.popup-submit {
+  display: block;
+  width: 100%;
+
+  font-family: $secondaryFont;
+  @include font-size(16, 18);
+  font-weight: $boldWeight;
+  color: $signColor;
+  padding: 9px 18px;
+  background: transparent;
+  border: 1px solid $signColor;
+  border-radius: 5px;
+  outline: none;
   cursor: pointer;
 }
 
@@ -177,8 +192,6 @@ main {
   }
 }
 
-
-
 [dir="rtl"],
 .rtl {
   .woocommerce-pagination {
@@ -217,9 +230,38 @@ main {
   .btn {
     @include font-size(18, 18);
 
-    // &:hover{
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 
-    // }
+    &:hover {
+      box-shadow: 0 4px 19px rgba($black, 0.25);
+    }
+
+    &:active {
+      background: $btnActive;
+    }
+
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
+
+  .popup-submit {
+    transition: background 0.3s ease, border-color 0.3s ease;
+    &:hover {
+      background: $popupSubmitHover;
+      border-color: $popupSubmitHover;
+    }
+    &:active {
+      background: $popupSubmitActive;
+      border-color: $popupSubmitActive;
+    }
+    &[disabled] {
+      background: $popupSubmitDisabled;
+      border-color: $popupSubmitDisabled;
+      opacity: 0.3;
+      pointer-events: none;
+    }
   }
 
   .close-btn {

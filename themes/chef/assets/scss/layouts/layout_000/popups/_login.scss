@@ -90,23 +90,23 @@
     }
   }
 
-  &__submit {
-    display: block;
-    width: 100%;
+  // &__submit {
+  //   display: block;
+  //   width: 100%;
 
-    font-family: $secondaryFont;
-    // font-size: 1.6rem;
-    // line-height: 1.8rem;
-    @include font-size(16, 18);
-    font-weight: $boldWeight;
-    color: $signColor;
-    padding: 9px 18px;
-    background: transparent;
-    border: 1px solid $signColor;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-  }
+  //   font-family: $secondaryFont;
+  //   // font-size: 1.6rem;
+  //   // line-height: 1.8rem;
+  //   @include font-size(16, 18);
+  //   font-weight: $boldWeight;
+  //   color: $signColor;
+  //   padding: 9px 18px;
+  //   background: transparent;
+  //   border: 1px solid $signColor;
+  //   border-radius: 5px;
+  //   outline: none;
+  //   cursor: pointer;
+  // }
 
   &__forget-pass {
     display: block;

@@ -99,7 +99,7 @@
 					<img src="<?= get_template_directory_uri() . '/assets/image/svg/eye.svg' ?>" alt="" class='login-popup__eye'>
 				</div>
 				<div class="login-popup__item">
-					 <input type="submit" value='Send' class='login-popup__submit'>
+					 <input type="submit" value='Send' class='login-popup__submit popup-submit'>
 				</div>
 			</form>
 
@@ -142,7 +142,7 @@
 				</label>
 			</div>
 			<div class="register-popup__item register-popup__item_submit">
-				<input type="submit" value='Send' class='register-popup__submit'>
+				<input type="submit" value='Send' class='register-popup__submit popup-submit'>
 			</div>
 		</form>
 
@@ -169,7 +169,7 @@
 				<label for="" class="subscribe-popup__checkbox-label">I agree with the <a href="#" class='subscribe-popup__terms-link'>terms and condition</a></label>
 			</div>
 			<div class="subscribe-popup__item">
-				<input type="submit" class="subscribe-popup__submit" value='Send'>
+				<input type="submit" class="subscribe-popup__submit popup-submit" value='Send'>
 			</div>
 		</form>
 
@@ -192,7 +192,7 @@
 				<input type="tel" class='question-popup__input' placeholder='Phone'>
 			</div>
 			<div class="question-popup__item">
-				<input type="submit" class='question-popup__submit' value='Send'>
+				<input type="submit" class='question-popup__submit popup-submit' value='Send'>
 			</div>
 		</form>
 

@@ -39,7 +39,21 @@
     opacity: 0;
     transform: translateY(10px);
 
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 19px rgba($black, 0.25);
+    }
+
+    &:active {
+      background: $btnActive;
+    }
+
+    &[disabled] {
+      pointer-events: none;
+      opacity: 0.3;
+    }
   }
 }
 

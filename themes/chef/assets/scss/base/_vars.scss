@@ -23,6 +23,7 @@ $blackWeight: 900;
 $white: #fff;
 $black: #000;
 $red: #d3222a;
+$red2: #9d0e15;
 $lightBlack: #373f41;
 $grey: #5a5a5a;
 $grey2: #404040;
@@ -79,7 +80,12 @@ $price: $darkGrey;
 $line: $darkGrey;
 
 $btnBg: $red;
+$btnActive: $red2;
 $btnText: $white;
+
+$popupSubmitHover: #c6464c;
+$popupSubmitActive: $red;
+$popupSubmitDisabled: #757575;
 
 $svgFill: $red;
 
