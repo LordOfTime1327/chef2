@@ -1,0 +1,132 @@
+2021-05-18T07:54:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function chef_myaccount_required_fields(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:302
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_myaccount_required_fields(Array)
+#1 W:\domains\Chef\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(271): apply_filters('woocommerce_sav...', Array)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#7 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#8 W:\domains\Chef\inde in W:\domains\Chef\wp-content\themes\chef\functions.php on line 302
+
+2021-05-18T07:55:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function chef_myaccount_required_fields(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:302
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_myaccount_required_fields(Array)
+#1 W:\domains\Chef\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(271): apply_filters('woocommerce_sav...', Array)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#7 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#8 W:\domains\Chef\inde in W:\domains\Chef\wp-content\themes\chef\functions.php on line 302
+
+2021-05-18T07:55:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function chef_myaccount_required_fields(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:302
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_myaccount_required_fields(Array)
+#1 W:\domains\Chef\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(271): apply_filters('woocommerce_sav...', Array)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#7 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#8 W:\domains\Chef\inde in W:\domains\Chef\wp-content\themes\chef\functions.php on line 302
+
+2021-05-18T07:59:02+00:00 CRITICAL syntax error, unexpected ',' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 304
+
+2021-05-18T07:59:03+00:00 CRITICAL syntax error, unexpected ',' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 304
+
+2021-05-18T08:33:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_account_endpoint_url(), 0 passed in W:\domains\Chef\wp-content\themes\chef\functions.php on line 302 and exactly 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-account-functions.php:174
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\functions.php(302): wc_get_account_endpoint_url()
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_redirect_to_orders_from_dashboard('')
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-account-functions.php on line 174
+
+2021-05-18T08:33:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_account_endpoint_url(), 0 passed in W:\domains\Chef\wp-content\themes\chef\functions.php on line 302 and exactly 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-account-functions.php:174
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\functions.php(302): wc_get_account_endpoint_url()
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(292): chef_redirect_to_orders_from_dashboard('')
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#3 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-account-functions.php on line 174
+
+2021-05-18T08:48:38+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 323
+
+2021-05-18T08:48:39+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 323
+
+2021-05-18T09:11:52+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 329
+
+2021-05-18T09:11:53+00:00 CRITICAL syntax error, unexpected ')' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 329
+
+2021-05-18T09:14:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_customer_save_address(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:334
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): action_woocommerce_customer_save_address(2)
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(348): do_action('woocommerce_sav...', 2)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#5 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#8 W:\domains\Che in W:\domains\Chef\wp-content\themes\chef\functions.php on line 334
+
+2021-05-18T09:14:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_customer_save_address(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:334
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): action_woocommerce_customer_save_address(2)
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(348): do_action('woocommerce_sav...', 2)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#5 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#8 W:\domains\Che in W:\domains\Chef\wp-content\themes\chef\functions.php on line 334
+
+2021-05-18T09:14:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_customer_save_address(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:334
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): action_woocommerce_customer_save_address(2)
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(348): do_action('woocommerce_sav...', 2)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#5 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#8 W:\domains\Che in W:\domains\Chef\wp-content\themes\chef\functions.php on line 334
+
+2021-05-18T09:14:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_customer_save_address(), 1 passed in W:\domains\Chef\wp-includes\class-wp-hook.php on line 292 and exactly 2 expected in W:\domains\Chef\wp-content\themes\chef\functions.php:334
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): action_woocommerce_customer_save_address(2)
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(348): do_action('woocommerce_sav...', 2)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(292): WC_Form_Handler::save_account_details('')
+#5 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 W:\domains\Chef\wp-includes\template-loader.php(13): do_action('template_redire...')
+#8 W:\domains\Che in W:\domains\Chef\wp-content\themes\chef\functions.php on line 334
+
+2021-05-18T09:18:59+00:00 CRITICAL Uncaught Error: Cannot use string offset as an array in W:\domains\Chef\wp-content\themes\chef\functions.php:331
+Stack trace:
+#0 W:\domains\Chef\wp-includes\class-wp-hook.php(292): misha_add_field_edit_account_form('')
+#1 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\form-edit-account.php(60): do_action('woocommerce_edi...')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(160): wc_get_template('myaccount/form-...', Array)
+#6 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3201): WC_Shortcode_My_Account::edit_account()
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_edit_account('')
+#8 W:\domains\Chef\wp in W:\domains\Chef\wp-content\themes\chef\functions.php on line 331
+

@@ -279,6 +279,14 @@ function chef_remove_my_account_links( $menu_links ){
   return $menu_links;
 }
 
+// unset( $menu_links['dashboard'] );
+add_filter( 'woocommerce_account_menu_items', 'chef_remove_my_account_dashboard' );
+function chef_remove_my_account_dashboard( $menu_links ){
+	unset( $menu_links['dashboard'] );
+	return $menu_links;
+ }
+
+ // rename account links
 add_filter ( 'woocommerce_account_menu_items', 'chef_rename_account_links' );
 function chef_rename_account_links( $menu_links ){
 	$menu_links['orders'] = 'Your Orders'; 
@@ -287,6 +295,7 @@ function chef_rename_account_links( $menu_links ){
 	return $menu_links;
 }
 
+// remove cart coupon
 remove_action( 'woocommerce_cart_coupon', 'action_woocommerce_cart_coupon', 10); 
 
 add_action('template_redirect', 'chef_redirect_to_orders_from_dashboard' );
@@ -296,3 +305,70 @@ function chef_redirect_to_orders_from_dashboard(){
 		exit;
 	}
 }
+
+// Remove required fields account settings
+add_filter('woocommerce_save_account_details_required_fields', function($array){
+	$array =  array(
+		'account_first_name'   => __( 'First name', 'woocommerce' ),
+		// 'account_last_name'    => __( 'Last name', 'woocommerce' ),
+		// 'account_display_name' => __( 'Display name', 'woocommerce' ),
+		"billing_phone" => __("Phone", 'woocommerce'),
+		'account_email'        => __( 'Email address', 'woocommerce' ),
+	);
+	return $array;
+});
+
+add_action( 'woocommerce_save_account_details', 'my_account_saving_phone', 10, 1 );
+function my_account_saving_phone( $user_id ) {
+    $billing_phone = $_POST['billing_phone'];
+    if( ! empty( $billing_phone ) )
+        update_user_meta( $user_id, 'billing_phone', sanitize_text_field( $billing_phone ) );
+}
+
+// add_action( 'woocommerce_edit_account_form', 'chef_add_field_edit_account_form' );
+// function chef_add_field_edit_account_form() {
+// 	woocommerce_form_field(
+// 		'Phone',
+// 		array(
+// 			'type'        => 'tel',
+// 			'required'    => true, // remember, this doesn't make the field required, just adds an "*"
+// 			'label'       => 'Phone',
+// 			'priority'    => 41,  
+// 		), 
+// 		get_user_meta( get_current_user_id(), 'Phone', true ) // get the data
+// 	);
+// }
+
+function action_woocommerce_customer_save_address( ) { 
+	wp_safe_redirect(wc_get_account_endpoint_url( 'edit-account' )); 
+	exit;
+}; 
+add_action( 'woocommerce_save_account_details', 'action_woocommerce_customer_save_address', 99, 2 );
+
+// add_action( 'woocommerce_edit_account_form', 'test');
+// function test(){
+// 	wp_redirect( home_url('/my-account/edit-account') ) ;
+// 	exit();
+// }
+function new_contact_methods( $contactmethods ) {
+	$contactmethods['phone'] = 'Phone Number';
+	return $contactmethods;
+}
+add_filter( 'user_contactmethods', 'new_contact_methods', 10, 1 );
+
+
+function new_modify_user_table( $column ) {
+	$column['phone'] = 'Phone';
+	return $column;
+}
+add_filter( 'manage_users_columns', 'new_modify_user_table' );
+
+function new_modify_user_table_row( $val, $column_name, $user_id ) {
+	switch ($column_name) {
+			case 'phone' :
+					return get_the_author_meta( 'billing_phone', $user_id );
+			default:
+	}
+	return $val;
+}
+add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );

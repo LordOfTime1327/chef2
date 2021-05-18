@@ -1,0 +1,193 @@
+2021-05-17T11:29:37+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 79
+
+2021-05-17T11:31:39+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 77
+
+2021-05-17T11:39:55+00:00 CRITICAL Out of memory (allocated 33554432) (tried to allocate 32768 bytes) in W:\domains\Chef\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Notes.php on line 378
+
+2021-05-17T11:48:00+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 76
+
+2021-05-17T11:57:01+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 84
+
+2021-05-17T11:57:44+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 83
+
+2021-05-17T12:03:49+00:00 CRITICAL Uncaught Error: Call to undefined function number() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:61
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 W:\domains\Chef\ in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 61
+
+2021-05-17T12:07:10+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::wc_get_customer_order_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includ in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 74
+
+2021-05-17T12:07:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_customer_order_count(), 0 passed in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 74 and exactly 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-user-functions.php:675
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php(74): wc_get_customer_order_count()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('w in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-user-functions.php on line 675
+
+2021-05-17T12:07:39+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::wc_get_customer_order_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includ in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 74
+
+2021-05-17T12:07:58+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::wc_orders_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:74
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.ph in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 74
+
+2021-05-17T12:08:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_orders_count(), 0 passed in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 74 and exactly 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-order-functions.php:334
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php(74): wc_orders_count()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#6 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '') in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-order-functions.php on line 334
+
+2021-05-17T12:10:43+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_price() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:73
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 73
+
+2021-05-17T12:22:43+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_product_id() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:56
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 56
+
+2021-05-17T12:33:57+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_the_post_thumbnail_url() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:69
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-include in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 69
+
+2021-05-17T12:34:06+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_the_post_thumbnail_url() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:69
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_H in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 69
+
+2021-05-17T12:42:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_order_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:77
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_act in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 77
+
+2021-05-17T12:42:27+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_orders_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:77
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_ac in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 77
+
+2021-05-17T12:42:50+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_item_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:77
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_acti in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 77
+
+2021-05-17T12:43:57+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_item_count() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:77
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_acti in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 77
+
+2021-05-17T12:45:41+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_price() in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:78
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Ar in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 78
+
+2021-05-17T13:16:45+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 93
+
+2021-05-17T20:01:34+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in W:\domains\Chef\wp-admin\includes\class-wp-privacy-data-removal-requests-list-table.php on line 10
+

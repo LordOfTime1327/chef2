@@ -36,7 +36,7 @@
     &__info-box {
       @include flex(space-between, flex-start, row, wrap);
       flex: 1;
-      padding-right: 15px;
+      padding-left: 15px;
     }
 
     &__prod-name {
@@ -96,7 +96,7 @@
       @include flex(center, center);
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
     }
     &__remove {
       display: block;
@@ -146,7 +146,7 @@
     font-weight: $regularWeight;
     text-transform: uppercase;
     color: $black;
-    padding-left: 18px;
+    padding-right: 18px;
   }
   &__total-price {
     @include font-size(24, 24);
@@ -180,6 +180,28 @@
       border-radius: 8px !important;
       box-shadow: 0 6px 30px rgba($black, 0.15) !important;
       cursor: pointer !important;
+    }
+  }
+}
+
+html[dir="rtl"],
+.rtl {
+  .cart-form {
+    &__info-box {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+
+    &__remove-box {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .totals {
+    &__total-title {
+      padding-left: 18px;
+      padding-right: 0;
     }
   }
 }

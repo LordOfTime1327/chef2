@@ -15,10 +15,10 @@ get_header();
   </div>
   <div class="container">
     
-    <div class="my-account__content">
+    <div class="my-account__content-box">
       <?php get_template_part( 'woocommerce/myaccount/navigation' ); ?>
 
-      <div class="woocommerce-MyAccount-content">
+      <div class="woocommerce-MyAccount-content my-account__content">
         <?php
           /**
            * My Account content.

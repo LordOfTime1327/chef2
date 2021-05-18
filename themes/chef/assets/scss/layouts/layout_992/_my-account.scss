@@ -1,0 +1,83 @@
+.my-account {
+  &__title {
+    @include font-size(72, 72);
+    padding-bottom: 34px;
+  }
+
+  &__content-box {
+    @include flex(flex-start, flex-start, row, nowrap);
+  }
+
+  &__nav {
+    flex: 0 0 370px;
+    padding-left: 30px;
+  }
+
+  &__nav-item {
+    @include font-size(18, 20);
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__order-item {
+    padding: 25px 35px;
+  }
+
+  &__order-header {
+    @include flex($wrap: nowrap);
+  }
+
+  &__order-number {
+    flex: unset;
+    padding-left: 20px;
+
+    @include font-size(18, 20);
+  }
+  &__order-date {
+    flex: unset;
+    padding-right: 20px;
+  }
+  &__order-status {
+    flex: unset;
+    padding-top: 0;
+    margin-right: auto;
+
+    @include font-size(14, 20);
+  }
+
+  &__order-name {
+    @include flex(flex-start, center, row, nowrap);
+  }
+  &__order-img-box {
+    padding-bottom: 0;
+  }
+  &__order-prod-title {
+    @include font-size(14, 16);
+    padding-right: 38px;
+  }
+}
+
+.settings {
+  @include flex(space-between, flex-start, row, wrap);
+
+  .form-row {
+    flex: 0 1 calc(345px);
+    padding-bottom: 40px;
+
+    label {
+      @include font-size(18, 20);
+      color: $myAccount;
+      padding-bottom: 30px;
+    }
+
+    input {
+      @include font-size(14, 20);
+    }
+  }
+
+  &__action {
+    flex: 0 0 100%;
+  }
+}

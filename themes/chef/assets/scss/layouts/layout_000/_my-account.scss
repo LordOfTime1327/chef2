@@ -1,11 +1,12 @@
 .my-account {
   padding-top: 30px;
+  padding-bottom: 100px;
 
   &__title {
     padding-bottom: 20px;
   }
 
-  &__content {
+  &__content-box {
     @include flex(flex-start, flex-start, column);
   }
 
@@ -31,5 +32,172 @@
   &__nav-link {
     @include font-inherit;
     text-decoration: none;
+  }
+
+  &__content {
+    width: 100% !important;
+  }
+  // orders
+  // &__order-box {
+
+  // }
+  &__order-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__order-header {
+    @include flex(flex-start, flex-start, row, wrap);
+    padding-bottom: 11px;
+  }
+
+  // &__order-body {
+  //   padding-bottom: 15px;
+  // }
+  &__order-number {
+    flex: 0 1 50%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+    @include font-size(14, 16);
+  }
+  &__order-date {
+    flex: 0 1 50%;
+    text-align: left;
+
+    @include font-size(11, 20);
+    font-weight: $lightWeight;
+  }
+  &__order-status {
+    flex: 0 0 100%;
+    padding-top: 10px;
+
+    @include font-size(12, 20);
+    font-weight: $mediumWeight;
+  }
+
+  &__order-prod-box {
+    @include flex(space-between, flex-start, row, nowrap);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    // &:last-child {
+    //   border-bottom: 0;
+    // }
+  }
+  &__order-name {
+    flex: 1;
+    margin-left: auto;
+    padding-left: 10px;
+  }
+
+  &__order-img-box {
+    max-width: 80px;
+    width: 100%;
+    padding-bottom: 7px;
+  }
+  &__order-img {
+    @include img-fluid;
+  }
+
+  &__order-prod-title {
+    @include font-size(12, 14);
+    font-weight: $semiBoldWeight;
+  }
+
+  &__order-count {
+    flex: 0 1 100px;
+    @include flex(space-between, center, row, nowrap);
+  }
+
+  &__order-quantity {
+    @include font-size(14, 20);
+  }
+
+  &__order-price {
+    padding-right: 40px;
+
+    @include font-size(14, 20);
+  }
+
+  &__order-total-price {
+    .amount {
+      @include font-size(18, 20);
+      font-weight: $mediumWeight;
+    }
+  }
+  &__order-total-title {
+    padding-left: 8px;
+
+    @include font-size(14, 20);
+  }
+}
+
+.my-account__order-status--canceled,
+.my-account__order-status--pending,
+.my-account__order-status--refunded {
+  color: #7f8c8d;
+}
+.my-account__order-status--completed {
+  color: #0652dd;
+}
+.my-account__order-status--failed {
+  color: #ea2027;
+}
+.my-account__order-status--on-hold {
+  color: #f79f1f;
+}
+.my-account__order-status--processing {
+  color: #009432;
+}
+
+.settings {
+  &__last-name {
+    display: none;
+  }
+  &__display-name {
+    display: none;
+  }
+
+  .form-row {
+    float: unset !important;
+    width: 100% !important;
+    padding-bottom: 20px;
+
+    clear: none !important;
+
+    &::before,
+    &::after {
+      display: none !important;
+    }
+
+    label {
+      @include font-size(14, 20);
+      color: $myAccount;
+      padding-bottom: 10px;
+    }
+
+    .required {
+      color: $myAccountRequired;
+    }
+
+    input {
+      width: inherit;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      outline: none;
+      padding: 10px 15px;
+
+      font-family: inherit;
+      @include font-size(12, 22);
+    }
+  }
+
+  &__btn {
+    margin-right: auto;
   }
 }
