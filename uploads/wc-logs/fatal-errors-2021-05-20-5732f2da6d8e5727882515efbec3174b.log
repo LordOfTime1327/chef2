@@ -1,0 +1,4 @@
+2021-05-20T09:57:41+00:00 CRITICAL syntax error, unexpected ';' in W:\domains\Chef\wp-content\themes\chef\woocommerce\global\breadcrumb.php on line 48
+
+2021-05-20T12:16:32+00:00 CRITICAL syntax error, unexpected ''</a>'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\woocommerce\global\breadcrumb.php on line 36
+

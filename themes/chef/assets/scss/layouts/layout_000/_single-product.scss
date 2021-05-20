@@ -18,6 +18,10 @@
     align-items: center;
   }
 
+  &__slider-arrow {
+    display: none;
+  }
+
   &__slider-pagination {
     position: static;
     padding-bottom: 15px;
@@ -34,6 +38,16 @@
     .swiper-pagination-bullet-active {
       background: $sliderDots;
     }
+  }
+
+  &__slider-thumb-slide {
+    opacity: 0.4;
+  }
+  &__slider-slide {
+    opacity: 1 !important;
+  }
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
   }
 
   &__img {
@@ -93,8 +107,22 @@
   }
 
   &__price {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: left;
 
+    .amount bdi {
+      @include font-size(24);
+      text-decoration: none;
+    }
+    del .amount bdi {
+      @include font-size(14, 14);
+    }
+    ins {
+      @include font-size(24);
+      text-decoration: none;
+    }
+
+    .amount bdi,
     del,
     ins {
       display: block;
@@ -108,13 +136,39 @@
         @include font-inherit;
       }
     }
-    del {
-      @include font-size(14, 14);
+  }
+
+  &__form {
+    @include flex(flex-start, flex-start, column);
+  }
+
+  &__form-quantity-box {
+    @include flex(flex-start, stretch, row, nowrap);
+    padding-bottom: 26px;
+  }
+
+  &__form-quantity-input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    @include font-size(16, 18);
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
-    ins {
-      @include font-size(24);
-      text-decoration: none;
-    }
+
+    -moz-appearance: textfield;
+  }
+
+  &__form-quantity-btn {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: inherit;
+    @include font-size(16, 18);
   }
 }
 
@@ -174,8 +228,36 @@
     text-align: center;
     margin-bottom: 23px;
   }
+
+  &__slider-arrow {
+    width: 9px;
+    outline: none;
+
+    &:after {
+      content: "" !important;
+    }
+
+    &_next {
+      background: url(../assets/image/svg/related-slider-arrow.svg) center
+        center no-repeat !important;
+      transform: rotate(180deg);
+    }
+    &_prev {
+      background: url(../assets/image/svg/related-slider-arrow.svg) center
+        center no-repeat !important;
+    }
+  }
 }
 
 .woocommerce div.product .woocommerce-product-rating {
   margin: 0;
+}
+
+[dir="rtl"],
+.rtl {
+  .product {
+    &__price {
+      text-align: right;
+    }
+  }
 }

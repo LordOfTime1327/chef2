@@ -82,17 +82,19 @@ main {
 }
 
 .btn {
-  display: block;
-  font-family: $secondaryFont;
-  @include font-size(16, 16);
-  color: $btnText;
-  text-decoration: none;
-  padding: 13px 31px;
-  border: none;
-  outline: none;
-  background: $btnBg;
-  border-radius: 8px;
-  cursor: pointer;
+  display: block !important;
+  font-family: $secondaryFont !important;
+  font-size: 16px !important;
+  font-weight: $semiBoldWeight !important;
+  line-height: 16px !important;
+  color: $btnText !important;
+  text-decoration: none !important;
+  padding: 13px 31px !important;
+  border: none !important;
+  outline: none !important;
+  background: $btnBg !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
 }
 
 .popup-submit {
@@ -109,6 +111,18 @@ main {
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+}
+
+.breadcrumbs {
+  padding-top: 15px;
+  font-size: 0;
+  a {
+    @include font-size(14, 25);
+    text-decoration: none;
+  }
+  & > a:not(:last-child) {
+    display: none;
+  }
 }
 
 .cover-bg {
@@ -228,21 +242,45 @@ main {
     @include font-size(55, 80);
   }
   .btn {
-    @include font-size(18, 18);
+    font-size: 18px !important;
+    line-height: 18px !important;
 
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease !important;
 
     &:hover {
-      box-shadow: 0 4px 19px rgba($black, 0.25);
+      box-shadow: 0 4px 19px rgba($black, 0.25) !important;
     }
 
     &:active {
-      background: $btnActive;
+      background: $btnActive !important;
     }
 
     &[disabled] {
-      pointer-events: none;
-      opacity: 0.3;
+      pointer-events: none !important;
+      opacity: 0.3 !important;
+    }
+  }
+
+  .breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 45px;
+
+    @include font-size(14, 24);
+    color: $breadcrumbsCurrent;
+
+    a {
+      display: inline;
+      @include font-inherit;
+      color: $breadcrumbsLinks;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $breadcrumbsHover;
+      }
+    }
+    & > a:not(:last-child) {
+      display: inline;
     }
   }
 
@@ -300,72 +338,82 @@ main {
 * 
 */
 /*star rating for products*/
-.rating-custom div.product .woocommerce-product-rating {
-  margin-bottom: 1.618em;
+.woocommerce .star-rating span::before {
+  color: #fab941;
 }
+.woocommerce-product-rating > span {
+  padding-right: 15px;
+}
+.woocommerce-review-link {
+  padding-right: 5px;
+}
+// .rating-custom div.product .woocommerce-product-rating {
+//   margin-bottom: 1.618em;
+// }
 
-.rating-custom .woocommerce-product-rating .star-rating {
-  margin: 0.5em 4px 0 0;
-  float: left;
-}
+// .rating-custom .woocommerce-product-rating .star-rating {
+//   margin: 0.5em 4px 0 0;
+//   float: left;
+// }
 
-.rating-custom .woocommerce-product-rating::after,
-.rating-custom .woocommerce-product-rating::before {
-  content: " ";
-  display: table;
-}
+// .rating-custom .woocommerce-product-rating::after,
+// .rating-custom .woocommerce-product-rating::before {
+//   content: " ";
+//   display: table;
+// }
 
-.rating-custom .woocommerce-product-rating {
-  line-height: 2;
-}
+// .rating-custom .woocommerce-product-rating {
+//   line-height: 2;
+// }
 
-.rating-custom .star-rating {
-  float: right;
-  overflow: hidden;
-  position: relative;
-  height: 1em;
-  line-height: 1;
-  font-size: 1em;
-  width: 5.4em;
-  font-family: star;
-}
+// .rating-custom .star-rating {
+//   float: right;
+//   overflow: hidden;
+//   position: relative;
+//   height: 1em;
+//   line-height: 1;
+//   font-size: 1em;
+//   width: 5.4em;
+//   font-family: star;
+// }
 
-.rating-custom .star-rating::before {
-  content: "\73\73\73\73\73";
-  color: #d3ced2;
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
+// .rating-custom .star-rating::before {
+//   content: "\73\73\73\73\73";
+//   color: #d3ced2;
+//   float: left;
+//   top: 0;
+//   left: 0;
+//   position: absolute;
+// }
 
-.rating-custom .star-rating {
-  line-height: 1;
-  font-size: 1em;
-  font-family: star;
-}
+// .rating-custom .star-rating {
+//   line-height: 1;
+//   font-size: 1em;
+//   font-family: star;
+// }
 
-.rating-custom .star-rating span {
-  overflow: hidden;
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding-top: 1.5em;
-}
+// .rating-custom .star-rating span {
+//   overflow: hidden;
+//   float: left;
+//   top: 0;
+//   left: 0;
+//   position: absolute;
+//   padding-top: 1.5em;
+// }
 
-.rating-custom .star-rating span::before {
-  content: "\53\53\53\53\53";
-  top: 0;
-  position: absolute;
-  left: 0;
-}
+// .rating-custom .star-rating span::before {
+//   content: "\53\53\53\53\53";
+//   top: 0;
+//   position: absolute;
+//   left: 0;
+//   color: #fab941;
+// }
 
-.rating-custom .star-rating span {
-  overflow: hidden;
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding-top: 1.5em;
-}
+// .rating-custom .star-rating span {
+//   overflow: hidden;
+//   float: left;
+//   top: 0;
+//   left: 0;
+//   position: absolute;
+//   padding-top: 1.5em;
+// }

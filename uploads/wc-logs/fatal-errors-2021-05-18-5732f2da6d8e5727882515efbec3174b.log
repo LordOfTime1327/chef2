@@ -130,3 +130,41 @@ Stack trace:
 #7 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_edit_account('')
 #8 W:\domains\Chef\wp in W:\domains\Chef\wp-content\themes\chef\functions.php on line 331
 
+2021-05-18T15:12:35+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 101
+
+2021-05-18T15:16:03+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 104
+
+2021-05-18T17:36:24+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ':' in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 92
+
+2021-05-18T17:36:44+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ':' in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 92
+
+2021-05-18T17:37:04+00:00 CRITICAL syntax error, unexpected '{', expecting ':' in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 92
+
+2021-05-18T17:41:06+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 103
+
+2021-05-18T17:41:43+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:50
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 W:\dom in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 50
+
+2021-05-18T17:42:15+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php:53
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3133): wc_get_template('myaccount/order...', Array)
+#2 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_orders(1)
+#3 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3082): do_action('woocommerce_acc...', '')
+#6 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_content('')
+#7 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#8 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#9 W:\dom in W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\orders.php on line 53
+

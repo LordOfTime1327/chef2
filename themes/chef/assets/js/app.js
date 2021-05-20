@@ -164,8 +164,8 @@ let prodThumbs =
 
 let prodSlider = new Swiper(".product__slider", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".product__slider-arrow_next",
+    prevEl: ".product__slider-arrow_prev",
   },
 
   thumbs: {
@@ -186,7 +186,7 @@ let prodSlider = new Swiper(".product__slider", {
   },
 });
 
-// cart
+// cart quantity
 $(document).ready(function () {
   $(document).on("click", ".cart-form__quantity-btn_plus", function (e) {
     e.preventDefault();
@@ -220,4 +220,63 @@ $(document).ready(function () {
     $(".qty").trigger("change");
     $('button[name="update_cart"]').trigger("click");
   });
+});
+
+// single product quantity
+$(document).ready(function () {
+  $(document).on("click", ".product-form__quantity-btn_plus", function (e) {
+    e.preventDefault();
+    let inp = this.parentNode.children[1].children[1],
+      count = +inp.value,
+      max = inp.getAttribute("max");
+
+    if (count == max) {
+      return;
+    } else {
+      count += 1;
+      inp.setAttribute("value", count);
+    }
+
+    $(".qty").trigger("change");
+    $('button[name="update_cart"]').trigger("click");
+  });
+  $(document).on("click", ".product-form__quantity-btn_minus", function (e) {
+    e.preventDefault();
+    let inp = this.parentNode.children[1].children[1],
+      count = +inp.value,
+      min = inp.getAttribute("min");
+
+    if (count == min) {
+      return;
+    } else {
+      count -= 1;
+      inp.setAttribute("value", count);
+    }
+
+    $(".qty").trigger("change");
+    $('button[name="update_cart"]').trigger("click");
+  });
+});
+
+//related slider single product page
+let relatedSlider = new Swiper(".related__slider", {
+  navigation: {
+    nextEl: ".related__slider-arrow_next",
+    prevEl: ".related__slider-arrow_prev",
+  },
+  allowTouchMove: true,
+
+  breakpoints: {
+    550: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+      navigation: false,
+      allowTouchMove: false,
+    },
+  },
 });

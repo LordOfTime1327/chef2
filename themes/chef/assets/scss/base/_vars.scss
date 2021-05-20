@@ -45,6 +45,17 @@ $darkGrey5: #d2d2d2;
 $darkGrey6: #6a6a6a;
 $darkGrey7: #323232;
 
+//
+// $red: #d3222a;
+// $red2: #9d0e15;
+
+// $darkGrey: #323232;
+// $darkGrey: #4f4f4f;
+// $grey: #828282;
+// $grey2: #aaa;
+// $lightGrey: #ececec;
+// $light: #f0f0f0;
+
 $gradient1: linear-gradient(152deg, #aaaaaa 12%, #818181 82%);
 $gradient2: linear-gradient(318deg, #cdcdcd 19%, #9d9d9d 89%);
 $gradient3: linear-gradient(152deg, #cdcdcd 12%, #9d9d9d 82%);
@@ -127,3 +138,15 @@ $myAccountRequired: $red;
 // $canceled: #7f8c8d;
 // $pending: #7f8c8d;
 // $refunded: #7f8c8d;
+
+$processing: #f2c94c;
+$onhold: #0652dd;
+$failed: #ea2027;
+$completed: #27ae60;
+$cancelled: #d44b51;
+$pending: #7f8c8d;
+$refunded: #7f8c8d;
+
+$breadcrumbsCurrent: $darkGrey;
+$breadcrumbsLinks: #828282;
+$breadcrumbsHover: #4f4f4f;

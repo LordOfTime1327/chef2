@@ -29,7 +29,7 @@ $rating_count = $product->get_rating_count();
 $review_count = $product->get_review_count();
 $average      = round( $product->get_average_rating(), 1 );
 
-if ( $rating_count > 0 ) : ?>
+if ( $rating_count >= 0 ) : ?>
 
 	<div class="woocommerce-product-rating">
 		<?php echo wc_get_rating_html( $average, $rating_count ); // WPCS: XSS ok. ?>

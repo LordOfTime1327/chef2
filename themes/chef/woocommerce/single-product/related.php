@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related">
+	<!-- <section class="related"> -->
 
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'You may also like', 'woocommerce' ) );
@@ -33,21 +33,27 @@ if ( $related_products ) : ?>
 		
 		<?php woocommerce_product_loop_start(); ?>
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+		<div class='related__slider swiper-container'>
+			<div class="swiper-wrapper">
+				<?php foreach ( $related_products as $related_product ) : ?>
+					<div class="swiper-slide related__slide">
+						<?php
+						$post_object = get_post( $related_product->get_id() );
 
-					<?php
-					$post_object = get_post( $related_product->get_id() );
+						setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-					wc_get_template_part( 'content', 'product' );
-					?>
-
-			<?php endforeach; ?>
+						wc_get_template_part( 'content', 'product' );
+						?>
+					</div>		
+				<?php endforeach; ?>
+			</div>
+			<div class="swiper-button-next related__slider-arrow related__slider-arrow_next"></div>
+			<div class="swiper-button-prev related__slider-arrow related__slider-arrow_prev"></div>
+		</div>
 
 		<?php woocommerce_product_loop_end(); ?>
 
-	</section>
+	<!-- </section> -->
 	<?php
 endif;
 

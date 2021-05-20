@@ -137,22 +137,26 @@
   }
 }
 
-.my-account__order-status--canceled,
-.my-account__order-status--pending,
+.my-account__order-status--pending {
+  color: $pending;
+}
 .my-account__order-status--refunded {
-  color: #7f8c8d;
+  color: $refunded;
+}
+.my-account__order-status--cancelled {
+  color: $cancelled;
 }
 .my-account__order-status--completed {
-  color: #0652dd;
+  color: $completed;
 }
 .my-account__order-status--failed {
-  color: #ea2027;
+  color: $failed;
 }
 .my-account__order-status--on-hold {
-  color: #f79f1f;
+  color: $onhold;
 }
 .my-account__order-status--processing {
-  color: #009432;
+  color: $processing;
 }
 
 .settings {

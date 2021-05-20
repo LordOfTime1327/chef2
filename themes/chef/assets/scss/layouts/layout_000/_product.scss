@@ -80,15 +80,40 @@
 
   &__card-link {
     display: block;
-    margin: 0 auto;
-    margin-top: auto;
-    @include font-size(11, 18, 0.2);
-    font-weight: $boldWeight;
-    color: $btnText;
-    text-transform: uppercase;
     text-decoration: none;
-    background: $btnBg;
-    border-radius: 5px;
-    padding: 10px 35px;
+  }
+  // &__card-btn {
+  //   display: block;
+  //   margin: 0 auto;
+  //   margin-top: auto;
+  //   @include font-size(11, 18, 0.2);
+  //   font-weight: $boldWeight;
+  //   color: $btnText;
+  //   text-transform: uppercase;
+  //   text-decoration: none;
+  //   background: $btnBg;
+  //   border-radius: 5px;
+  //   padding: 10px 35px;
+  // }
+
+  &__card-btn {
+    //   display: block !important;
+    //   font-family: $secondaryFont !important;
+    //   font-size: 16px !important;
+    //   line-height: 16px !important;
+    //   color: $btnText !important;
+    //   text-decoration: none !important;
+    //   padding: 13px 31px !important;
+    //   border: none !important;
+    //   outline: none !important;
+    //   background: $btnBg !important;
+    //   border-radius: 8px !important;
+    //   cursor: pointer !important;
+
+    margin-top: auto !important;
+  }
+
+  .added_to_cart {
+    display: none !important;
   }
 }

@@ -39,9 +39,9 @@ if ( post_password_required() ) {
 
 				<div class="product__info product__info_mob">
 					<h2 class="product__title"><?= the_title(); ?></h2>
-					<div class="product__short-description">
+					<p class="product__short-description">
 						<?= $product->get_short_description(); ?>
-					</div>
+					</p>
 					<div class="product__stars">
 						<?php do_action( 'showRatingStars' ); ?>
 					</div>
@@ -63,18 +63,13 @@ if ( post_password_required() ) {
 							</div>
 						</div>
 
-						<!-- <div class="test">
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-						</div> -->
-
 						<div class="swiper-container gallery-thumbs product__slider-thumbs">
     					<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<div class="swiper-slide product__slider-thumb-slide">
 									<img src="<?= wp_get_attachment_image_url( $product->get_image_id(),'full'); ?>" alt="" class='product__img'>
 								</div>
 								<?php foreach ($product->get_gallery_image_ids() as $value) :?>
-									<div class="swiper-slide product__slider-slide">
+									<div class="swiper-slide product__slider-thumb-slide">
 										<img src="<?=wp_get_attachment_image_url( $value,'full'); ?>" alt="" class='product__img'>
 									</div>
 								<?php endforeach;?>
@@ -83,16 +78,16 @@ if ( post_password_required() ) {
 
 						<div class="swiper-pagination product__slider-pagination"></div>
 
-						<!-- <div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div> -->
+						<div class="product__slider-arrow product__slider-arrow_next swiper-button-next"></div>
+						<div class="product__slider-arrow product__slider-arrow_prev swiper-button-prev"></div>
 
 					</div>
 
 					<div class="product__info">
 						<h2 class='product__title product__title_desc'><?= the_title(); ?></h2>
-						<div class="product__short-description product__short-description_desc">
+						<p class="product__short-description product__short-description_desc">
 							<?= $product->get_short_description(); ?>
-						</div>
+						</p>
 						<div class="product__stars product__stars_desc">
 							<?php do_action( 'showRatingStars' ); ?>
 						</div>
@@ -116,7 +111,7 @@ if ( post_password_required() ) {
 			</div>
 		</section>
 
-		<section class='reviews'>
+		<section id='reviews' class='reviews'>
 			<div class="container">
 				<h2 class="reviews__title decor">Reviews</h2>
 				<div class="reviews__box">
