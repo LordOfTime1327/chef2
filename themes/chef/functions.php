@@ -382,3 +382,101 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
 // remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 // remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+// checkout required fields
+add_filter('woocommerce_billing_fields', 'chef_checkout_fields');
+function chef_checkout_fields(){
+	$fields['billing_first_name'] = array(
+		'label' => __('Name', 'woocommerce'),
+		'required' => true,
+		'type' => 'text',
+		'class' => array('popup-checkout__item')
+	);
+
+	$fields['billing_last_name'] = array(
+		'label' => __('Last Name', 'woocommerce'),
+		// 'placeholder' => _x('last Name.', 'placeholder', 'woocommerce'),
+		'required' => true,
+		'type' => 'text',
+		'class' => array('popup-checkout__item')
+	);
+
+	$fields['billing_phone'] = array(
+		'label' => __('Phone', 'woocommerce'),
+		'required' => true,
+		'type' => 'tel',
+		'class' => array('popup-checkout__item')
+	);
+
+	$fields['billing_email'] = array(
+		'label' => __('Email', 'woocommerce'),
+		'required' => true,
+		'type' => 'email',
+		'class' => array('popup-checkout__item')
+	);
+
+	$fields['billing_city'] = array(
+		'label' => __('City', 'woocommerce'),
+		'required' => true,
+		'type' => 'text',
+		'class' => array('popup-checkout__item')
+	);
+
+	$fields['billing_address_1'] = array(
+		'label' => __('Street', 'woocommerce'),
+		'required' => true,
+		'type' => 'text',
+		'class' => array('popup-checkout__item')
+	);
+
+	// $fields['billing_last_name']['label'] = 'Last Name';
+	// // $fields['label']['class'] = 'popup-checkout__label';
+	// $fields['billing_last_name']['required'] = true;
+
+	// $fields['billing_first_name']['label'] = 'First Name';
+	// $fields['billing_first_name']['required'] = true;
+
+	// $fields['billing_phone']['label'] = 'Your Phone';
+	// $fields['billing_phone']['required'] = true;
+
+	// $fields['billing_email']['label'] = 'Your Email';
+	// $fields['billing_email']['required'] = true;
+
+	// $fields['billing_city']['label'] = 'City';
+	// $fields['billing_city']['required'] = true;
+
+	// $fields['billing_address_1']['label'] = 'Street';
+	// $fields['billing_address_1']['required'] = true;
+
+	return $fields;
+}
+// Hook in
+add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
+function chef_override_checkout_fields( $fields ) {
+    //  ['label'] = 'Comment';
+    //  $fields['order']['order_comments']['placeholder'] = '';
+
+		$fields['order']['order_comments'] = array(
+			'label' => 'Comments',
+			'placeholder' => '',
+			'type' => 'textarea',
+			'class' => array('popup-checkout__item')
+		);
+
+    return $fields;
+}
+add_filter( 'woocommerce_form_field' , 'chef_remove_checkout_optional_fields_label', 10, 4 );
+function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
+		$optional = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
+		$field = str_replace( $optional, '', $field );
+    return $field;
+}
+/* 
+billing_last_name
+billing_first_name
+billing_country
+billing_address_1
+billing_city
+billing_phone
+billing_email
+*/

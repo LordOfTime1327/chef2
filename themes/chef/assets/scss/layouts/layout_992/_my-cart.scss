@@ -15,7 +15,7 @@
 
   .cart-form {
     flex: 0 1 840px;
-    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 0;
 
     &__item {
@@ -25,6 +25,10 @@
 
     &__img-box {
       flex: 0 0 113px;
+    }
+
+    &__info-box {
+      padding-left: 30px;
     }
 
     &__prod-name {
@@ -87,4 +91,19 @@
 .order-total {
   background: $gradient1;
   padding: 50px 37px;
+}
+
+[dir="rtl"],
+.rtl {
+  .cart-page {
+    .cart-form {
+      padding-left: 30px;
+      padding-right: 0;
+
+      &__info-box {
+        padding-left: 0;
+        padding-right: 30px;
+      }
+    }
+  }
 }

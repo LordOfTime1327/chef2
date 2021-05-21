@@ -280,3 +280,21 @@ let relatedSlider = new Swiper(".related__slider", {
     },
   },
 });
+
+// popup checkout
+let checkoutBtn = document.querySelector(".checkout-button"),
+  checkout = document.querySelector(".popup-checkout");
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", checkoutFn);
+}
+function checkoutFn(e) {
+  e.preventDefault();
+  bgCover.classList.add("active");
+  html.classList.add("stop-scrolling");
+  checkout.classList.add("active");
+}
+bgCover.addEventListener("click", function () {
+  html.classList.remove("stop-scrolling");
+  bgCover.classList.remove("active");
+  checkout.classList.remove("active");
+});

@@ -1,0 +1,150 @@
+.cart-page .popup-checkout {
+  display: none;
+  max-width: 1170px;
+  width: calc(100% - 30px);
+
+  position: fixed;
+  top: 20px;
+  // top: 50%;
+  // bottom: 20px;
+  height: max-content;
+  // height: calc(100vh - 40px);
+  // max-height: calc(100vh - 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  background: $gradient1;
+  padding: 48px 12px;
+
+  &.active {
+    display: block;
+  }
+
+  .woocommerce {
+    @include flex(flex-start, flex-start, row, wrap);
+    padding-bottom: 0;
+  }
+
+  .woocommerce-form-coupon-toggle {
+    display: none;
+  }
+
+  .woocommerce-notices-wrapper {
+    flex: 0 0 100%;
+  }
+
+  &__title {
+    @include font-size(24, normal, 0.2);
+    font-weight: $semiBoldWeight;
+    color: $checkoutTitle;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+  }
+
+  .checkout {
+    flex: 0 0 100%;
+  }
+
+  &__item {
+    padding: 0 !important;
+    padding-bottom: 40px !important;
+    margin: 0 !important;
+
+    label {
+      display: block;
+      @include font-size(12, 18, 4);
+      font-weight: $lightWeight;
+      text-transform: uppercase;
+      color: $checkoutText;
+    }
+
+    input,
+    textarea {
+      display: block;
+      padding: 15px 10px;
+      border: none;
+      border-bottom: 1px solid $checkoutText;
+      outline: none;
+      background: transparent;
+
+      font-family: inherit;
+      @include font-size(14, 14, 0.3);
+      color: $checkoutText;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  .woocommerce-checkout-review-order-table {
+    display: none;
+  }
+
+  .woocommerce-checkout-payment {
+    background: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  .wc_payment_method {
+    text-align: right !important;
+  }
+
+  .payment_method_paypal {
+    label {
+      a,
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .woocommerce-privacy-policy-text {
+    display: none;
+  }
+
+  .payment_methods {
+    border: none !important;
+    padding: 0 !important;
+    padding-bottom: 45px !important;
+
+    li {
+      @include font-size(14, 14);
+      color: $checkoutText;
+      padding-bottom: 25px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .place-order {
+    padding: 0 !important;
+  }
+
+  button[type="submit"] {
+    display: block;
+    max-width: 217px;
+    width: 100%;
+
+    font-family: $secondaryFont;
+    @include font-size(16, 18);
+    font-weight: $boldWeight;
+    color: $signColor;
+    padding: 9px 18px;
+    background: transparent;
+    border: 1px solid $signColor;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    margin-bottom: 0 !important;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

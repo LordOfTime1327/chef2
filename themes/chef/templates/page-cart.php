@@ -150,6 +150,11 @@ get_header();
       ?>
       </div>
     </div>
+
+    <div class="popup-checkout">
+      <h2 class="popup-checkout__title">Checkout</h2>
+      <?php echo do_shortcode('[woocommerce_checkout]'); ?>
+    </div>
   </div>
 </main>
 

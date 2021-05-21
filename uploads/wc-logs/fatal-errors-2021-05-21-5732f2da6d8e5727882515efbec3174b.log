@@ -1,0 +1,70 @@
+2021-05-21T09:04:48+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:06:10+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:06:57+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:07:14+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:07:25+00:00 CRITICAL Uncaught Error: Call to undefined function wp_template_part() in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php:155
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 155
+
+2021-05-21T09:09:27+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:25
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-includes\template.php(676): load_template('W:\\domains\\Chef...', false, Array)
+#2 W:\domains\Chef\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php(155): get_template_part('woocommerce/che...')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 25
+
+2021-05-21T13:40:37+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-shipping.php on line 53
+
+2021-05-21T13:40:40+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-shipping.php on line 61
+
+2021-05-21T13:47:19+00:00 CRITICAL syntax error, unexpected '}', expecting ';' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 459
+
+2021-05-21T13:54:07+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 461
+
+2021-05-21T13:54:07+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 461
+
