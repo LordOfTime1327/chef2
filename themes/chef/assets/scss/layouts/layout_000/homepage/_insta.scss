@@ -1,0 +1,79 @@
+.insta {
+  padding: 50px 0 70px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  #sb_instagram {
+    padding-bottom: 0 !important;
+  }
+
+  .sb_instagram_header {
+    padding: 0 !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 0 !important;
+
+    .sbi_header_img {
+      display: none;
+    }
+    h3 {
+      padding-top: 0 !important;
+      @include font-size(16, 30, 0.2);
+      font-weight: $lightWeight;
+      text-align: center;
+      color: $instaName;
+    }
+  }
+
+  .sbi-owl-stage-outer {
+    padding-bottom: 20px;
+  }
+
+  .sbi-owl-nav {
+    @include flex(center, center, row, nowrap);
+    padding-bottom: 35px;
+
+    & > div {
+      position: static;
+      top: unset !important;
+      left: unset;
+      right: unset;
+
+      @include flex(center, center);
+      width: 30px;
+      height: 30px;
+      background: $homeCatalogArrowBox;
+      border-radius: 5px;
+      padding: 6px;
+      margin: 0 15px;
+
+      svg {
+        display: block;
+        height: 100%;
+      }
+    }
+
+    .sbi-owl-next {
+      transform: rotate(180deg) !important;
+    }
+  }
+
+  .sbi_follow_btn {
+    margin: 0 !important;
+
+    & > * {
+      margin: 0 !important;
+    }
+  }
+
+  #sbi_images:hover {
+    .sbi-owl-nav > div {
+      background: $homeCatalogArrowBox !important;
+      transform: scale(1);
+    }
+    .sbi-wol-next {
+      transform: scale(1);
+    }
+  }
+}

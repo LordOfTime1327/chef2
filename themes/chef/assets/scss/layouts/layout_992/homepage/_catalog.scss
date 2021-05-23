@@ -1,5 +1,17 @@
-.catalog_home {
+.catalog-home {
+  padding-bottom: 75px;
+
   &__title {
-    padding-bottom: 74px;
+    margin-bottom: 60px;
+  }
+
+  .products {
+    margin-bottom: 60px;
+  }
+  &__slider {
+    padding-bottom: 0;
+  }
+  &__slider-arrow-box {
+    display: none;
   }
 }

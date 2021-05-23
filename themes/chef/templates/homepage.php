@@ -105,6 +105,7 @@ get_header();
 				<h2 class='title decor catalog-home__title'><?= get_field('catalog_title'); ?></h2>
 			<?php } ?>
 			<?= do_shortcode( '[products limit="4" sort_by="popularity"]' ); ?>
+			<a href="<?= home_url( '/catalog' ); ?>" class='btn catalog-home__btn'><?= get_field( 'catalog_btn' ); ?></a>
 			</div>
 	</section>
 
@@ -129,6 +130,15 @@ get_header();
 			<?php endif; ?>
 		</div>
 	</section>
+
+	<div class="insta">
+		<div class="container">
+			<?php if( get_field( 'insta_title' ) ) { ?>
+				<h2 class="title decor insta__title"><?= get_field( 'insta_title' ); ?></h2>
+			<?php } ?>
+				<?= do_shortcode( '[instagram-feed]' ); ?>
+		</div>
+	</div>
 </main>
 
 <?php

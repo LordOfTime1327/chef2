@@ -1,5 +1,46 @@
-.catalog_home {
+.catalog-home {
+  text-align: center;
+  padding-bottom: 50px;
+
   &__title {
-    padding-bottom: 34px;
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  &__slider-arrow-box {
+    @include flex(center, center, row, nowrap);
+  }
+  &__slider-arrow {
+    position: static;
+    right: unset;
+    left: unset;
+
+    @include flex(center, center);
+    width: 30px;
+    height: 30px;
+    background: $homeCatalogArrowBox;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0 15px;
+
+    &:after {
+      content: "" !important;
+    }
+
+    svg {
+      display: block;
+      height: 100%;
+    }
+
+    &_prev {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn {
+    display: inline-block !important;
   }
 }

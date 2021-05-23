@@ -281,6 +281,59 @@ let relatedSlider = new Swiper(".related__slider", {
   },
 });
 
+// homepage catalog slider single product page
+function homeProdsFn() {
+  if (document.body.classList.contains("home")) {
+    let products = document.querySelector(".products"),
+      productsContent = products.innerHTML;
+
+    products.innerHTML = `<div class='catalog-home__slider swiper-container'>
+                            <div class='swiper-wrapper'>
+                              ${productsContent}
+                            </div>
+                            <div class='catalog-home__slider-arrow-box'>
+                              <div class="swiper-button-prev catalog-home__slider-arrow catalog-home__slider-arrow_prev">
+                                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15 1L1 12.5L15 23" stroke="white"/>
+                                </svg>
+                              </div>
+                              <div class="swiper-button-next catalog-home__slider-arrow catalog-home__slider-arrow_next">
+                                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15 1L1 12.5L15 23" stroke="white"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>`;
+
+    $(".products__card").wrap("<div class='swiper-slide'></div>");
+  } else {
+    return;
+  }
+}
+homeProdsFn();
+let homeCatalogSlider = new Swiper(".catalog-home__slider", {
+  navigation: {
+    nextEl: ".catalog-home__slider-arrow_next",
+    prevEl: ".catalog-home__slider-arrow_prev",
+  },
+  // slidesPerView: 1,
+  allowTouchMove: true,
+
+  breakpoints: {
+    550: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+      navigation: false,
+      allowTouchMove: false,
+    },
+  },
+});
+
 // popup checkout
 let checkoutBtn = document.querySelector(".checkout-button"),
   checkout = document.querySelector(".popup-checkout");
@@ -298,3 +351,19 @@ bgCover.addEventListener("click", function () {
   bgCover.classList.remove("active");
   checkout.classList.remove("active");
 });
+
+// insta
+setTimeout(() => {
+  let instaArrows = document.querySelectorAll(".sbi-owl-nav > div");
+  for (let i = 0; i < instaArrows.length; i++) {
+    instaArrows[
+      i
+    ].innerHTML = `<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 1L1 12.5L15 23" stroke="white"/>
+                  </svg>`;
+  }
+
+  let instaLink = document.querySelector(".sbi_follow_btn a");
+  instaLink.classList.add("btn");
+  instaLink.children[0].remove();
+}, 100);

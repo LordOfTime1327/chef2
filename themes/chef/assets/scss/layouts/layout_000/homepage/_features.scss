@@ -11,20 +11,6 @@
     margin: 5px;
     background: $bgFeatures;
     transition: background 0.5s, transform 0.5s;
-
-    &:hover {
-      background: $bgHoverFeatures;
-      transform: scale(1.05);
-
-      .features {
-        &__img-box svg path {
-          fill: $white;
-        }
-        &__text-box {
-          color: $white;
-        }
-      }
-    }
   }
 
   &__img-box {
