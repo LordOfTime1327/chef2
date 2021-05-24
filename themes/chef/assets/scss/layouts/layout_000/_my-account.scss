@@ -6,6 +6,23 @@
     padding-bottom: 20px;
   }
 
+  &__empty {
+    @include flex(center, center, column);
+  }
+  &__empty-img-box {
+    max-width: 130px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  &__empty-img {
+    @include img-fluid;
+  }
+  &__empty-text {
+    @include font-size(16);
+    color: #828282;
+    padding-bottom: 20px;
+  }
+
   &__content-box {
     @include flex(flex-start, flex-start, column);
   }

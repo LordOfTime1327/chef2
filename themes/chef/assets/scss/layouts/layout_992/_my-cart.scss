@@ -4,6 +4,18 @@
     padding-bottom: 66px;
   }
 
+  &__empty {
+    padding-bottom: 80px;
+  }
+  &__empty-img-box {
+    max-width: 213px;
+    padding-bottom: 40px;
+  }
+  &__empty-text {
+    @include font-size(35);
+    padding-bottom: 40px;
+  }
+
   .woocommerce {
     @include flex(space-between, flex-start, row, nowrap);
     padding-bottom: 275px;

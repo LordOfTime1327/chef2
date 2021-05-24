@@ -7,6 +7,24 @@
     padding: 28px 0;
   }
 
+  &__empty {
+    @include flex(center, center, column);
+    padding-bottom: 40px;
+  }
+  &__empty-img-box {
+    max-width: 130px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  &__empty-img {
+    @include img-fluid;
+  }
+  &__empty-text {
+    @include font-size(16);
+    color: #828282;
+    padding-bottom: 20px;
+  }
+
   .cart-form {
     padding-bottom: 50px;
 

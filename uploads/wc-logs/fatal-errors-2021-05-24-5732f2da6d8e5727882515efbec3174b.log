@@ -94,3 +94,7 @@ Stack trace:
 
 2021-05-24T14:58:14+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 202
 
+2021-05-24T19:59:14+00:00 CRITICAL syntax error, unexpected '!', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 18
+
+2021-05-24T20:13:20+00:00 CRITICAL syntax error, unexpected end of file in W:\domains\Chef\wp-content\themes\chef\templates\page-cart.php on line 176
+

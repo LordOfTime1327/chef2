@@ -4,6 +4,15 @@
     padding-bottom: 34px;
   }
 
+  &__empty-img-box {
+    max-width: 213px;
+    padding-bottom: 40px;
+  }
+  &__empty-text {
+    @include font-size(35);
+    padding-bottom: 40px;
+  }
+
   &__content-box {
     @include flex(flex-start, flex-start, row, nowrap);
   }
