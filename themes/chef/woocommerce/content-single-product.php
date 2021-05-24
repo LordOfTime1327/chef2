@@ -33,89 +33,91 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'product', $product ); ?>>
 
-		<section class="product__info-box">
-			<div class="container">
-				<div class="wrapper">
+  <section class="product__info-box">
+    <div class="container">
+      <div class="wrapper">
 
-				<div class="product__info product__info_mob">
-					<h2 class="product__title"><?= the_title(); ?></h2>
-					<p class="product__short-description">
-						<?= $product->get_short_description(); ?>
-					</p>
-					<div class="product__stars">
-						<?php do_action( 'showRatingStars' ); ?>
-					</div>
-				</div>
-				
-					
-					<div class="product__slider-box">
-						<div class="swiper-container gallery-top product__slider">
-							<div class="swiper-wrapper product__slider-wrapper">
-								<div class="swiper-slide product__slider-slide">
-									<img src="<?= wp_get_attachment_image_url( $product->get_image_id(),'full'); ?>" alt="" class='product__img'>
-								</div>
+        <div class="product__info product__info_mob">
+          <h2 class="product__title"><?= the_title(); ?></h2>
+          <p class="product__short-description">
+            <?= $product->get_short_description(); ?>
+          </p>
+          <div class="product__stars">
+            <?php do_action( 'showRatingStars' ); ?>
+          </div>
+        </div>
 
-								<?php foreach ($product->get_gallery_image_ids() as $value) :?>
-									<div class="swiper-slide product__slider-slide">
-										<img src="<?=wp_get_attachment_image_url( $value,'full'); ?>" alt="" class='product__img'>
-									</div>
-								<?php endforeach;?>
-							</div>
-						</div>
 
-						<div class="swiper-container gallery-thumbs product__slider-thumbs">
-    					<div class="swiper-wrapper">
-								<div class="swiper-slide product__slider-thumb-slide">
-									<img src="<?= wp_get_attachment_image_url( $product->get_image_id(),'full'); ?>" alt="" class='product__img'>
-								</div>
-								<?php foreach ($product->get_gallery_image_ids() as $value) :?>
-									<div class="swiper-slide product__slider-thumb-slide">
-										<img src="<?=wp_get_attachment_image_url( $value,'full'); ?>" alt="" class='product__img'>
-									</div>
-								<?php endforeach;?>
-							</div>
-						</div>
+        <div class="product__slider-box">
+          <div class="swiper-container gallery-top product__slider">
+            <div class="swiper-wrapper product__slider-wrapper">
+              <div class="swiper-slide product__slider-slide">
+                <img src="<?= wp_get_attachment_image_url( $product->get_image_id(),'full'); ?>" alt=""
+                  class='product__img'>
+              </div>
 
-						<div class="swiper-pagination product__slider-pagination"></div>
+              <?php foreach ($product->get_gallery_image_ids() as $value) :?>
+              <div class="swiper-slide product__slider-slide">
+                <img src="<?=wp_get_attachment_image_url( $value,'full'); ?>" alt="" class='product__img'>
+              </div>
+              <?php endforeach;?>
+            </div>
+          </div>
 
-						<div class="product__slider-arrow product__slider-arrow_next swiper-button-next"></div>
-						<div class="product__slider-arrow product__slider-arrow_prev swiper-button-prev"></div>
+          <div class="swiper-container gallery-thumbs product__slider-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product__slider-thumb-slide">
+                <img src="<?= wp_get_attachment_image_url( $product->get_image_id(),'full'); ?>" alt=""
+                  class='product__img'>
+              </div>
+              <?php foreach ($product->get_gallery_image_ids() as $value) :?>
+              <div class="swiper-slide product__slider-thumb-slide">
+                <img src="<?=wp_get_attachment_image_url( $value,'full'); ?>" alt="" class='product__img'>
+              </div>
+              <?php endforeach;?>
+            </div>
+          </div>
 
-					</div>
+          <div class="swiper-pagination product__slider-pagination"></div>
 
-					<div class="product__info">
-						<h2 class='product__title product__title_desc'><?= the_title(); ?></h2>
-						<p class="product__short-description product__short-description_desc">
-							<?= $product->get_short_description(); ?>
-						</p>
-						<div class="product__stars product__stars_desc">
-							<?php do_action( 'showRatingStars' ); ?>
-						</div>
-						<div class="product__price">
-							<?= $product->get_price_html(); ?>
-						</div>
-						<div>
-							<?php do_action( 'addToCartForm' ); ?>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div class="product__slider-arrow product__slider-arrow_next swiper-button-next"></div>
+          <div class="product__slider-arrow product__slider-arrow_prev swiper-button-prev"></div>
 
-		<section class='description'>
-			<div class="container">
-				<h2 class="description__title decor">Description</h2>
-				<div class="description__text-box">
-					<?= $product->get_description(); ?>
-				</div>
-			</div>
-		</section>
+        </div>
 
-		<section id='reviews' class='reviews'>
-			<div class="container">
-				<h2 class="reviews__title decor">Reviews</h2>
-				<div class="reviews__box">
-					<?php 	
+        <div class="product__info">
+          <h2 class='product__title product__title_desc'><?= the_title(); ?></h2>
+          <p class="product__short-description product__short-description_desc">
+            <?= $product->get_short_description(); ?>
+          </p>
+          <div class="product__stars product__stars_desc">
+            <?php do_action( 'showRatingStars' ); ?>
+          </div>
+          <div class="product__price">
+            <?= $product->get_price_html(); ?>
+          </div>
+          <div>
+            <?php do_action( 'addToCartForm' ); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='description'>
+    <div class="container">
+      <h2 class="description__title decor">Description</h2>
+      <div class="description__text-box">
+        <?= $product->get_description(); ?>
+      </div>
+    </div>
+  </section>
+
+  <section id='reviews' class='reviews'>
+    <div class="container">
+      <h2 class="reviews__title decor">Reviews</h2>
+      <div class="reviews__box">
+        <?php 	
 						// $product_id = $product->get_id();
 						// $comments = get_comments(array(
 						// 	'post_id'=>$product_id,
@@ -139,31 +141,98 @@ if ( post_password_required() ) {
 							'status'=>'approve',
 						));
 
-						foreach($comments as $comment){?>
-							<div>
-								<p><?php comment_author(); ?></p>
-								<p><?php echo get_comment_meta( $comment->comment_ID, 'rating', true); ?></p>
-								<p><?php comment_date(); ?></p>
-								<p><?php comment_text(); ?></p>
-							</div>
-						<?php } 
+						$i = 0; 
 
+						foreach( $comments as $comment ) { 
+							$i++;
+							if( $i < 4 ){
+							?>
+        <div class='reviews__item'>
+          <div class="reviews__header">
+            <p class='reviews__rating'><?php echo get_comment_meta( $comment->comment_ID, 'rating', true); ?></p>
+            <p class='reviews__date'><?php comment_date(); ?></p>
+          </div>
+          <div class="reviews__body">
+            <p class='reviews__author'><?php comment_author(); ?></p>
+            <div class='reviews__text-box'><?php comment_text(); ?></div>
+          </div>
+        </div>
+        <?php 
+								}
+						}
 						if( !$comments ) {
-							echo '<p>Empty</p>';
+							echo '<p>No reviews yet</p>';
 						}
 				  ?>
-				</div>
-			</div>
-		</section>
+      </div>
+      <div class="reviews__btn-box">
+        <?php if( $comments ) { ?>
+        <button class='btn reviews__btn reviews__show-reviews'>Show All</button>
+        <?php } ?>
+        <button class='reviews__btn reviews__leave-feedback'>Leave Review</button>
+      </div>
+    </div>
 
-		<!-- RELATED PRODUCTS -->
-		<section class='related'>
-			<div class="container">
-				<?php woocommerce_output_related_products(); ?>
-			</div>
-		</section>
+    <div class="allReviews">
+      <h2 class="allReviews__title">Reviews</h2>
 
-	<?php
+      <div class="allReviews__box">
+        <?php 
+						$product_id = $product->get_id();
+						$comments = get_comments(array(
+							'post_id'=>$product_id,
+							'status'=>'approve',
+						));
+
+				foreach( $comments as $comment ) { 
+					?>
+        <div class='allReviews__item'>
+          <div class="allReviews__header">
+            <p class='allReviews__rating'><?php echo get_comment_meta( $comment->comment_ID, 'rating', true); ?></p>
+            <p class='allReviews__date'><?php comment_date(); ?></p>
+          </div>
+          <div class="allReviews__body">
+            <p class='allReviews__author'><?php comment_author(); ?></p>
+            <div class='allReviews__text-box'><?php comment_text(); ?></div>
+          </div>
+        </div>
+        <?php 
+						}
+						if( !$comments ) {
+							echo '<div class="allReviews__empty-box">
+											<p class="allReviews__empty">No reviews yet</p>
+											<button class="reviews__btn reviews__leave-feedback">Leave Review</button>
+										</div>';
+						}
+					?>
+      </div>
+
+      <div class="allReviews__close">
+        <span class="allReviews__close-line"></span>
+        <span class="allReviews__close-line"></span>
+      </div>
+    </div>
+    <div class="leaveFeedback">
+      <h2 class="leaveFeedback__title">Leave Feedback</h2>
+
+      <?php comments_template( 'woocommerce/single-product-reviews' ); ?>
+
+      <div class="leaveFeedback__close">
+        <span class="leaveFeedback__close-line"></span>
+        <span class="leaveFeedback__close-line"></span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class='related'>
+    <div class="container">
+      <?php woocommerce_output_related_products(); ?>
+    </div>
+  </section>
+
+  <?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
 	 *
@@ -173,9 +242,9 @@ if ( post_password_required() ) {
 	 // do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<!-- <div class="summary entry-summary"> -->
+  <!-- <div class="summary entry-summary"> -->
 
-		<?php
+  <?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
 		 *
@@ -191,9 +260,9 @@ if ( post_password_required() ) {
 		
 		//do_action( 'woocommerce_single_product_summary' );
 		?>
-	<!-- </div> -->
+  <!-- </div> -->
 
-	<?php
+  <?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
 	 *

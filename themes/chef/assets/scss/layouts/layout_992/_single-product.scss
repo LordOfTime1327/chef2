@@ -155,6 +155,31 @@
       transform: translateX(0);
     }
   }
+
+  &__date {
+    @include font-size(15, 22, 0.3);
+  }
+  &__author {
+    @include font-size(24, 24, 0.3);
+    padding-bottom: 17px;
+  }
+  &__text-box {
+    @include font-size(16, 24, 0.3);
+  }
+
+  &__leave-feedback {
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      background: $red;
+      color: $white;
+      box-shadow: 0 4px 19px rgba(0, 0, 0, 0.25);
+    }
+    &:active {
+      background: $btnActive;
+    }
+  }
 }
 
 .related {
@@ -174,6 +199,81 @@
 
   &__slider-arrow {
     display: none;
+  }
+}
+
+.allReviews {
+  padding: 100px 60px;
+
+  &__title {
+    @include font-size(42, 42, 0.3);
+    padding-bottom: 70px;
+  }
+
+  &__item {
+    padding-bottom: 90px;
+
+    &:nth-last-child(-n + 2) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__header {
+    @include flex(flex-start, center, row, nowrap);
+    padding-bottom: 30px;
+  }
+  &__date {
+    @include font-size(15, 22, 0.3);
+  }
+  &__author {
+    @include font-size(24, 24, 0.3);
+    padding-bottom: 17px;
+  }
+  &__text-box {
+    @include font-size(16, 24, 0.3);
+  }
+
+  &__close {
+    top: 44px;
+    left: 60px;
+    width: 56px;
+    height: 56px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.leaveFeedback {
+  padding: 47px 155px 120px;
+  &__title {
+    @include font-size(48, 48, 0.3);
+    padding-bottom: 45px;
+  }
+  &__input {
+    @include font-size(18, 18);
+  }
+
+  .comment-form {
+    .comment-form-cookies-consent {
+      padding-bottom: 30px;
+
+      label {
+        @include font-size(18, 24);
+      }
+    }
+  }
+
+  &__close {
+    width: 35px;
+    height: 35px;
+    top: 30px;
+    left: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

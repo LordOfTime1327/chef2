@@ -98,19 +98,21 @@ main {
 }
 
 .popup-submit {
-  display: block;
-  width: 100%;
+  display: block !important;
+  width: 100% !important;
 
-  font-family: $secondaryFont;
-  @include font-size(16, 18);
-  font-weight: $boldWeight;
-  color: $signColor;
-  padding: 9px 18px;
-  background: transparent;
-  border: 1px solid $signColor;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
+  font-family: $secondaryFont !important;
+  // @include font-size(16, 18);
+  font-size: 16px !important;
+  line-height: 18px !important;
+  font-weight: $boldWeight !important;
+  color: $signColor !important;
+  padding: 9px 18px !important;
+  background: transparent !important;
+  border: 1px solid $signColor !important;
+  border-radius: 5px !important;
+  outline: none !important;
+  cursor: pointer !important;
 }
 
 .breadcrumbs {
@@ -285,20 +287,20 @@ main {
   }
 
   .popup-submit {
-    transition: background 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease !important;
     &:hover {
-      background: $popupSubmitHover;
-      border-color: $popupSubmitHover;
+      background: $popupSubmitHover !important;
+      border-color: $popupSubmitHover !important;
     }
     &:active {
-      background: $popupSubmitActive;
-      border-color: $popupSubmitActive;
+      background: $popupSubmitActive !important;
+      border-color: $popupSubmitActive !important;
     }
     &[disabled] {
-      background: $popupSubmitDisabled;
-      border-color: $popupSubmitDisabled;
-      opacity: 0.3;
-      pointer-events: none;
+      background: $popupSubmitDisabled !important;
+      border-color: $popupSubmitDisabled !important;
+      opacity: 0.3 !important;
+      pointer-events: none !important;
     }
   }
 

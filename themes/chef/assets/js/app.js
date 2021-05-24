@@ -339,6 +339,12 @@ let checkoutBtn = document.querySelector(".checkout-button"),
   checkout = document.querySelector(".popup-checkout");
 if (checkoutBtn) {
   checkoutBtn.addEventListener("click", checkoutFn);
+
+  bgCover.addEventListener("click", function () {
+    html.classList.remove("stop-scrolling");
+    bgCover.classList.remove("active");
+    checkout.classList.remove("active");
+  });
 }
 function checkoutFn(e) {
   e.preventDefault();
@@ -346,24 +352,82 @@ function checkoutFn(e) {
   html.classList.add("stop-scrolling");
   checkout.classList.add("active");
 }
-bgCover.addEventListener("click", function () {
-  html.classList.remove("stop-scrolling");
-  bgCover.classList.remove("active");
-  checkout.classList.remove("active");
-});
 
 // insta
-setTimeout(() => {
-  let instaArrows = document.querySelectorAll(".sbi-owl-nav > div");
-  for (let i = 0; i < instaArrows.length; i++) {
-    instaArrows[
-      i
-    ].innerHTML = `<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 1L1 12.5L15 23" stroke="white"/>
-                  </svg>`;
-  }
+let insta = document.querySelector(".insta");
+if (insta) {
+  setTimeout(() => {
+    let instaArrows = document.querySelectorAll(".sbi-owl-nav > div");
+    for (let i = 0; i < instaArrows.length; i++) {
+      instaArrows[
+        i
+      ].innerHTML = `<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 1L1 12.5L15 23" stroke="white"/>
+                    </svg>`;
+    }
 
-  let instaLink = document.querySelector(".sbi_follow_btn a");
-  instaLink.classList.add("btn");
-  instaLink.children[0].remove();
-}, 100);
+    let instaLink = document.querySelector(".sbi_follow_btn a");
+    instaLink.classList.add("btn");
+    instaLink.children[0].remove();
+  }, 100);
+}
+
+//single prod reviews
+let allReviewsBtn = document.querySelector(".reviews__show-reviews"),
+  leaveFeedbackBtn = document.querySelector(".reviews__leave-feedback"),
+  allReviews = document.querySelector(".allReviews"),
+  leaveFeedbackPopup = document.querySelector(".leaveFeedback"),
+  allReviewsClose = document.querySelector(".allReviews__close"),
+  leaveFeedbackClose = document.querySelector(".leaveFeedback__close");
+
+if (allReviewsBtn) {
+  allReviewsBtn.addEventListener("click", showReviews);
+}
+leaveFeedbackBtn.addEventListener("click", leaveFeedback);
+
+allReviewsClose.addEventListener("click", closeAllReviews);
+leaveFeedbackClose.addEventListener("click", closeLeaveFeedback);
+
+bgCover.addEventListener("click", closeAllReviews);
+bgCover.addEventListener("click", closeLeaveFeedback);
+
+function showReviews(e) {
+  e.preventDefault();
+  html.classList.add("stop-scrolling");
+  allReviews.classList.add("active");
+  bgCover.classList.add("active");
+}
+function closeAllReviews() {
+  html.classList.remove("stop-scrolling");
+  allReviews.classList.remove("active");
+  bgCover.classList.remove("active");
+}
+
+function leaveFeedback(e) {
+  e.preventDefault();
+  html.classList.add("stop-scrolling");
+  leaveFeedbackPopup.classList.add("active");
+  bgCover.classList.add("active");
+}
+function closeLeaveFeedback() {
+  html.classList.remove("stop-scrolling");
+  leaveFeedbackPopup.classList.remove("active");
+  bgCover.classList.remove("active");
+}
+
+let nameFeedback = document.querySelector(".comment-form-author input"),
+  emailFeedback = document.querySelector(".comment-form-email input"),
+  commentFeedback = document.querySelector(".comment-form-comment textarea"),
+  submitFeedback = document.querySelector('.form-submit input[type="submit"]');
+
+nameFeedback.setAttribute("placeholder", "Name *");
+emailFeedback.setAttribute("placeholder", "Email *");
+commentFeedback.setAttribute("placeholder", "Comment");
+
+nameFeedback.classList.add("leaveFeedback__input");
+emailFeedback.classList.add("leaveFeedback__input");
+commentFeedback.classList.add(
+  "leaveFeedback__input",
+  "leaveFeedback__textarea"
+);
+submitFeedback.classList.add("popup-submit", "leaveFeedback__submit");

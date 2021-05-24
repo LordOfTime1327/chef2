@@ -1,0 +1,96 @@
+2021-05-24T08:44:45+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Comment::get_id() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:144
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 144
+
+2021-05-24T08:45:00+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Comment::comment_ID() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:144
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 144
+
+2021-05-24T08:47:37+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 159
+
+2021-05-24T08:47:47+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 159
+
+2021-05-24T12:26:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_insert_comment(), 0 passed in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 217 and exactly 1 expected in W:\domains\Chef\wp-includes\comment.php:1991
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php(217): wp_insert_comment()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-includes\comment.php on line 1991
+
+2021-05-24T12:26:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_insert_comment(), 0 passed in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 217 and exactly 1 expected in W:\domains\Chef\wp-includes\comment.php:1991
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php(217): wp_insert_comment()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-includes\comment.php on line 1991
+
+2021-05-24T12:41:09+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_parts() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:218
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 218
+
+2021-05-24T12:41:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_parts() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:218
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 218
+
+2021-05-24T12:41:34+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_parts() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:218
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 218
+
+2021-05-24T12:41:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_parts() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:218
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 218
+
+2021-05-24T14:58:14+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 202
+

@@ -217,9 +217,319 @@
     text-align: center;
     margin-bottom: 23px;
   }
+
+  &__box {
+    @include flex(flex-start, center, column);
+    padding-bottom: 30px;
+  }
+  &__item {
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__header {
+    @include flex(flex-start, center, column);
+    padding-bottom: 10px;
+  }
+  &__date {
+    @include font-size(11, 22, 0.3);
+  }
+  &__rating {
+    padding-left: 12px;
+    padding-bottom: 5px;
+  }
+  &__author {
+    @include font-size(18, 24, 0.3);
+    font-weight: $semiBoldWeight;
+    color: $reviewsAuthor;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  &__text-box {
+    @include font-size(12, 24, 0.3);
+    color: $reviewsText;
+    text-align: center;
+
+    & > * {
+      @include font-inherit;
+    }
+  }
+
+  &__btn-box {
+    @include flex(center, center, column);
+  }
+  &__show-reviews {
+    margin-bottom: 15px;
+  }
+  &__leave-feedback {
+    display: block;
+    border: 1px solid $red;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    padding: 13px 31px;
+    font-family: inherit;
+    @include font-size(16, 16);
+    color: $red;
+  }
+}
+
+.allReviews {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 20px;
+  left: 50%;
+  max-height: calc(100vh - 40px);
+  transform: translateX(-50%);
+
+  max-width: 1220px;
+  width: calc(100% - 30px);
+
+  background: $white;
+  padding: 40px 30px;
+  box-shadow: 0px 15px 39px rgba(0, 0, 0, 0.25);
+
+  overflow-y: auto;
+
+  &.active {
+    display: block;
+  }
+
+  &__title {
+    @include font-size(24, 24, 0.3);
+    font-weight: $mediumWeight;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__header {
+    @include flex(flex-start, flex-start, column);
+    padding-bottom: 10px;
+  }
+  &__date {
+    @include font-size(11, 22, 0.3);
+  }
+  &__rating {
+    padding-left: 12px;
+    padding-bottom: 5px;
+  }
+  &__author {
+    @include font-size(18, 24, 0.3);
+    font-weight: $semiBoldWeight;
+    color: $reviewsAuthor;
+    padding-bottom: 10px;
+  }
+  &__text-box {
+    @include font-size(12, 24, 0.3);
+    color: $reviewsText;
+
+    & > * {
+      @include font-inherit;
+    }
+  }
+
+  &__close {
+    @include flex(center, center, row, nowrap);
+
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+  }
+  &__close-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &:nth-child(1) {
+      transform: translateX(-50%) rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: translateX(-50%) rotate(-45deg);
+    }
+  }
+}
+
+.leaveFeedback {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  max-height: calc(100vh - 40px);
+  transform: translate(-50%, -50%);
+  background: $gradient1;
+  padding: 30px;
+  max-width: 720px;
+  width: calc(100% - 20px);
+
+  &__title {
+    @include font-size(24, 24, 0.3);
+    font-weight: $regularWeight;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  .comment-reply-title {
+    display: none;
+  }
+
+  .comment-form {
+    @include flex(flex-start, flex-start, column);
+
+    p {
+      display: block;
+      width: 100%;
+      margin-bottom: 0 !important;
+
+      input,
+      textarea {
+        display: block;
+        width: 100% !important;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+        max-height: 250px;
+      }
+    }
+
+    .comment-notes {
+      display: none;
+    }
+
+    .comment-form-author {
+      order: 1;
+
+      label {
+        display: none;
+      }
+    }
+    .comment-form-email {
+      order: 2;
+
+      label {
+        display: none;
+      }
+    }
+    .comment-form-rating {
+      order: 3;
+
+      label {
+        display: none;
+      }
+    }
+    .comment-form-comment {
+      order: 4;
+
+      label {
+        display: none;
+      }
+    }
+    .comment-form-cookies-consent {
+      order: 5;
+      padding-bottom: 15px;
+
+      input {
+        display: inline;
+        width: auto !important;
+      }
+
+      label {
+        @include font-size(14, 18);
+        font-weight: $lightWeight;
+        color: $white;
+      }
+    }
+    .form-submit {
+      order: 6;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $white;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    @include font-size(14, 18);
+    font-weight: $lightWeight;
+    color: $white;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    &::placeholder {
+      @include font-inherit;
+      opacity: 0.5;
+    }
+  }
+
+  .stars a::before {
+    color: #fab941;
+  }
+
+  &__textarea {
+    margin-bottom: 30px;
+  }
+
+  &__submit {
+    max-width: 220px;
+    margin: 0 auto !important;
+  }
+
+  &__close {
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+  &__close-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &:nth-child(1) {
+      transform: translateX(-50%) rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: translateX(-50%) rotate(-45deg);
+    }
+  }
 }
 
 .related {
+  padding-bottom: 110px;
+
   &__title {
     @include font-size(30, normal, 0.2);
     font-weight: $mediumWeight;
@@ -227,6 +537,14 @@
     color: $titleColor;
     text-align: center;
     margin-bottom: 23px;
+  }
+
+  .products {
+    margin-bottom: 0;
+    &__card {
+      margin: 0 8px;
+      height: 100%;
+    }
   }
 
   &__slider-arrow {
