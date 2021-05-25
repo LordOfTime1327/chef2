@@ -6,6 +6,7 @@ let burger = document.querySelector(".header__burger"),
   menu = document.querySelector(".header-menu");
 burger.addEventListener("click", function (e) {
   e.preventDefault;
+  burger.classList.toggle("close");
   html.classList.toggle("stop-scrolling");
   menu.classList.toggle("active");
 });
@@ -382,9 +383,9 @@ let allReviewsBtn = document.querySelector(".reviews__show-reviews"),
 
 if (allReviewsBtn) allReviewsBtn.addEventListener("click", showReviews);
 if (leaveFeedbackBtn) leaveFeedbackBtn.addEventListener("click", leaveFeedback);
-
-allReviewsClose.addEventListener("click", closeAllReviews);
-leaveFeedbackClose.addEventListener("click", closeLeaveFeedback);
+if (allReviewsClose) allReviewsClose.addEventListener("click", closeAllReviews);
+if (leaveFeedbackClose)
+  leaveFeedbackClose.addEventListener("click", closeLeaveFeedback);
 
 bgCover.addEventListener("click", closeAllReviews);
 bgCover.addEventListener("click", closeLeaveFeedback);
@@ -418,14 +419,16 @@ let nameFeedback = document.querySelector(".comment-form-author input"),
   commentFeedback = document.querySelector(".comment-form-comment textarea"),
   submitFeedback = document.querySelector('.form-submit input[type="submit"]');
 
-nameFeedback.setAttribute("placeholder", "Name *");
-emailFeedback.setAttribute("placeholder", "Email *");
-commentFeedback.setAttribute("placeholder", "Comment");
+if (nameFeedback) nameFeedback.setAttribute("placeholder", "Name *");
+if (emailFeedback) emailFeedback.setAttribute("placeholder", "Email *");
+if (commentFeedback) commentFeedback.setAttribute("placeholder", "Comment");
 
-nameFeedback.classList.add("leaveFeedback__input");
-emailFeedback.classList.add("leaveFeedback__input");
-commentFeedback.classList.add(
-  "leaveFeedback__input",
-  "leaveFeedback__textarea"
-);
-submitFeedback.classList.add("popup-submit", "leaveFeedback__submit");
+if (nameFeedback) nameFeedback.classList.add("leaveFeedback__input");
+if (emailFeedback) emailFeedback.classList.add("leaveFeedback__input");
+if (commentFeedback)
+  commentFeedback.classList.add(
+    "leaveFeedback__input",
+    "leaveFeedback__textarea"
+  );
+if (submitFeedback)
+  submitFeedback.classList.add("popup-submit", "leaveFeedback__submit");

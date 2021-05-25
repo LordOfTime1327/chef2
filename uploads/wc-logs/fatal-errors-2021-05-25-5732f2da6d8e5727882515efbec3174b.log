@@ -1,0 +1,8 @@
+2021-05-25T08:39:19+00:00 CRITICAL Object of class WP_User could not be converted to string in W:\domains\Chef\wp-content\themes\chef\header.php on line 66
+
+2021-05-25T08:40:44+00:00 CRITICAL Object of class WP_User could not be converted to string in W:\domains\Chef\wp-content\themes\chef\header.php on line 90
+
+2021-05-25T08:43:34+00:00 CRITICAL syntax error, unexpected ':', expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\header.php on line 89
+
+2021-05-25T08:44:47+00:00 CRITICAL Object of class WP_User could not be converted to string in W:\domains\Chef\wp-content\themes\chef\header.php on line 90
+
