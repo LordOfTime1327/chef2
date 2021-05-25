@@ -6,3 +6,56 @@
 
 2021-05-25T08:44:47+00:00 CRITICAL Object of class WP_User could not be converted to string in W:\domains\Chef\wp-content\themes\chef\header.php on line 90
 
+2021-05-25T09:36:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_content() in W:\domains\Chef\wp-content\themes\chef\templates\terms&conditions.php:16
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template-loader.php(106): include()
+#1 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#2 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#3 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\templates\terms&conditions.php on line 16
+
+2021-05-25T11:14:02+00:00 CRITICAL Uncaught Error: Call to undefined function wp_star_rating() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:94
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 94
+
+2021-05-25T11:14:17+00:00 CRITICAL Uncaught Error: Call to undefined function wp_star_rating() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:94
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 94
+
+2021-05-25T11:41:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_star_rating() in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php:154
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(732): require()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#2 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#4 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#5 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#6 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 154
+
+2021-05-25T11:54:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_get_star_rating_html(), 0 passed in W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php on line 153 and at least 1 expected in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php:3516
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\content-single-product.php(153): wc_get_star_rating_html()
+#1 W:\domains\Chef\wp-includes\template.php(732): require('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('W:\\domains\\Chef...', false)
+#3 W:\domains\Chef\wp-content\themes\chef\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 3516
+

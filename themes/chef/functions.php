@@ -471,12 +471,18 @@ function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value
 		$field = str_replace( $optional, '', $field );
     return $field;
 }
-/* 
-billing_last_name
-billing_first_name
-billing_country
-billing_address_1
-billing_city
-billing_phone
-billing_email
-*/
+
+// star rating
+add_filter('woocommerce_product_get_rating_html', 'chef_get_rating_html', 10, 2);
+function chef_get_rating_html($rating_html, $rating) {
+	if ( $rating > 0 ) {
+		$title = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
+	} else {
+		$title = 'Not yet rated';
+		$rating = 0;
+	}
+	$rating_html  = '<div class="star-rating" title="' . $title . '">';
+	$rating_html .= '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%"><strong class="rating">' . $rating . '</strong> ' . __( 'out of 5', 'woocommerce' ) . '</span>';
+	$rating_html .= '</div>';
+	return $rating_html;
+}
