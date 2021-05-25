@@ -222,3 +222,72 @@
     margin-right: auto;
   }
 }
+
+.addresses {
+  @include flex(flex-start, flex-start, column);
+
+  &::before,
+  &:after {
+    display: none !important;
+  }
+
+  &__item {
+    float: none;
+    @include flex(flex-start, flex-start, column);
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    @include font-size(14, 20);
+    font-weight: $regularWeight;
+    color: #4f4f4f;
+    text-align: right;
+    padding-bottom: 10px;
+
+    & > * {
+      @include font-inherit;
+      float: none !important;
+    }
+  }
+  &__content {
+    @include font-size(12, 20);
+    padding-bottom: 30px;
+  }
+
+  &__form-box {
+    @include flex(flex-start, flex-start, column);
+
+    .form-row {
+      display: block;
+      width: 100% !important;
+      margin-bottom: 20px;
+
+      float: none !important;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+
+      label {
+        @include font-size(14, 20);
+        color: #4f4f4f;
+      }
+      input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-family: inherit;
+        @include font-size(12, 22);
+        color: #828282;
+
+        border: none;
+        border-bottom: 1px solid rgba($black, 0.1);
+        outline: none;
+      }
+    }
+
+    #shipping_address_2_field {
+      display: none;
+    }
+  }
+}

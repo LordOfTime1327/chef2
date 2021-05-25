@@ -90,3 +90,37 @@
     flex: 0 0 100%;
   }
 }
+
+.addresses {
+  @include flex(flex-start, flex-start, row, nowrap);
+
+  &__item {
+    @include flex(flex-start, flex-start, column);
+    flex: calc(50% - 20px);
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    @include font-size(18, 20);
+    padding-bottom: 40px;
+  }
+  &__content {
+    @include font-size(14, 20);
+    padding-bottom: 40px;
+  }
+
+  &__form-box {
+    @include flex(space-between, stretch, row, wrap);
+
+    .form-row {
+      flex: 0 1 calc(33% - 15px);
+      margin-bottom: 50px;
+
+      @include flex(space-between, stretch, column);
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

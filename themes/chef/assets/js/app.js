@@ -380,10 +380,8 @@ let allReviewsBtn = document.querySelector(".reviews__show-reviews"),
   allReviewsClose = document.querySelector(".allReviews__close"),
   leaveFeedbackClose = document.querySelector(".leaveFeedback__close");
 
-if (allReviewsBtn) {
-  allReviewsBtn.addEventListener("click", showReviews);
-}
-leaveFeedbackBtn.addEventListener("click", leaveFeedback);
+if (allReviewsBtn) allReviewsBtn.addEventListener("click", showReviews);
+if (leaveFeedbackBtn) leaveFeedbackBtn.addEventListener("click", leaveFeedback);
 
 allReviewsClose.addEventListener("click", closeAllReviews);
 leaveFeedbackClose.addEventListener("click", closeLeaveFeedback);
