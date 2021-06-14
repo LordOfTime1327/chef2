@@ -20,72 +20,59 @@ $extraBoldWeight: 800;
 $blackWeight: 900;
 
 // Colors
+// orders colors
+$processing: #f2c94c;
+$onhold: #0652dd;
+$failed: #ea2027;
+$completed: #27ae60;
+$cancelled: #d44b51;
+$pending: #7f8c8d;
+$refunded: #7f8c8d;
+
+// colors
 $white: #fff;
 $black: #000;
+
 $red: #d3222a;
 $red2: #9d0e15;
-$lightBlack: #373f41;
-$grey: #5a5a5a;
-$grey2: #404040;
-$grey3: #4f4f4f;
-$grey4: #515151;
-$grey5: #737b7d;
-$grey6: #9d9d9d;
-$grey7: #717476;
-$lightGrey: #646464;
-$lightGrey2: #f5f5f5;
-$lightGrey3: #f0f0f0;
-$lightGrey4: #eaeaea;
-$lightGrey5: #9d9d9d;
-$darkGrey: #333;
-$darkGrey2: #444;
-$darkGrey3: #171717;
-$darkGrey4: #242424;
-$darkGrey5: #d2d2d2;
-$darkGrey6: #6a6a6a;
-$darkGrey7: hsl(0, 0%, 20%);
 
-//
-// $red: #d3222a;
-// $red2: #9d0e15;
-
-// $darkGrey: #323232;
-// $darkGrey: #4f4f4f;
-// $grey: #828282;
-// $grey2: #aaa;
-// $lightGrey: #ececec;
-// $light: #f0f0f0;
+$darkGrey: #323232;
+$darkGrey2: #4f4f4f;
+$grey: #828282;
+$grey2: #aaa;
+$lightGrey: #ececec;
+$light: #f0f0f0;
 
 $gradient1: linear-gradient(152deg, #aaaaaa 12%, #818181 82%);
 $gradient2: linear-gradient(318deg, #cdcdcd 19%, #9d9d9d 89%);
 $gradient3: linear-gradient(152deg, #cdcdcd 12%, #9d9d9d 82%);
 
 $menuBgMob: $white;
-$menuBorder: $lightGrey4;
+$menuBorder: $lightGrey;
 
-$titleColor: $lightBlack;
-$subtitleColor: $grey2;
-$textColor: $lightGrey;
+$titleColor: $darkGrey;
+$subtitleColor: $darkGrey2;
+$textColor: $grey;
 
-$headerText: $grey5;
-$headerPromBg: $darkGrey4;
+$headerText: $grey;
+$headerPromBg: $darkGrey;
 $headerPromText: $white;
 
 $catsTitleHover: $white;
 $catsBgHover: $darkGrey;
 
-$featuresText: $grey;
-$bgFeatures: $lightGrey3;
+$featuresText: $darkGrey2;
+$bgFeatures: $lightGrey;
 $bgHoverFeatures: $red;
 
-$singleProdTitle: $grey2;
+$singleProdTitle: $darkGrey2;
 $singleProdList: $darkGrey2;
-$prodBg: $lightGrey2;
+$prodBg: $lightGrey;
 
 $reviewsName: $black;
 $reviewsProd: $black;
-$reviewsText: $grey4;
-$reviewsColor: $grey7;
+$reviewsText: $grey;
+$reviewsColor: $grey2;
 
 $price: $darkGrey;
 $line: $darkGrey;
@@ -102,53 +89,37 @@ $svgFill: $red;
 
 $bgBrands: rgba($darkGrey, 0.1);
 
-$bgFooter: $darkGrey3;
+$bgFooter: #171717;
 $bgFooterDev: $black;
 $textFooter: $white;
 
-$text404: $lightBlack;
+$text404: $darkGrey;
 $contactFormDark: $black;
 $contactFormLight: $white;
-$contactFormBorderDark: $darkGrey5;
+$contactFormBorderDark: $grey2;
 $contactFormBorderWhite: $white;
 
-$faqLines: $grey6;
-$questionText: $grey2;
-$answerText: $lightGrey;
+$faqLines: $grey2;
+$questionText: $darkGrey2;
+$answerText: $light;
 
 $signColor: $white;
 
-$sliderDots: $lightGrey5;
+$sliderDots: $lightGrey;
 
-$pagination: $darkGrey6;
+$pagination: $grey;
 $paginationCurrent: $white;
-$paginationBorder: $lightGrey4;
+$paginationBorder: $darkGrey;
 
-$cartItemBorder: $darkGrey5;
+$cartItemBorder: $grey2;
 
-$myAccount: $grey3;
-$myAccountNav: $darkGrey7;
+$myAccount: $darkGrey2;
+$myAccountNav: $darkGrey;
 $myAccountNavActive: $red;
 $myAccountRequired: $red;
 
 $checkoutTitle: $white;
 $checkoutText: $white;
-
-// $processing: #009432;
-// $onhold: #f79f1f;
-// $failed: #ea2027;
-// $completed: #0652dd;
-// $canceled: #7f8c8d;
-// $pending: #7f8c8d;
-// $refunded: #7f8c8d;
-
-$processing: #f2c94c;
-$onhold: #0652dd;
-$failed: #ea2027;
-$completed: #27ae60;
-$cancelled: #d44b51;
-$pending: #7f8c8d;
-$refunded: #7f8c8d;
 
 $breadcrumbsCurrent: $darkGrey;
 $breadcrumbsLinks: #828282;

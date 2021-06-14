@@ -86,10 +86,10 @@ main {
   font-family: $secondaryFont !important;
   font-size: 16px !important;
   font-weight: $semiBoldWeight !important;
-  line-height: 16px !important;
+  line-height: 28px !important;
   color: $btnText !important;
   text-decoration: none !important;
-  padding: 13px 31px !important;
+  padding: 11px 35px !important;
   border: none !important;
   outline: none !important;
   background: $btnBg !important;
@@ -102,8 +102,7 @@ main {
   width: 100% !important;
 
   font-family: $secondaryFont !important;
-  // @include font-size(16, 18);
-  font-size: 16px !important;
+  font-size: 14px !important;
   line-height: 18px !important;
   font-weight: $boldWeight !important;
   color: $signColor !important;
@@ -244,8 +243,8 @@ main {
     @include font-size(55, 80);
   }
   .btn {
-    font-size: 18px !important;
-    line-height: 18px !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
 
     transition: background 0.3s ease, box-shadow 0.3s ease !important;
 

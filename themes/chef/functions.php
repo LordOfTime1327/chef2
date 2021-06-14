@@ -107,6 +107,12 @@ endif;
 add_action( 'after_setup_theme', 'coelix_setup' );
 
 /**
+ * Account
+ */
+require get_template_directory() . '/inc/_autch.php';
+
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.

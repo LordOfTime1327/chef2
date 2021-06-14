@@ -57,7 +57,7 @@
   &__title {
     @include font-size(24, 39, 0.35);
     font-weight: $regularWeight;
-    color: $lightBlack;
+    color: $singleProdTitle;
 
     &_desc {
       display: none;

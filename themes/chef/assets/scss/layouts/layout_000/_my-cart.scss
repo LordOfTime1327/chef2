@@ -157,7 +157,13 @@
   }
 
   .order-total {
-    @include flex(flex-start, flex-end);
+    // @include flex(flex-start, flex-end);
+    &__total-box {
+      @include flex(space-between, center);
+    }
+    &__total-price-box {
+      @include flex(flex-start, center);
+    }
   }
   &__total-title {
     @include font-size(15, 15);
@@ -179,25 +185,96 @@
 
   &__btn {
     padding: 0 !important;
-    flex: 0 0 100%;
-    margin-top: 33px;
 
     a {
-      display: block !important;
-      max-width: 217px;
-      margin: 0 auto !important;
-      font-family: $secondaryFont !important;
-      font-size: 16px !important;
-      font-weight: $boldWeight;
-      color: $btnText !important;
-      text-decoration: none !important;
-      padding: 13px 31px !important;
-      border: none !important;
-      outline: none !important;
-      background: $btnBg !important;
-      border-radius: 8px !important;
-      box-shadow: 0 6px 30px rgba($black, 0.15) !important;
-      cursor: pointer !important;
+      margin-bottom: 0 !important;
+      min-width: 116px;
+      // display: block !important;
+      // min-width: 128px;
+      // margin: 0 auto !important;
+      // font-family: $secondaryFont !important;
+      // font-size: 16px !important;
+      // font-weight: $boldWeight;
+      // color: $btnText !important;
+      // text-decoration: none !important;
+      // padding: 15px 32px !important;
+      // border: none !important;
+      // outline: none !important;
+      // background: $btnBg !important;
+      // border-radius: 8px !important;
+      // box-shadow: 0 6px 30px rgba($black, 0.15) !important;
+      // cursor: pointer !important;
+    }
+  }
+}
+
+.cart-page {
+  .cart-discount {
+    display: none;
+  }
+
+  .woocommerce-form-coupon-toggle {
+    display: none;
+  }
+  .woocommerce-form-coupon {
+    padding: 0 !important;
+    width: 100%;
+    @include flex(flex-start, stretch);
+  }
+  .woocommerce-form-coupon {
+    margin: 0 !important;
+    margin-bottom: 40px !important;
+    border: 0 !important;
+
+    .form-row {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      float: none;
+      // flex: 1;
+
+      &.form-row-first {
+        flex: 1;
+        padding-left: 15px;
+
+        input[name="coupon_code"] {
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid rgba($black, 0.3);
+          padding: 10px;
+
+          @include font-size(14, 24);
+          font-weight: $light;
+          color: $textColor;
+
+          &::placeholder {
+            @include font-inherit;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      &.form-row-last {
+        button {
+          height: 100%;
+          min-width: 116px;
+          display: block !important;
+          margin: 0 auto !important;
+          font-family: $secondaryFont !important;
+          font-size: 16px !important;
+          font-weight: $boldWeight;
+          color: $grey !important;
+          text-decoration: none !important;
+          padding: 15px 32px !important;
+          border: 1px solid $grey !important;
+          outline: none !important;
+          // background: $btnBg !important;
+          background: transparent;
+          border-radius: 8px !important;
+          box-shadow: 0px 12px 28px -15px rgba(186, 146, 100, 0.69);
+          cursor: pointer !important;
+        }
+      }
     }
   }
 }

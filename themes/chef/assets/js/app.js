@@ -432,3 +432,5 @@ if (commentFeedback)
   );
 if (submitFeedback)
   submitFeedback.classList.add("popup-submit", "leaveFeedback__submit");
+
+import "../js/autch";

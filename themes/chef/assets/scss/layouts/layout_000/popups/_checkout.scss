@@ -5,11 +5,9 @@
 
   position: fixed;
   top: 20px;
-  // top: 50%;
-  // bottom: 20px;
   height: max-content;
-  // height: calc(100vh - 40px);
-  // max-height: calc(100vh - 40px);
+  height: calc(100vh - 40px);
+  overflow: auto;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
@@ -77,6 +75,10 @@
     textarea {
       resize: vertical;
     }
+  }
+
+  .checkout_coupon {
+    display: none;
   }
 
   .woocommerce-checkout-review-order-table {

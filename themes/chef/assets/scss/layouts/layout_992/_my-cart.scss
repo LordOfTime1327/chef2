@@ -87,22 +87,51 @@
     color: $white;
   }
 
-  &__btn {
-    a {
-      margin: 0 !important;
-      font-size: 18px !important;
-      color: $white !important;
-      border: 1px solid $white !important;
-      border-radius: 5px !important;
-      background: transparent !important;
-      padding: 19px 40px !important;
-    }
-  }
+  // &__btn {
+  // a {
+  // margin: 0 !important;
+  // font-size: 18px !important;
+  // color: $white !important;
+  // border: 1px solid $white !important;
+  // border-radius: 5px !important;
+  // background: transparent !important;
+  // }
+  // }
 }
 
 .order-total {
   background: $gradient1;
   padding: 50px 37px;
+}
+
+.cart-page {
+  .woocommerce-form-coupon {
+    margin-bottom: 30px !important;
+
+    .form-row {
+      &.form-row-first {
+        padding-left: 15px;
+
+        input[name="coupon_code"] {
+          border-bottom: 1px solid rgba($white, 0.3);
+
+          @include font-size(14, 24);
+          color: $white;
+        }
+      }
+
+      &.form-row-last {
+        button {
+          margin: 0 !important;
+          font-size: 18px !important;
+          color: $white !important;
+          border: 1px solid $white !important;
+          border-radius: 5px !important;
+          background: transparent !important;
+        }
+      }
+    }
+  }
 }
 
 [dir="rtl"],

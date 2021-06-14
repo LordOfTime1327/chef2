@@ -11,10 +11,11 @@ get_header();
 
 <main class="site-main woocommerce-cart cart-page">
   <div class="container">
+
     <h1 class='cart-page__title'>My cart</h1>
 
     <?php
-      $WC_Cart = new WC_Cart();
+      // $WC_Cart = new WC_Cart();
       if ( WC()->cart->get_cart_contents_count() == 0 ){
     ?>
     <div class="cart-page__empty">
