@@ -31,10 +31,6 @@ defined( 'ABSPATH' ) || exit;
 			<td data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr> -->
 
-    <div class="totals__img-box">
-      <img src="<?= get_field( 'img_cart' ) ?>" alt="" class="totals__img">
-    </div>
-
     <?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
     <div class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
       <div><?php wc_cart_totals_coupon_label( $coupon ); ?></div>

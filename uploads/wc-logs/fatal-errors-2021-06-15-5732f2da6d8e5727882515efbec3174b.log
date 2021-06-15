@@ -1,0 +1,162 @@
+2021-06-15T08:01:21+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:01:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:01:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:01:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:01:35+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:03:08+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:03:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_methods() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:58
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repla in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 58
+
+2021-06-15T08:38:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_packages() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:59
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repl in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 59
+
+2021-06-15T08:38:13+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_packages() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:59
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repl in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 59
+
+2021-06-15T08:38:16+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_packages() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:59
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repl in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 59
+
+2021-06-15T08:38:55+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_packages() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:59
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repl in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 59
+
+2021-06-15T08:38:57+00:00 CRITICAL Uncaught Error: Call to undefined function get_shipping_packages() in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php:59
+Stack trace:
+#0 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#5 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 W:\domains\Chef\wp-includes\shortcodes.php(218): preg_repl in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php on line 59
+
+2021-06-15T08:40:08+00:00 CRITICAL Uncaught Error: Using $this when not in object context in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php:220
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php(59): WC_Shipping::get_shipping_methods()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#6 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '' in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php on line 220
+
+2021-06-15T08:40:10+00:00 CRITICAL Uncaught Error: Using $this when not in object context in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php:220
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php(59): WC_Shipping::get_shipping_methods()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#6 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '' in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php on line 220
+
+2021-06-15T08:40:12+00:00 CRITICAL Uncaught Error: Using $this when not in object context in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php:220
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\form-checkout.php(59): WC_Shipping::get_shipping_methods()
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(293): wc_get_template('checkout/form-c...', Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#4 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#5 W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#6 W:\domains\Chef\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '' in W:\domains\Chef\wp-content\plugins\woocommerce\includes\class-wc-shipping.php on line 220
+

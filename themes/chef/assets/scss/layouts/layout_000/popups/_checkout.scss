@@ -45,6 +45,7 @@
     flex: 0 0 100%;
   }
 
+  .form-row,
   &__item {
     padding: 0 !important;
     padding-bottom: 40px !important;
@@ -129,7 +130,7 @@
 
   button[type="submit"] {
     display: block;
-    max-width: 217px;
+    // max-width: 217px;
     width: 100%;
 
     font-family: $secondaryFont;
@@ -147,6 +148,40 @@
 
     &:hover {
       background: transparent;
+    }
+  }
+
+  .shipping-billing {
+    @include font-size(12, 18);
+    color: $signColor;
+
+    .payment__title {
+      @include font-size(12, 18);
+      color: $signColor;
+    }
+
+    ul {
+      @include font-size(18, 18);
+      padding-top: 20px !important;
+
+      li {
+        @include flex(flex-start, center);
+        @include font-inherit();
+        padding-bottom: 25px;
+        margin: 0 !important;
+
+        input {
+          margin: 0 !important;
+          margin-left: 15px !important;
+        }
+
+        label {
+          @include font-inherit();
+        }
+      }
+    }
+    .woocommerce-shipping-destination {
+      padding-bottom: 50px !important;
     }
   }
 }

@@ -14,8 +14,9 @@
   #customer_details {
     flex: 0 1 600px;
   }
-  .woocommerce-checkout-review-order {
+  .shipping-billing {
     flex: 1;
+    padding-right: 100px !important;
   }
 
   .woocommerce-billing-fields__field-wrapper {
@@ -26,9 +27,9 @@
     padding-bottom: 28px !important;
   }
 
-  .woocommerce-checkout-payment {
-    padding-right: 100px !important;
-  }
+  // .woocommerce-checkout-payment {
+  //   padding-right: 100px !important;
+  // }
 
   button[type="submit"] {
     float: none !important;

@@ -118,8 +118,8 @@ get_header();
             <div class="product-price cart-form__product-price"
               data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
               <?php
-                      echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
-                    ?>
+                echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+              ?>
             </div>
           </div>
 
@@ -165,6 +165,10 @@ get_header();
     <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 
     <div class="cart-collaterals">
+
+      <div class="totals__img-box">
+        <img src="<?= get_field( 'img_cart' ) ?>" alt="" class="totals__img">
+      </div>
       <?php
           /**
            * Cart collaterals hook.

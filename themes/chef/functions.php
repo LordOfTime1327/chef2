@@ -393,7 +393,7 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 add_filter('woocommerce_billing_fields', 'chef_checkout_fields');
 function chef_checkout_fields(){
 	$fields['billing_first_name'] = array(
-		'label' => __('Name', 'woocommerce'),
+		'label' => __('First Name', 'woocommerce'),
 		'required' => true,
 		'type' => 'text',
 		'class' => array('popup-checkout__item')
@@ -435,48 +435,48 @@ function chef_checkout_fields(){
 		'class' => array('popup-checkout__item')
 	);
 
-	// $fields['billing_last_name']['label'] = 'Last Name';
-	// // $fields['label']['class'] = 'popup-checkout__label';
-	// $fields['billing_last_name']['required'] = true;
+// 	// $fields['billing_last_name']['label'] = 'Last Name';
+// 	// // $fields['label']['class'] = 'popup-checkout__label';
+// 	// $fields['billing_last_name']['required'] = true;
 
-	// $fields['billing_first_name']['label'] = 'First Name';
-	// $fields['billing_first_name']['required'] = true;
+// 	// $fields['billing_first_name']['label'] = 'First Name';
+// 	// $fields['billing_first_name']['required'] = true;
 
-	// $fields['billing_phone']['label'] = 'Your Phone';
-	// $fields['billing_phone']['required'] = true;
+// 	// $fields['billing_phone']['label'] = 'Your Phone';
+// 	// $fields['billing_phone']['required'] = true;
 
-	// $fields['billing_email']['label'] = 'Your Email';
-	// $fields['billing_email']['required'] = true;
+// 	// $fields['billing_email']['label'] = 'Your Email';
+// 	// $fields['billing_email']['required'] = true;
 
-	// $fields['billing_city']['label'] = 'City';
-	// $fields['billing_city']['required'] = true;
+// 	// $fields['billing_city']['label'] = 'City';
+// 	// $fields['billing_city']['required'] = true;
 
-	// $fields['billing_address_1']['label'] = 'Street';
-	// $fields['billing_address_1']['required'] = true;
+// 	// $fields['billing_address_1']['label'] = 'Street';
+// 	// $fields['billing_address_1']['required'] = true;
 
 	return $fields;
 }
 // Hook in
-add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
-function chef_override_checkout_fields( $fields ) {
-    //  ['label'] = 'Comment';
-    //  $fields['order']['order_comments']['placeholder'] = '';
+// add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
+// function chef_override_checkout_fields( $fields ) {
+//     //  ['label'] = 'Comment';
+//     //  $fields['order']['order_comments']['placeholder'] = '';
 
-		$fields['order']['order_comments'] = array(
-			'label' => 'Comments',
-			'placeholder' => '',
-			'type' => 'textarea',
-			'class' => array('popup-checkout__item')
-		);
+// 		$fields['order']['order_comments'] = array(
+// 			'label' => 'Comments',
+// 			'placeholder' => '',
+// 			'type' => 'textarea',
+// 			'class' => array('popup-checkout__item')
+// 		);
 
-    return $fields;
-}
-add_filter( 'woocommerce_form_field' , 'chef_remove_checkout_optional_fields_label', 10, 4 );
-function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
-		$optional = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
-		$field = str_replace( $optional, '', $field );
-    return $field;
-}
+//     return $fields;
+// }
+// add_filter( 'woocommerce_form_field' , 'chef_remove_checkout_optional_fields_label', 10, 4 );
+// function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
+// 		$optional = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
+// 		$field = str_replace( $optional, '', $field );
+//     return $field;
+// }
 
 // star rating
 add_filter('woocommerce_product_get_rating_html', 'chef_get_rating_html', 10, 2);
@@ -491,4 +491,33 @@ function chef_get_rating_html($rating_html, $rating) {
 	$rating_html .= '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%"><strong class="rating">' . $rating . '</strong> ' . __( 'out of 5', 'woocommerce' ) . '</span>';
 	$rating_html .= '</div>';
 	return $rating_html;
+}
+
+// Add custom fields to a specific selected shipping method
+add_action( 'woocommerce_after_shipping_rate', 'pickup_store_custom_field', 100, 2 );
+function pickup_store_custom_field( $method, $index ) {
+    // Only on checkout page and for Local pickup shipping method
+    if( is_cart() || $method->method_id !== 'local_pickup' )
+        return;
+
+    $chosen_shipping_methods = WC()->session->get('chosen_shipping_methods')[ $index ];
+
+    $chosen_method_id = explode(':', $chosen_shipping_methods);
+    $chosen_method_id = reset($chosen_method_id);
+
+    // Only when the chosen shipping method is "local_pickup"
+    if( $chosen_method_id !== 'local_pickup' )
+        return;
+
+    echo '<div class="wrapper-pickup_store" style="margin-top:16px">
+        <label class="title">' . __("Choose your pickup store") . ':</label><br>
+        <label for="barsha-store">
+            <input type="radio" id="barsha-store" name="pickup_store" value="Barsha">' 
+            . __("Barsha") . '<a href="#"><small> '. __("Check Location") . '</small></a>
+        </label><br>
+        <label for="deira-store">
+            <input type="radio" id="deira-store" name="pickup_store" value="Deira">' 
+            . __("Deira") . '<a href="#"><small> '. __("Check Location") . '</small></a>
+        </label>
+    </div>';
 }
