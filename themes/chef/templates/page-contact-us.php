@@ -16,16 +16,16 @@ get_header();
       <div class="wrapper">
         <div class="contact-us__item">
           <?php if ( get_field( 'title_contact' ) ) { ?>
-            <h1 class="contact-us__title"><?= the_field( 'title_contact' ); ?></h1>
+          <h1 class="contact-us__title"><?= the_field( 'title_contact' ); ?></h1>
           <?php } ?>
           <?php if ( get_field( 'img_contact' ) ) { ?>
-            <div class="contact-us__img-box">
-              <img src="<?= the_field( 'img_contact' ); ?>" alt="" class="contact-us__img">
-            </div>
+          <div class="contact-us__img-box">
+            <img src="<?= the_field( 'img_contact' ); ?>" alt="" class="contact-us__img">
+          </div>
           <?php } ?>
         </div>
         <div class="contact-us__item">
-          <form action="" class="contact-us__form contact-form">
+          <!-- <form action="" class="contact-us__form contact-form">
             <div class="contact-form__item">
               <label for="name" class="contact-form__label">Name</label>
               <input type="text" class="contact-form__input">
@@ -45,7 +45,9 @@ get_header();
             <div class="contact-form__item">
               <input type="submit" class="contact-form__submit" value='<?= the_field( 'btn_contact' ); ?>'>
             </div>
-          </form>
+          </form> -->
+
+          <?= do_shortcode('[contact-form-7 id="397" title="Contact us" html_class="contact-us__form contact-form"]') ?>
         </div>
       </div>
     </div>

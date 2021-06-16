@@ -18,6 +18,12 @@
         <a href="<?= home_url(); ?>" class="footer__logo-box">
           <img src="<?= the_field( 'logo_footer', 'option' ); ?>" alt="" class="footer__logo">
         </a>
+
+        <div class='contact-info'>
+          <p>מכשיר טלפון: <a href="tel:0535565505" class="phone">0535565505</a></p>
+          <p>כתובת: <span>חיים עוזר 23 פתח תקווה
+              אייזנברג 1 רחובות</span></p>
+        </div>
       </div>
       <div class="footer__col">
         <?php if( get_field( 'footer_title_second', 'option' ) ) { ?>

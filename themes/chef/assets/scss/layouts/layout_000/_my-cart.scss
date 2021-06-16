@@ -151,6 +151,12 @@
 }
 .totals {
   padding-bottom: 33px;
+  font-size: 0;
+
+  .woocommerce-shipping-methods,
+  .woocommerce-shipping-destination {
+    display: none;
+  }
 
   &__img-box {
     display: none;
