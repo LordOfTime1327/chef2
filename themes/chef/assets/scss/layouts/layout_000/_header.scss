@@ -26,7 +26,7 @@
   }
 
   &__col {
-    width: 25%;
+    width: calc(25% + 5px);
     // display: flex;
     // justify-content: flex-start;
     @include flex(flex-start);
@@ -98,11 +98,25 @@
   &__cart,
   &__search {
     display: block;
-    width: 20px;
     cursor: pointer;
+
+    svg {
+      display: block;
+      width: 20px;
+    }
   }
   &__cart {
     margin-left: 20px;
+
+    svg {
+      margin-left: 5px;
+    }
+  }
+  &__cart-link {
+    @include flex($ai: center);
+    @include font-size(16, 20);
+    color: $headerCart;
+    text-decoration: none;
   }
 
   &__btn-box {

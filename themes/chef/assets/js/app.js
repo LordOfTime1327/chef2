@@ -453,3 +453,18 @@ if (submitFeedback)
   submitFeedback.classList.add("popup-submit", "leaveFeedback__submit");
 
 import "../js/autch";
+
+//
+$(document).on(
+  "added_to_cart updated_cart_totals removed_from_cart",
+  function (data) {
+    $.ajax({
+      url: wp.ajaxurl,
+      type: "POST",
+      data: { action: "cart_count" },
+      success: function (response) {
+        $(".header__cart-link span").html(response.data);
+      },
+    });
+  }
+);

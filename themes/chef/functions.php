@@ -163,7 +163,7 @@ function coelix_scripts() {
 	
 	if ( !is_admin() ) {
 	  wp_deregister_script( 'jquery' );
-	  wp_register_script( 'jquery', ( 'https://code.jquery.com/jquery-3.5.1.min.js' ), false, null, true );
+	  wp_register_script( 'jquery', ( 'https://code.jquery.com/jquery-3.5.1.min.js' ), false, null, false);
 	  wp_enqueue_script( 'jquery' );
 	}
 
@@ -389,6 +389,21 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 // remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 // remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+ 
+function custom_override_checkout_fields( $fields ) {
+	unset($fields['shipping']['shipping_first_name']);    
+	unset($fields['shipping']['shipping_last_name']);  
+	unset($fields['shipping']['shipping_company']);
+	unset($fields['shipping']['shipping_address_1']);
+	unset($fields['shipping']['shipping_address_2']);
+	unset($fields['shipping']['shipping_city']);
+	unset($fields['shipping']['shipping_postcode']);
+	unset($fields['shipping']['shipping_country']);
+	unset($fields['shipping']['shipping_state']);
+    return $fields;
+}
+
 // checkout required fields
 add_filter('woocommerce_billing_fields', 'chef_checkout_fields');
 function chef_checkout_fields(){
@@ -456,11 +471,14 @@ function chef_checkout_fields(){
 
 	return $fields;
 }
+
+
 // Hook in
 // add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
 // function chef_override_checkout_fields( $fields ) {
 //     //  ['label'] = 'Comment';
 //     //  $fields['order']['order_comments']['placeholder'] = '';
+// 		unset($fields["billing"]["billing_country"]);
 
 // 		$fields['order']['order_comments'] = array(
 // 			'label' => 'Comments',
@@ -521,3 +539,10 @@ function pickup_store_custom_field( $method, $index ) {
         </label>
     </div>';
 }
+//
+function get_cart_count() {
+	wp_send_json_success( WC()->cart->get_cart_contents_count() );
+	wp_die();
+}
+add_action('wp_ajax_cart_count', 'get_cart_count' );
+add_action('wp_ajax_nopriv_cart_count', 'get_cart_count' );
