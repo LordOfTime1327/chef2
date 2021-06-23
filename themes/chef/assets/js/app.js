@@ -455,6 +455,7 @@ if (submitFeedback)
 import "../js/autch";
 
 //
+
 $(document).on(
   "added_to_cart updated_cart_totals removed_from_cart",
   function (data) {
@@ -468,3 +469,18 @@ $(document).on(
     });
   }
 );
+
+// search
+let searchIcon = document.querySelector(".header__search svg"),
+  searchForm = document.querySelector(".search-form"),
+  searchClose = document.querySelector(".search-form__close");
+
+searchIcon.addEventListener("click", showSearchFrom);
+searchClose.addEventListener("click", hideSearchFrom);
+
+function showSearchFrom() {
+  searchForm.classList.add("is-active");
+}
+function hideSearchFrom() {
+  searchForm.classList.remove("is-active");
+}

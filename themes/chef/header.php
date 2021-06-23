@@ -77,14 +77,15 @@
           </nav>
 
           <div class='header__col header__col_end'>
-            <div class="header__search">
-              <?php echo file_get_contents( get_theme_file_path() . '/assets/image/svg/search.svg' ) ?>
-            </div>
             <div class="header__cart">
               <a href="<?= home_url( '/cart' ); ?>" class="header__cart-link">
                 <?php echo file_get_contents( get_theme_file_path() . '/assets/image/svg/cart.svg' ) ?>
                 <span><?php echo WC()->cart->get_cart_contents_count(); ?></span>
               </a>
+            </div>
+            <div class="header__search">
+              <?php echo file_get_contents( get_theme_file_path() . '/assets/image/svg/search.svg' ) ?>
+              <?php get_template_part( 'woocommerce/product-searchform' ) ?>
             </div>
           </div>
 

@@ -20,15 +20,11 @@
   &__logo-box {
     display: block;
     width: 127px;
-    // margin: 0 auto;
     margin-bottom: 50px;
   }
 
   &__menu-title {
-    // font-size: 1.8rem;
     font-weight: $semiBoldWeight;
-    // line-height: 2.4rem;
-    // letter-spacing: 0.1px;
     @include font-size(18, 24, 0.1);
     color: $textFooter;
     padding-bottom: 10px;
@@ -48,22 +44,28 @@
     }
     li,
     a {
-      // font-family: inherit;
-      // font-size: inherit;
-      // font-weight: inherit;
-      // font-style: inherit;
-      // color: inherit;
-      // text-decoration: inherit;
       @include font-inherit;
       text-decoration: inherit;
     }
   }
 
+  &__tel {
+    @include font-size(16, 22);
+    text-align: center;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  &__tel-link {
+    @include font-inherit;
+    text-decoration: none;
+  }
+  &__address {
+    @include font-size(16, 22);
+    text-align: center;
+    color: $white;
+  }
+
   &__soc-box {
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: center;
-    // align-items: center;
     @include flex(center, center, row, nowrap);
   }
   &__soc-link {
@@ -82,7 +84,6 @@
     background: $bgFooterDev;
   }
   &__dev-text {
-    // font-size: 1rem;
     @include font-size(10);
     font-weight: $lightWeight;
     color: $white;

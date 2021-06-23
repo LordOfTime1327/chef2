@@ -1,0 +1,40 @@
+.search-form {
+  position: static;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 5px;
+  padding: 7px 15px;
+  @include flex(flex-start, flex-start, row, nowrap);
+  flex: 1;
+
+  &__btn {
+    &:hover {
+      cursor: pointer;
+
+      svg path {
+        fill: red;
+      }
+    }
+  }
+
+  &__input {
+    flex: 0 1 250px;
+    margin: 0;
+    padding-right: 15px;
+  }
+
+  &__close {
+    display: none;
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .search-form {
+    &__input {
+      flex: 0 1 250px;
+      margin: 0;
+      padding-right: 0;
+      padding-left: 15px;
+    }
+  }
+}

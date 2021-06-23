@@ -32,6 +32,7 @@ main {
 
 .container {
   display: block;
+  position: relative;
   max-width: 1470px;
   width: 100%;
   padding: 0 15px;
@@ -350,18 +351,18 @@ main {
 }
 
 //
-.contact-info {
-  @include font-size(16, 22);
-  text-align: initial;
-  color: $white;
+// .contact-info {
+//   @include font-size(16, 22);
+//   text-align: initial;
+//   color: $white;
 
-  a {
-    @include font-inherit();
-  }
-  p {
-    @include font-inherit();
-  }
-}
+//   a {
+//     @include font-inherit();
+//   }
+//   p {
+//     @include font-inherit();
+//   }
+// }
 
 .wpcf7-form {
   .wpcf7-not-valid {

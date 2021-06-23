@@ -2,8 +2,6 @@
   box-shadow: 0px 5px 25px 5px rgba($color: #424242, $alpha: 0.1);
 
   .wrapper {
-    // align-items: center;
-    // justify-content: space-between;
     @include flex(space-between, center);
   }
 
@@ -13,10 +11,7 @@
   }
   &__promotion-text {
     @include font-size(8, 16, 2);
-    // font-size: 0.8rem;
-    // line-height: 1.6rem;
     text-align: center;
-    // letter-spacing: 2px;
     color: $headerPromText;
     text-transform: uppercase;
   }
@@ -27,12 +22,9 @@
 
   &__col {
     width: calc(25% + 5px);
-    // display: flex;
-    // justify-content: flex-start;
     @include flex(flex-start);
 
     &_end {
-      // justify-content: flex-end;
       @include flex(flex-end);
     }
   }
@@ -103,13 +95,14 @@
     svg {
       display: block;
       width: 20px;
+      flex: 0 0 20px;
     }
   }
   &__cart {
-    margin-left: 20px;
+    margin-right: 20px;
 
     svg {
-      margin-left: 5px;
+      margin-right: 5px;
     }
   }
   &__cart-link {
@@ -117,6 +110,10 @@
     @include font-size(16, 20);
     color: $headerCart;
     text-decoration: none;
+  }
+
+  &__search {
+    display: flex !important;
   }
 
   &__btn-box {
@@ -154,10 +151,6 @@
 
   .header {
     &__logged-box {
-      // display: flex;
-      // flex-flow: row-reverse nowrap;
-      // justify-content: flex-end;
-      // align-items: center;
       @include flex(flex-end, center, row-reverse, nowrap);
       text-decoration: none;
 
@@ -168,9 +161,6 @@
       padding-right: 18px;
     }
     &__logged-name {
-      // font-size: 1.8rem;
-      // line-height: 2.2rem;
-      // letter-spacing: 0.3px;
       @include font-size(18, 22, 0.3);
       color: $headerText;
     }
@@ -184,8 +174,6 @@
       display: block;
       border: none;
       background: transparent;
-      // font-size: 1.8rem;
-      // line-height: 2.2rem;
       @include font-size(18, 22);
       color: $headerText;
       margin: 0;
@@ -200,19 +188,11 @@
   &__list {
     list-style: none;
     padding: 0;
-    // font-size: 1.8rem;
-    // line-height: 2.2rem;
-    // letter-spacing: 0.3px;
     @include font-size(18, 22, 0.3);
     color: $headerText;
 
     li,
     a {
-      // font-family: inherit;
-      // font-size: inherit;
-      // font-style: inherit;
-      // font-weight: inherit;
-      // color: inherit;
       @include font-inherit;
     }
     li {
@@ -231,8 +211,13 @@
       right: 0;
     }
     &__cart {
-      margin-left: 0;
-      margin-right: 20px;
+      margin-right: 0;
+      margin-left: 20px;
+
+      svg {
+        margin-right: 0;
+        margin-left: 5px;
+      }
     }
 
     &__logged-img-box {

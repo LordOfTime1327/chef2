@@ -43,8 +43,10 @@
 
   @if $direction == column {
     flex-direction: column;
-  } @else {
+  } @else if $direction == null {
     flex-direction: row;
+  } @else {
+    flex-direction: $direction;
   }
 
   @if $wrap == nowrap {
