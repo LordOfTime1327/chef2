@@ -1,0 +1,51 @@
+.woocommerce-order-received {
+  .woocommerce-order {
+    @include flex(flex-start, flex-start, row, nowrap);
+
+    &__col {
+      flex: 0 1 520px;
+      padding-left: 60px;
+    }
+
+    &__title {
+      @include font-size(24, 24);
+    }
+  }
+
+  .entry-title {
+    @include font-size(24, 24);
+    padding: 24px;
+  }
+
+  ul.order_details {
+    li {
+      @include font-size(16, 24);
+    }
+  }
+
+  .woocommerce-order-overview {
+    &__title {
+      @include font-size(16, 24);
+    }
+    &__option {
+      @include font-size(16, 24);
+    }
+  }
+
+  .woocommerce-order-details {
+    .order_details {
+      tbody th,
+      tbody td,
+      tfoot th,
+      tfoot td {
+        @include font-size(16, 24);
+      }
+    }
+  }
+
+  .woocommerce-customer-details {
+    address {
+      @include font-size(16, 24);
+    }
+  }
+}

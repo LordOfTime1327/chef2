@@ -1,0 +1,137 @@
+.woocommerce-order-received {
+  main {
+    padding-top: 30px;
+  }
+
+  .woocommerce-order {
+    @include flex(flex-start, flex-start, column);
+
+    &__col {
+      width: 100%;
+    }
+
+    &__title {
+      @include font-size(18);
+      color: $black;
+      padding-bottom: 15px;
+    }
+  }
+
+  .entry-title {
+    @include font-size(16, 24);
+    font-weight: 400;
+    color: #6bd38f;
+    text-align: center;
+    padding: 15px;
+    background: rgba(#6bd38f, 0.1);
+    border: 1px solid #6bd38f;
+    margin-bottom: 30px;
+  }
+
+  ul.order_details {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    li {
+      @include font-size(14, 20);
+      font-weight: $lightWeight;
+      @include flex(space-between, center, row, nowrap);
+
+      float: none;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 10px 24px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .woocommerce-order-overview {
+    &__title {
+      flex: 0 0 50%;
+
+      @include font-size(14, 20);
+      text-transform: none;
+    }
+
+    &__option {
+      flex: 0 0 50%;
+      @include font-size(14, 20);
+      text-transform: none;
+    }
+
+    & + p {
+      display: none;
+    }
+  }
+
+  .woocommerce-order-details {
+    width: 100%;
+
+    .order_details {
+      text-align: left;
+
+      tbody th,
+      tbody td,
+      tfoot th,
+      tfoot td {
+        @include font-size(14, 20);
+        font-weight: 300;
+
+        & > * {
+          @include font-inherit;
+        }
+      }
+    }
+  }
+
+  .woocommerce-customer-details {
+    margin-bottom: 20px !important;
+    address {
+      @include font-size(14, 20);
+      text-align: left;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      p {
+        @include font-inherit;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0 -12px;
+        padding-left: 0 !important;
+        padding: 7px 12px !important;
+
+        &:last-child {
+          padding-bottom: 0 !important;
+        }
+
+        &::before {
+          position: static !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+html[dir="rtl"],
+.rtl {
+  &.woocommerce-order-received {
+    .woocommerce-customer-details {
+      address {
+        text-align: right;
+      }
+    }
+    .woocommerce-order-details {
+      .order_details {
+        text-align: right;
+      }
+    }
+  }
+}

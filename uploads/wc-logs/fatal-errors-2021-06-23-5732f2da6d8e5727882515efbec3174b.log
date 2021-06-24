@@ -1,0 +1,4 @@
+2021-06-23T12:20:42+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in W:\domains\Chef\wp-content\themes\chef\woocommerce\order\order-details.php on line 57
+
+2021-06-23T12:50:37+00:00 CRITICAL syntax error, unexpected '<' in W:\domains\Chef\wp-content\themes\chef\woocommerce\checkout\thankyou.php on line 54
+
