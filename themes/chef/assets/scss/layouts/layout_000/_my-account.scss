@@ -34,6 +34,7 @@
     list-style: none;
   }
   &__nav-item {
+    @include flex(flex-start, center);
     @include font-size(16, 20);
     color: $myAccountNav;
     padding-bottom: 25px;
@@ -49,6 +50,42 @@
   &__nav-link {
     @include font-inherit;
     text-decoration: none;
+  }
+  .woocommerce-MyAccount-navigation-link--orders,
+  .woocommerce-MyAccount-navigation-link--edit-address,
+  .woocommerce-MyAccount-navigation-link--edit-account,
+  .woocommerce-MyAccount-navigation-link--customer-logout {
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+  }
+  .woocommerce-MyAccount-navigation-link--orders {
+    &:before {
+      background: url(../assets/image/svg/orders.svg) center center / contain
+        no-repeat;
+    }
+  }
+  .woocommerce-MyAccount-navigation-link--edit-address {
+    &:before {
+      background: url(../assets/image/svg/addresses.svg) center center / contain
+        no-repeat;
+    }
+  }
+  .woocommerce-MyAccount-navigation-link--edit-account {
+    &:before {
+      background: url(../assets/image/svg/settings.svg) center center / contain
+        no-repeat;
+    }
+  }
+  .woocommerce-MyAccount-navigation-link--customer-logout {
+    &:before {
+      background: url(../assets/image/svg/logout.svg) center center / contain
+        no-repeat;
+    }
   }
 
   &__content {

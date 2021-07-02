@@ -416,7 +416,6 @@ function chef_checkout_fields(){
 
 	$fields['billing_last_name'] = array(
 		'label' => __('Last Name', 'woocommerce'),
-		// 'placeholder' => _x('last Name.', 'placeholder', 'woocommerce'),
 		'required' => true,
 		'type' => 'text',
 		'class' => array('popup-checkout__item')
@@ -474,27 +473,25 @@ function chef_checkout_fields(){
 
 
 // Hook in
-// add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
-// function chef_override_checkout_fields( $fields ) {
-//     //  ['label'] = 'Comment';
-//     //  $fields['order']['order_comments']['placeholder'] = '';
-// 		unset($fields["billing"]["billing_country"]);
+add_filter( 'woocommerce_checkout_fields' , 'chef_override_checkout_fields' );
+function chef_override_checkout_fields( $fields ) {
+		unset($fields["billing"]["billing_country"]);
 
-// 		$fields['order']['order_comments'] = array(
-// 			'label' => 'Comments',
-// 			'placeholder' => '',
-// 			'type' => 'textarea',
-// 			'class' => array('popup-checkout__item')
-// 		);
+		$fields['order']['order_comments'] = array(
+			'label' => 'Comments',
+			'placeholder' => '',
+			'type' => 'textarea',
+			'class' => array('popup-checkout__item')
+		);
 
-//     return $fields;
-// }
-// add_filter( 'woocommerce_form_field' , 'chef_remove_checkout_optional_fields_label', 10, 4 );
-// function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
-// 		$optional = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
-// 		$field = str_replace( $optional, '', $field );
-//     return $field;
-// }
+    return $fields;
+}
+add_filter( 'woocommerce_form_field' , 'chef_remove_checkout_optional_fields_label', 10, 4 );
+function chef_remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
+		$optional = '&nbsp;<span class="optional">(' . esc_html__( 'optional', 'woocommerce' ) . ')</span>';
+		$field = str_replace( $optional, '', $field );
+    return $field;
+}
 
 // star rating
 add_filter('woocommerce_product_get_rating_html', 'chef_get_rating_html', 10, 2);

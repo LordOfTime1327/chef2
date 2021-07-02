@@ -31,11 +31,11 @@
   }
 
   &__cat-title {
-    font-family: $Quicksand;
+    // font-family: $Quicksand;
     @include font-size(16, 18, 0.3);
     font-weight: $boldWeight;
     text-align: center;
-    color: $titleColor;
+    color: $catsColor;
     padding-bottom: 10px;
   }
 

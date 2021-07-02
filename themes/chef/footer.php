@@ -95,7 +95,7 @@
       <input type="password" id='password' name='password' class="login-popup__input">
       <img src="<?= get_template_directory_uri() . '/assets/image/svg/eye.svg' ?>" alt="" class='login-popup__eye'>
     </div>
-    <div class="login-popup__item">
+    <div class="login-popup__item login-popup__item_btn-box">
       <input type="submit" value='Send' class='login-popup__submit popup-submit'>
     </div>
 
@@ -189,26 +189,7 @@
   <div class="close-btn close-btn_subscribe"></div>
 </div>
 
-<div class="question-popup"
-  style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'question_bg', 'option' ) ?>)'>
-  <h2 class="question-popup__title">Have any questions?</h2>
-  <p class="question-popup__subtitle">our manager will contact you</p>
 
-  <form class="question-popup__form">
-    <div class="question-popup__item">
-      <input type="text" class='question-popup__input' placeholder='Name'>
-    </div>
-    <div class="question-popup__item">
-      <input type="tel" class='question-popup__input' placeholder='Phone'>
-    </div>
-    <div class="question-popup__item">
-      <input type="submit" class='question-popup__submit popup-submit' value='Send'>
-    </div>
-  </form>
-
-  <div class="close-btn close-btn_question"></div>
-
-</div>
 
 
 <?php wp_footer(); ?>

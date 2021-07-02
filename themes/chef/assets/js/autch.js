@@ -56,6 +56,11 @@ jQuery(function ($) {
       success: function (response) {
         if (response.data.loggedin == false) {
           $(".autch_form__message").html(response.data.message);
+        } else {
+          $this.block({
+            message: null,
+            overlayCSS: { background: "red", opacity: 0.6 },
+          });
         }
 
         if (response.data.loggedin == true) {

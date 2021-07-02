@@ -5,12 +5,12 @@
   @include flex(flex-start, stretch, row, wrap);
 
   &__card {
-    // background: #ccc;
     flex: 0 0 calc(50% - 16px);
-    // flex: 1 0 160px;
     float: none;
     margin: 15px 8px;
     padding: 16px;
+    height: 100%;
+    margin: 0 8px;
 
     @include flex(flex-start, center, column);
   }
@@ -34,8 +34,13 @@
     font-weight: $semiBoldWeight;
     text-align: center;
     margin: 0 auto;
-    color: $titleColor;
+    color: $singleProdTitle;
     @include truncate(2, 24px);
+
+    &:empty {
+      height: 0;
+      margin: 0;
+    }
   }
 
   &__card-description {
@@ -44,11 +49,16 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
-    // width: 150px;
+
+    &:empty {
+      height: 0;
+      margin: 0;
+    }
   }
 
   &__card-price {
     @include font-size(13, 20, 0.2);
+    font-weight: $semiBoldWeight;
     text-align: center;
     text-decoration: none;
     padding-bottom: 10px;
@@ -110,6 +120,7 @@
     //   border-radius: 8px !important;
     //   cursor: pointer !important;
 
+    padding: 11px 54px !important;
     margin-top: auto !important;
   }
 

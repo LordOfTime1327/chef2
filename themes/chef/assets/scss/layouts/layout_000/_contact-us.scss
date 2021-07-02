@@ -3,16 +3,35 @@
 
   &__title {
     @include font-size(36, 71, 0.2);
-    // font-size: 3.6rem;
     font-weight: $semiBoldWeight;
-    // line-height: 7.1rem;
-    // letter-spacing: 0.2px;
     text-align: center;
     color: $titleColor;
   }
 
   &__img-box {
     display: none;
+    position: relative;
+
+    &_mob {
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: calc(100% - 20px);
+      height: calc(100% + 10px);
+      position: absolute;
+      top: 20px;
+      right: -20px;
+      z-index: -1;
+      background: $gradient3;
+    }
+  }
+  &__img {
+    @include img-fluid;
   }
 }
 
@@ -22,15 +41,12 @@
   &__item {
     margin-bottom: 30px;
     position: relative;
-    width: fit-content;
   }
 
   &__label {
     display: block;
-    // font-size: 1.4rem;
     @include font-size(14, 14);
     font-weight: $extraLightWeight;
-    // line-height: 1.4rem;
     color: $contactFormDark;
     opacity: 0.6;
     padding-bottom: 15px;
@@ -45,10 +61,7 @@
     padding: 0 20px 15px;
 
     font-family: inherit;
-    // font-size: 1.8rem;
     font-weight: $lightWeight;
-    // line-height: 1.8rem;
-    // letter-spacing: 0.06rem;
     @include font-size(18, 18, 1);
 
     &_textarea {
@@ -58,12 +71,6 @@
     }
 
     &::placeholder {
-      // font-family: inherit;
-      // font-size: inherit;
-      // font-weight: inherit;
-      // font-style: inherit;
-      // line-height: inherit;
-      // letter-spacing: inherit;
       @include font-inherit;
       opacity: 0.5;
     }
@@ -73,8 +80,6 @@
     display: block;
     margin: 0 auto;
     font-family: $secondaryFont;
-    // font-size: 1.8rem;
-    // line-height: 1.8rem;
     @include font-size(18, 18);
     color: $btnText;
     text-decoration: none;

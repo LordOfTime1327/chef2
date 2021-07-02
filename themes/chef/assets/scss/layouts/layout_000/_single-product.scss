@@ -239,6 +239,10 @@
   &__rating {
     padding-left: 12px;
     padding-bottom: 5px;
+
+    &:empty {
+      padding-left: 0;
+    }
   }
   &__author {
     @include font-size(18, 24, 0.3);
@@ -269,9 +273,9 @@
     border-radius: 5px;
     outline: none;
     background: transparent;
-    padding: 13px 31px;
+    padding: 12px 31px;
     font-family: inherit;
-    @include font-size(16, 16);
+    @include font-size(16, 24);
     color: $red;
   }
 }

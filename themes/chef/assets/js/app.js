@@ -135,7 +135,8 @@ let qPopup = document.querySelector(".question-popup"),
 // setTimeout(showQPopup, 10000);
 
 bgCover.addEventListener("click", closeQePopup);
-closeBtnQ.addEventListener("click", closeQePopup);
+
+if (closeBtnQ) closeBtnQ.addEventListener("click", closeQePopup);
 
 function showQPopup() {
   qPopup.classList.add("active");
@@ -406,8 +407,8 @@ if (allReviewsClose) allReviewsClose.addEventListener("click", closeAllReviews);
 if (leaveFeedbackClose)
   leaveFeedbackClose.addEventListener("click", closeLeaveFeedback);
 
-bgCover.addEventListener("click", closeAllReviews);
-bgCover.addEventListener("click", closeLeaveFeedback);
+// bgCover.addEventListener("click", closeAllReviews);
+// bgCover.addEventListener("click", closeLeaveFeedback);
 
 function showReviews(e) {
   e.preventDefault();
@@ -421,17 +422,17 @@ function closeAllReviews() {
   bgCover.classList.remove("active");
 }
 
-function leaveFeedback(e) {
-  e.preventDefault();
-  html.classList.add("stop-scrolling");
-  leaveFeedbackPopup.classList.add("active");
-  bgCover.classList.add("active");
-}
-function closeLeaveFeedback() {
-  html.classList.remove("stop-scrolling");
-  leaveFeedbackPopup.classList.remove("active");
-  bgCover.classList.remove("active");
-}
+// function leaveFeedback(e) {
+//   e.preventDefault();
+//   html.classList.add("stop-scrolling");
+//   leaveFeedbackPopup.classList.add("active");
+//   bgCover.classList.add("active");
+// }
+// function closeLeaveFeedback() {
+//   html.classList.remove("stop-scrolling");
+//   leaveFeedbackPopup.classList.remove("active");
+//   bgCover.classList.remove("active");
+// }
 
 let nameFeedback = document.querySelector(".comment-form-author input"),
   emailFeedback = document.querySelector(".comment-form-email input"),

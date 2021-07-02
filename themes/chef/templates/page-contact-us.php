@@ -25,29 +25,10 @@ get_header();
           <?php } ?>
         </div>
         <div class="contact-us__item">
-          <!-- <form action="" class="contact-us__form contact-form">
-            <div class="contact-form__item">
-              <label for="name" class="contact-form__label">Name</label>
-              <input type="text" class="contact-form__input">
-            </div>
-            <div class="contact-form__item">
-              <label for="name" class="contact-form__label">Tel</label>
-              <input type="tel" class="contact-form__input">
-            </div>
-            <div class="contact-form__item">
-              <label for="name" class="contact-form__label">City</label>
-              <input type="text" class="contact-form__input">
-            </div>
-            <div class="contact-form__item">
-              <label for="name" class="contact-form__label">Comment</label>
-              <textarea type="text" class="contact-form__input contact-form__input_textarea"></textarea>
-            </div>
-            <div class="contact-form__item">
-              <input type="submit" class="contact-form__submit" value='<?= the_field( 'btn_contact' ); ?>'>
-            </div>
-          </form> -->
-
           <?= do_shortcode('[contact-form-7 id="397" title="Contact us" html_class="contact-us__form contact-form"]') ?>
+        </div>
+        <div class="contact-us__img-box contact-us__img-box_mob">
+          <img src="<?= the_field( 'img_contact' ); ?>" alt="" class="contact-us__img">
         </div>
       </div>
     </div>

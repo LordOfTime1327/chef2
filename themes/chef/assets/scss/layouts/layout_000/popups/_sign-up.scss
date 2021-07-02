@@ -74,7 +74,7 @@
     font-weight: $lightWeight;
     color: $signColor;
 
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   &__terms-link {
@@ -115,10 +115,7 @@
     border: none;
     border-bottom: 1px solid rgba($signColor, 0.1);
     outline: none;
-
-    // font-size: 1.5rem;
-    // line-height: 1.5rem;
-    // letter-spacing: 0.06em;
+    font-family: inherit;
     @include font-size(15, 15, 0.9);
     color: $signColor;
     padding: 10px 18px;
@@ -183,7 +180,7 @@
   .register-popup {
     &__checkbox-label {
       margin-left: 0;
-      margin-right: 15px;
+      margin-right: 25px;
     }
 
     &__eye {

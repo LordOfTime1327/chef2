@@ -32,8 +32,8 @@
       border-bottom: 1px solid $cartItemBorder;
       @include flex(flex-start, flex-start, row, nowrap);
       position: relative;
-      padding-bottom: 5px;
-      margin-top: 65px;
+      padding-bottom: 15px;
+      margin-top: 30px;
 
       &:first-child {
         margin-top: 0;

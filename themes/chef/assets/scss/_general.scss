@@ -50,9 +50,6 @@ main {
 
 .title {
   @include font-size(30, 40, 0.2);
-  // font-size: 3rem;
-  // line-height: 4rem;
-  // letter-spacing: 0.2px;
   color: $titleColor;
   text-transform: uppercase;
   text-align: center;
@@ -80,6 +77,10 @@ main {
   @include font-size(24, 45, 0.2);
   color: $titleColor;
   text-transform: uppercase;
+}
+
+button {
+  font-family: inherit;
 }
 
 .btn {
@@ -208,6 +209,72 @@ main {
   }
 }
 
+// Custom radio
+input[type="radio"] {
+  width: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    margin-left: 15px !important;
+  }
+  &:checked::before {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// Custom checkbox
+input[type="checkbox"] {
+  position: relative;
+  width: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    content: "";
+    display: none;
+    width: 6px;
+    height: 4px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transform: rotate(-45deg);
+  }
+
+  &:checked::after {
+    display: block;
+  }
+}
+
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  @include flex(flex-start, center, row, nowrap);
+  padding: 1em 3.5em 1em;
+
+  a {
+    margin-right: 15px !important;
+  }
+}
+
 [dir="rtl"],
 .rtl {
   .woocommerce-pagination {
@@ -218,6 +285,20 @@ main {
       &:last-child {
         margin-left: 0;
       }
+    }
+  }
+
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
+    a {
+      margin-right: 0 !important;
+      margin-left: 15px !important;
+    }
+
+    &:before {
+      left: auto;
+      right: 1.5em;
     }
   }
 }

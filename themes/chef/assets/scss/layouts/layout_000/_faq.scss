@@ -3,12 +3,9 @@
   padding-bottom: 30px;
 
   &__title {
-    // font-size: 2.4rem;
-    // line-height: 3.6rem;
     font-weight: $semiBoldWeight;
-    // letter-spacing: 0.2px;
     @include font-size(24, 36, 0.2);
-    color: $textColor;
+    color: $titleColor;
     padding-bottom: 14px;
   }
 
@@ -17,9 +14,6 @@
   }
 
   &__question-box {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     @include flex(space-between, center, row, nowrap);
 
     border-bottom: 1px solid $faqLines;
@@ -30,10 +24,7 @@
   }
   &__question {
     @include font-size(14, 22, 0.3);
-    // font-size: 1.4rem;
-    // line-height: 2.2rem;
     color: $questionText;
-    // letter-spacing: 0.3px;
     padding-right: 15px;
   }
 
@@ -54,18 +45,13 @@
   }
   &__answer {
     @include font-size(12, 22, 0.3);
-    // font-size: 1.2rem;
-    // line-height: 2.2rem;
     color: $answerText;
-    // letter-spacing: 0.3px;
   }
 
   &__btn-box {
     position: relative;
     flex: 0 0 21px;
     height: 21px;
-
-    // transition: transform 0.25s;
 
     &:before,
     &:after {
@@ -85,8 +71,6 @@
     }
 
     &.active {
-      // transform: rotate(180deg);
-
       &:after {
         transform: rotate(0);
       }
@@ -106,10 +90,7 @@
 .faq-form {
   &__title {
     @include font-size(24, 28, 0.2);
-    // font-size: 2.4rem;
-    // line-height: 2.8rem;
     font-weight: $semiBoldWeight;
-    // letter-spacing: 0.2px;
     text-align: center;
     color: $titleColor;
     padding-bottom: 15px;
@@ -117,10 +98,7 @@
 
   &__subtitle {
     @include font-size(18, 22, 0.3);
-    // font-size: 1.8rem;
-    // line-height: 2.2rem;
     font-weight: $lightWeight;
-    // letter-spacing: 0.3px;
     text-align: center;
     color: $subtitleColor;
     padding-bottom: 40px;
@@ -133,14 +111,10 @@
   }
 
   &__label {
-    // font-size: 1.2rem;
-    // line-height: 1.2rem;
     @include font-size(12, 12);
     color: $contactFormLight;
   }
   &__input {
-    // font-size: 1.5rem;
-    // line-height: 1.5rem;
     @include font-size(15, 15);
     color: $contactFormLight;
     border-bottom-color: $contactFormBorderWhite;
@@ -162,8 +136,6 @@
     max-width: 767px;
   }
   &__img {
-    // display: block;
-    // width: 100%;
     @include img-fluid;
   }
 }
