@@ -209,6 +209,15 @@ button {
   }
 }
 
+#billing_company_field,
+#billing_address_2_field {
+  display: none !important;
+}
+
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
 // Custom radio
 input[type="radio"] {
   width: 0;

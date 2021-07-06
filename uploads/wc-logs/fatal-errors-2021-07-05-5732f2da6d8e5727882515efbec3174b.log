@@ -1,0 +1,11 @@
+2021-07-05T14:05:59+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php:2694
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\woocommerce\myaccount\form-edit-address.php(40): woocommerce_form_field('billing_first_n...', Array, 'dima')
+#1 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('W:\\domains\\Chef...')
+#2 W:\domains\Chef\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-my-account.php(220): wc_get_template('myaccount/form-...', Array)
+#3 W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3171): WC_Shortcode_My_Account::edit_address('billing')
+#4 W:\domains\Chef\wp-includes\class-wp-hook.php(292): woocommerce_account_edit_address('billing')
+#5 W:\domains\Chef\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 W:\domains\Chef\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 W:\domains\Chef\wp-content\plugins\w in W:\domains\Chef\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 2694
+

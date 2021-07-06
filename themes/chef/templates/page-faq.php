@@ -93,7 +93,7 @@ get_header();
   </div>
 
   <div class="question-popup"
-    style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'question_bg', 'option' ) ?>)'>
+    style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0), rgba(129, 129, 129, 0)), url(<?= get_field( 'question_bg', 'option' ) ?>)'>
     <h2 class="question-popup__title">Have any questions?</h2>
     <p class="question-popup__subtitle">our manager will contact you</p>
 

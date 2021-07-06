@@ -401,75 +401,83 @@ function custom_override_checkout_fields( $fields ) {
 	unset($fields['shipping']['shipping_postcode']);
 	unset($fields['shipping']['shipping_country']);
 	unset($fields['shipping']['shipping_state']);
-    return $fields;
-}
-
-// checkout required fields
-add_filter('woocommerce_billing_fields', 'chef_checkout_fields');
-function chef_checkout_fields(){
-	$fields['billing_first_name'] = array(
-		'label' => __('First Name', 'woocommerce'),
-		'required' => true,
-		'type' => 'text',
-		'class' => array('popup-checkout__item')
-	);
-
-	$fields['billing_last_name'] = array(
-		'label' => __('Last Name', 'woocommerce'),
-		'required' => true,
-		'type' => 'text',
-		'class' => array('popup-checkout__item')
-	);
-
-	$fields['billing_phone'] = array(
-		'label' => __('Phone', 'woocommerce'),
-		'required' => true,
-		'type' => 'tel',
-		'class' => array('popup-checkout__item')
-	);
-
-	$fields['billing_email'] = array(
-		'label' => __('Email', 'woocommerce'),
-		'required' => true,
-		'type' => 'email',
-		'class' => array('popup-checkout__item')
-	);
-
-	$fields['billing_city'] = array(
-		'label' => __('City', 'woocommerce'),
-		'required' => true,
-		'type' => 'text',
-		'class' => array('popup-checkout__item')
-	);
-
-	$fields['billing_address_1'] = array(
-		'label' => __('Street', 'woocommerce'),
-		'required' => true,
-		'type' => 'text',
-		'class' => array('popup-checkout__item')
-	);
-
-// 	// $fields['billing_last_name']['label'] = 'Last Name';
-// 	// // $fields['label']['class'] = 'popup-checkout__label';
-// 	// $fields['billing_last_name']['required'] = true;
-
-// 	// $fields['billing_first_name']['label'] = 'First Name';
-// 	// $fields['billing_first_name']['required'] = true;
-
-// 	// $fields['billing_phone']['label'] = 'Your Phone';
-// 	// $fields['billing_phone']['required'] = true;
-
-// 	// $fields['billing_email']['label'] = 'Your Email';
-// 	// $fields['billing_email']['required'] = true;
-
-// 	// $fields['billing_city']['label'] = 'City';
-// 	// $fields['billing_city']['required'] = true;
-
-// 	// $fields['billing_address_1']['label'] = 'Street';
-// 	// $fields['billing_address_1']['required'] = true;
 
 	return $fields;
 }
+
+// checkout required fields
+// add_filter('woocommerce_billing_fields', 'chef_checkout_fields');
+// function chef_checkout_fields(){
+
+// 	unset($fields['billing']['billing_company']);
+// 	unset($fields['billing']['billing_address_2']);
+// 	unset($fields['billing']['billing_postcode']);
+// 	unset($fields['billing']['billing_country']);
+// 	unset($fields['billing']['billing_state']);
+
+// 	$fields['billing_first_name'] = array(
+// 		'label' => __('First Name', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'text',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// 	$fields['billing_last_name'] = array(
+// 		'label' => __('Last Name', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'text',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// 	$fields['billing_phone'] = array(
+// 		'label' => __('Phone', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'tel',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// 	$fields['billing_email'] = array(
+// 		'label' => __('Email', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'email',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// 	$fields['billing_city'] = array(
+// 		'label' => __('City', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'text',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// 	$fields['billing_address_1'] = array(
+// 		'label' => __('Street', 'woocommerce'),
+// 		'required' => true,
+// 		'type' => 'text',
+// 		'class' => array('popup-checkout__item')
+// 	);
+
+// // 	// $fields['billing_last_name']['label'] = 'Last Name';
+// // 	// // $fields['label']['class'] = 'popup-checkout__label';
+// // 	// $fields['billing_last_name']['required'] = true;
+
+// // 	// $fields['billing_first_name']['label'] = 'First Name';
+// // 	// $fields['billing_first_name']['required'] = true;
+
+// // 	// $fields['billing_phone']['label'] = 'Your Phone';
+// // 	// $fields['billing_phone']['required'] = true;
+
+// // 	// $fields['billing_email']['label'] = 'Your Email';
+// // 	// $fields['billing_email']['required'] = true;
+
+// // 	// $fields['billing_city']['label'] = 'City';
+// // 	// $fields['billing_city']['required'] = true;
+
+// // 	// $fields['billing_address_1']['label'] = 'Street';
+// // 	// $fields['billing_address_1']['required'] = true;
+
+// 	return $fields;
+// }
 
 
 // Hook in

@@ -1,0 +1,169 @@
+05-07-2021 09:51:38 - ERROR - v: 7.2.0 - m: 56.3 MB, u: 1 - TNP_Mailer_Message Object
+(
+    [to_name] => 
+    [headers] => Array
+        (
+            [Precedence] => bulk
+            [X-Newsletter-Email-Id] => 1
+            [X-Auto-Response-Suppress] => OOF, AutoReply
+            [List-Unsubscribe] => <http://chef/?na=uc&nk=1-94550b84bd&nek=1-d6d9032cc4>
+            [List-Unsubscribe-Post] => List-Unsubscribe=One-Click
+        )
+
+    [user_id] => 1
+    [email_id] => 1
+    [error] => No error explanation reported
+    [subject] => TEST NEWSLETTER (TEST)
+    [body] => <!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title>TEST NEWSLETTER (TEST)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+<!--[if mso]>
+<style type="text/css">table {border-collapse:collapse;border-spacing:0;margin:0;}div, td {padding:0;}div {margin:0 !important;}</style>
+<noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<![endif]-->
+<style type="text/css">
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+body{margin:0; padding:0; height:100% !important; margin:0; padding:0; width:100% !important;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none; max-width: 100%!important}
+table{border-collapse:collapse !important;}
+img.aligncenter{display:block;margin:0 auto;}
+
+@media screen and (max-width: 525px) {
+
+ /* ALLOWS FOR FLUID TABLES */
+ table[class="wrapper"]{
+ width:100% !important;
+ }
+
+ table[class="responsive"]{
+ width:100%!important;
+ float: none;
+ display: table;
+ padding-left: 0;
+ padding-right: 0;
+ }
+
+ img[class="responsive"] {
+ max-width: 100%!important;
+ } 
+
+ .block {
+ display: block;
+ }
+
+ td[class="responsive"]{
+ width:100%!important;
+ max-width: 100%!important;
+ display: block;
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ float: none;
+ } 
+
+ td[class="section-padding"]{
+ padding: 50px 15px 50px 15px !important;
+ }
+
+ td[class="section-padding-bottom-image"]{
+ padding: 50px 15px 0 15px !important;
+ }
+
+ /* ADJUST BUTTONS ON MOBILE */
+ td[class="mobile-wrapper"]{
+ padding: 10px 5% 15px 5% !important;
+ }
+
+ td[class="responsive"]{
+ display: block;
+ width: 100% !important;
+ }
+
+ table[class="mobile-button-container"]{
+ margin:0 auto;
+ width:100% !important;
+ }
+
+ a[class="mobile-button"]{
+ width:80% !important;
+ padding: 15px !important;
+ border: 0 !important;
+ font-size: 16px !important;
+ }
+
+ .tnp-grid-column {
+ max-width: 100%!important;
+ }
+}
+
+/* Text */
+
+
+/* Last posts */
+@media (max-width: 525px) {
+ .posts-1-column {
+ width: 100%!important;
+ }
+ .posts-1-image {
+ width: 100%!important;
+ display: block;
+ }
+}
+
+
+
+/* Html */
+.html-td-global p {
+ font-family: Helvetica, Arial, sans-serif;
+ font-size: 16px;
+}
+
+</style>
+</head>
+<body style="margin: 0; padding: 0; line-height: normal; word-spacing: normal;" dir="ltr">
+
+<table cellpadding='0' cellspacing='0' border='0' width='100%'>
+<tr>
+<td bgcolor='#ffffff' valign='top'><!-- tnp -->
+
+ <!-- Composer content -->
+
+ <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="border-collapse: collapse; width: 100%;" class="tnpc-row tnpc-row-block ui-sortable-handle" data-id="text">
+<tbody><tr><td align="center" style="padding: 0;" class="edit-block">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" align="center" cellspacing="0" width="600"><tr><td width="600" style="vertical-align:top;width:600px;"><![endif]--><table type="options" class="tnpc-block-content" border="0" cellpadding="0" align="center" cellspacing="0" width="100%" style="width: 100%!important; max-width: 600px!important">
+<tbody><tr><td align="center" style="text-align: center; width: 100% !important; line-height: normal !important; letter-spacing: normal; padding-top: 20px; padding-left: 15px; padding-right: 15px; padding-bottom: 20px; background-color: #ffffff;" bgcolor="#ffffff" width="100%"><table width="100%" style="width: 100%!important" border="0" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+ <td width="100%" valign="top" align="left" style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; color: #222222; line-height: 1.5;">
+ <p style="text-align: left; margin: 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae sodales nulla, nec blandit velit. Morbi feugiat imperdiet augue, vel mattis augue sagittis rutrum. Sed.</p> </td>
+ </tr>
+</tbody></table></td></tr></tbody></table><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table>
+
+
+<!-- /tnp -->
+</td>
+</tr>
+</table>
+
+<img width="1" height="1" alt="" src="http://chef/?noti=MTsxO2MzOTBlOGI4NjYyOTQ1YzY1MWM5NGIxZWI0NzUxYmUz"/></body>
+</html>
+    [body_text] => This email requires a modern e-mail reader but you can view the email online here:
+http://chef/?na=v&nk=1-94550b84bd&id=1.
+Thank you, Chef
+To change your subscription follow: http://chef/?na=profile&nk=1-94550b84bd&nek=1-d6d9032cc4.
+    [from] => newsletter@chef
+    [from_name] => Chef
+    [to] => dima.vampire98@gmail.com
+)
+
+05-07-2021 09:51:38 - ERROR - v: 7.2.0 - m: 56.3 MB, u: 1 - No error message reported (1) - 

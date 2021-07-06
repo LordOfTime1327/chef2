@@ -132,7 +132,7 @@ function closeSubscribePopup() {
 let qPopup = document.querySelector(".question-popup"),
   closeBtnQ = document.querySelector(".close-btn_question");
 
-// setTimeout(showQPopup, 10000);
+if (qPopup) setTimeout(showQPopup, 1000);
 
 bgCover.addEventListener("click", closeQePopup);
 
@@ -485,3 +485,12 @@ function showSearchFrom() {
 function hideSearchFrom() {
   searchForm.classList.remove("is-active");
 }
+
+// phone validate
+function phoneValidation(ph) {
+  let regex = /^\d{10}$/;
+  if (ph.value.match(regex)) return 1;
+  else console.log("Nope!");
+}
+let test = document.querySelector(".wpcf7-tel");
+phoneValidation(test);

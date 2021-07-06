@@ -151,6 +151,7 @@
     <input type="hidden" name="action" value="account_registration">
     <?php wp_nonce_field( 'ajax-nonce', 'security' ); ?>
   </form>
+  <div class="autch_form__message"></div>
 
   <div class="register-popup__have-acc">
     <p class='register-popup__have-acc-text'>
@@ -162,7 +163,7 @@
   <div class="close-btn close-btn_register"></div>
 </div>
 
-<div class="autch_form__message"></div>
+
 
 <div class="subscribe-popup"
   style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'subscribe_bg', 'option' ) ?>)'>
