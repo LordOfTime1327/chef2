@@ -1,0 +1,50 @@
+2021-07-07T14:23:01+00:00 CRITICAL Uncaught Error: Class 'Mage' not found in W:\domains\Chef\wp-content\themes\chef\footer.php:196
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(730): require_once()
+#1 W:\domains\Chef\wp-includes\template.php(676): load_template('W:\\domains\\Chef...', true, Array)
+#2 W:\domains\Chef\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 W:\domains\Chef\wp-content\themes\chef\templates\homepage.php(145): get_footer()
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\footer.php on line 196
+
+2021-07-07T14:32:08+00:00 CRITICAL Uncaught Error: Class 'Mage' not found in W:\domains\Chef\wp-content\themes\chef\footer.php:196
+Stack trace:
+#0 W:\domains\Chef\wp-includes\template.php(730): require_once()
+#1 W:\domains\Chef\wp-includes\template.php(676): load_template('W:\\domains\\Chef...', true, Array)
+#2 W:\domains\Chef\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 W:\domains\Chef\wp-content\themes\chef\templates\homepage.php(145): get_footer()
+#4 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#5 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#6 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#7 {main}
+  thrown in W:\domains\Chef\wp-content\themes\chef\footer.php on line 196
+
+2021-07-07T15:44:28+00:00 CRITICAL syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 563
+
+2021-07-07T15:44:29+00:00 CRITICAL syntax error, unexpected ''email'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 563
+
+2021-07-07T15:46:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_userdata(), 0 passed in W:\domains\Chef\wp-content\themes\chef\functions.php on line 566 and exactly 1 expected in W:\domains\Chef\wp-includes\pluggable.php:83
+Stack trace:
+#0 W:\domains\Chef\wp-content\themes\chef\functions.php(566): get_userdata()
+#1 W:\domains\Chef\wp-content\themes\chef\footer.php(168): test()
+#2 W:\domains\Chef\wp-includes\template.php(730): require_once('W:\\domains\\Chef...')
+#3 W:\domains\Chef\wp-includes\template.php(676): load_template('W:\\domains\\Chef...', true, Array)
+#4 W:\domains\Chef\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#5 W:\domains\Chef\wp-content\themes\chef\page.php(38): get_footer()
+#6 W:\domains\Chef\wp-includes\template-loader.php(106): include('W:\\domains\\Chef...')
+#7 W:\domains\Chef\wp-blog-header.php(19): require_once('W:\\domains\\Chef...')
+#8 W:\domains\Chef\index.php(17): require('W:\\domains\\Chef...')
+#9 {main}
+  thrown in W:\domains\Chef\wp-includes\pluggable.php on line 83
+
+2021-07-07T15:49:05+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 568
+
+2021-07-07T15:49:06+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 568
+
+2021-07-07T15:50:55+00:00 CRITICAL syntax error, unexpected '}' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 567
+
+2021-07-07T15:50:56+00:00 CRITICAL syntax error, unexpected '}' in W:\domains\Chef\wp-content\themes\chef\functions.php on line 567
+

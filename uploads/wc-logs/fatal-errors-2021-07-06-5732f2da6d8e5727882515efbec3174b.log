@@ -1,0 +1,4 @@
+2021-07-06T11:41:54+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 20480 bytes) in W:\domains\Chef\wp-admin\includes\user.php on line 495
+
+2021-07-06T11:41:59+00:00 CRITICAL Maximum execution time of 180 seconds exceeded in W:\domains\Chef\wp-content\plugins\wpforms-lite\src\Admin\Tools\Importers\NinjaForms.php on line 10
+

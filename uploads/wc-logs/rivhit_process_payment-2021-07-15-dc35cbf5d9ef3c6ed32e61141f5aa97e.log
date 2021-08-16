@@ -1,0 +1,172 @@
+07-15-2021 @ 18:34:29 - New Payment Process Fired
+07-15-2021 @ 18:34:29 - Shipping and Items added
+07-15-2021 @ 18:34:29 - All data collected before Sending to Rivhit
+07-15-2021 @ 18:34:29 - WP Remote Post Completed
+07-15-2021 @ 18:34:29 - Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [content-type] => text/html
+                    [server] => 
+                    [strict-transport-security] => max-age=31536000; includeSubdomains
+                    [content-security-policy] => default-src https: data: 'unsafe-inline' 'unsafe-eval'
+                    [x-xss-protection] => 1; mode=block
+                    [x-content-type-options] => nosniff
+                    [x-aspnet-version] => 
+                    [date] => Thu, 15 Jul 2021 18:34:29 GMT
+                    [content-length] => 1794
+                )
+
+        )
+
+    [body] => ﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id="content">
+      <p class="heading1">Request Error</p>
+      <p xmlns="">The server encountered an error processing the request. Please see the <a rel="help-page" href="https://icredit.rivhit.co.il/API/PaymentPageRequest.svc/help">service help page</a> for constructing valid requests to the service.</p>
+    </div>
+  </body>
+</html>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => ﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id="content">
+      <p class="heading1">Request Error</p>
+      <p xmlns="">The server encountered an error processing the request. Please see the <a rel="help-page" href="https://icredit.rivhit.co.il/API/PaymentPageRequest.svc/help">service help page</a> for constructing valid requests to the service.</p>
+    </div>
+  </body>
+</html>
+                    [raw] => HTTP/1.1 400 Bad Request
+Content-Type: text/html
+Server: 
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+Content-Security-Policy: default-src https: data: 'unsafe-inline' 'unsafe-eval'
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-ASPNET-VERSION: 
+Date: Thu, 15 Jul 2021 18:34:29 GMT
+Connection: close
+Content-Length: 1794
+
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id="content">
+      <p class="heading1">Request Error</p>
+      <p xmlns="">The server encountered an error processing the request. Please see the <a rel="help-page" href="https://icredit.rivhit.co.il/API/PaymentPageRequest.svc/help">service help page</a> for constructing valid requests to the service.</p>
+    </div>
+  </body>
+</html>
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-type] => Array
+                                        (
+                                            [0] => text/html
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => 
+                                        )
+
+                                    [strict-transport-security] => Array
+                                        (
+                                            [0] => max-age=31536000; includeSubdomains
+                                        )
+
+                                    [content-security-policy] => Array
+                                        (
+                                            [0] => default-src https: data: 'unsafe-inline' 'unsafe-eval'
+                                        )
+
+                                    [x-xss-protection] => Array
+                                        (
+                                            [0] => 1; mode=block
+                                        )
+
+                                    [x-content-type-options] => Array
+                                        (
+                                            [0] => nosniff
+                                        )
+
+                                    [x-aspnet-version] => Array
+                                        (
+                                            [0] => 
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Thu, 15 Jul 2021 18:34:29 GMT
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 1794
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://icredit.rivhit.co.il/API/PaymentPageRequest.svc/GetUrl
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+

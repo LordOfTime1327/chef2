@@ -9,7 +9,6 @@
   }
 
   &__subtitle {
-    // font-size: 1.4rem;
     @include font-size(14);
     padding: 0 117px 35px;
     text-align: unset;
@@ -17,6 +16,10 @@
 
   &__form {
     padding: 0 117px 95px;
+
+    .wpcf7-response-output {
+      @include font-size(14);
+    }
   }
 
   &__item {

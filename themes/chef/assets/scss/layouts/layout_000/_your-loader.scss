@@ -1,0 +1,97 @@
+$loader-color: rgba(#fff, 0.5) !default;
+$loader-size: 18px !default;
+$loader-height: 20px !default;
+$loader-border-size: 8px !default;
+$loader-gap: 12px !default;
+$loader-animation-duration: 1s !default;
+
+@mixin loader-rotate {
+  @keyframes loader-rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin loader-scale {
+  @keyframes loader-scale {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+}
+
+@mixin loader10(
+  $size: $loader-size,
+  $color: $loader-color,
+  $duration: $loader-animation-duration,
+  $gap: $loader-gap,
+  $align: center
+) {
+  $unique-name: unique-id();
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  position: relative;
+  animation: #{"loader10-"}#{$unique-name} $duration ease alternate infinite;
+  animation-delay: ($duration / 5) * 2;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    animation: #{"loader10-"}#{$unique-name} $duration ease alternate infinite;
+  }
+
+  &::before {
+    left: -($size + $gap);
+    animation-delay: ($duration / 5) * 1;
+  }
+
+  &::after {
+    right: -($size + $gap);
+    animation-delay: ($duration / 5) * 3;
+  }
+
+  @if ($align == center) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @if ($align == middle) {
+    top: 50%;
+    margin: -($size + $size / 2) auto 0;
+  } @else {
+    top: -$size;
+  }
+  @keyframes #{'loader10-'}#{$unique-name} {
+    0% {
+      box-shadow: 0 $size 0 (-$size) $color;
+    }
+
+    100% {
+      box-shadow: 0 $size 0 $color;
+    }
+  }
+}
+
+.your-loader {
+  @include loader10;
+  margin-bottom: 15px;
+}

@@ -11,7 +11,12 @@
     padding: 0 75px 35px;
   }
 
-  &__form {
-    padding: 0 75px 35px;
+  .tnp-subscription {
+    form {
+      padding: 0 75px 35px;
+    }
+  }
+  .form-subscribe-message {
+    @include font-size(14);
   }
 }

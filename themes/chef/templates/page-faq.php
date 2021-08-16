@@ -92,12 +92,12 @@ get_header();
     </div>
   </div>
 
-  <div class="question-popup"
+  <div id='question-popup' class="question-popup"
     style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0), rgba(129, 129, 129, 0)), url(<?= get_field( 'question_bg', 'option' ) ?>)'>
     <h2 class="question-popup__title">Have any questions?</h2>
     <p class="question-popup__subtitle">our manager will contact you</p>
 
-    <form class="question-popup__form">
+    <!-- <form class="question-popup__form">
       <div class="question-popup__item">
         <input type="text" class='question-popup__input' placeholder='Name'>
       </div>
@@ -107,11 +107,12 @@ get_header();
       <div class="question-popup__item">
         <input type="submit" class='question-popup__submit popup-submit' value='Send'>
       </div>
-    </form>
+    </form> -->
+    <?= do_shortcode('[contact-form-7 id="399" title="Have questions?" html_class="question-popup__form"]'); ?>
 
     <div class="close-btn close-btn_question"></div>
-
   </div>
+  <div class="bgCoverQuestion"></div>
 </main>
 
 <?php

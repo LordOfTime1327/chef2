@@ -163,25 +163,17 @@
   <div class="close-btn close-btn_register"></div>
 </div>
 
-
-
-<div class="subscribe-popup"
+<?php 
+  if( isSubscribed() == false ) {
+?>
+<div id='subscribe-popup' class="subscribe-popup"
   style='background-image: linear-gradient(152deg, rgba(170, 170, 170, 0.95), rgba(129, 129, 129, 0.95)), url(<?= get_field( 'subscribe_bg', 'option' ) ?>)'>
   <h2 class="subscribe-popup__title">Subscribe</h2>
   <p class="subscribe-popup__subtitle">Subscribe now to get free discount</p>
-  <form action="" class="subscribe-popup__form">
-    <div class="subscribe-popup__item">
-      <input type="email" class='subscribe-popup__input' placeholder='Enter your email address'>
-    </div>
-    <div class="subscribe-popup__item">
-      <input type="checkbox" class="subscribe-popup__checkbox">
-      <label for="" class="subscribe-popup__checkbox-label">I agree with the <a href="#"
-          class='subscribe-popup__terms-link'>terms and condition</a></label>
-    </div>
-    <div class="subscribe-popup__item">
-      <input type="submit" class="subscribe-popup__submit popup-submit" value='Send'>
-    </div>
-  </form>
+
+  <?= do_shortcode('[newsletter_form type=“minimal”]') ?>
+  <div class="your-loader is-none"></div>
+  <p class="form-subscribe-message"></p>
 
   <div class="subscribe-popup__msg-box">
     <p class="subscribe-popup__msg">We will never spam you, unsubscribe anytime :)</p>
@@ -190,8 +182,8 @@
   <div class="close-btn close-btn_subscribe"></div>
 </div>
 
-
-
+<div class="bgCoverSubscribe"></div>
+<?php } ?>
 
 <?php wp_footer(); ?>
 

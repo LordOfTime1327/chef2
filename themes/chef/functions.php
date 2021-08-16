@@ -551,3 +551,42 @@ function get_cart_count() {
 }
 add_action('wp_ajax_cart_count', 'get_cart_count' );
 add_action('wp_ajax_nopriv_cart_count', 'get_cart_count' );
+
+function isSubscribed() {
+	global $wpdb;
+
+	$tbl = $wpdb->newsletter;
+
+	$newtable = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}newsletter" );
+
+	$is = false;
+
+	foreach ($newtable as $i){
+		if( wp_get_current_user()->user_email == $i->email ) {
+			$is = true;
+		}
+	}
+
+	return $is;
+}
+
+/**
+ * Ajax subscription
+ */
+add_action('wp_ajax_ajax_subscription', 'ajax_subscription');
+add_action('wp_ajax_nopriv_ajax_subscription', 'ajax_subscription');
+function ajax_subscription () {
+  $resp = [
+    'success' => false
+  ];
+  $res = TNP::subscribe([ 'email' => $_POST['ne'], 'send_emails' => true ]);
+  // wp_mail($_POST['ne'], 'Subscribe', $_POST['ne']);
+
+  if ( is_wp_error( $res ) ) {
+    $resp['message'] = $res -> get_error_message();
+    wp_send_json( $resp );
+  }
+
+  $resp['success'] = true;
+  wp_send_json( $resp );
+}

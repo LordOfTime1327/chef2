@@ -128,7 +128,9 @@ button {
   }
 }
 
-.cover-bg {
+.cover-bg,
+.bgCoverSubscribe,
+.bgCoverQuestion {
   display: none;
 
   background: rgba($color: $black, $alpha: 0.5);
@@ -137,7 +139,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
   cursor: pointer;
 
   &.active {
@@ -209,6 +211,10 @@ button {
   }
 }
 
+.is-none {
+  display: none;
+}
+
 #billing_company_field,
 #billing_address_2_field {
   display: none !important;
@@ -243,6 +249,7 @@ input[type="checkbox"] {
   position: relative;
   width: 0;
   cursor: pointer;
+  margin-left: 20px;
 
   &::before {
     content: "";
@@ -252,7 +259,7 @@ input[type="checkbox"] {
     border: 1px solid #fff;
     border-radius: 4px;
     position: absolute;
-    top: 0;
+    top: -13px;
     right: 0;
   }
   &::after {
@@ -263,7 +270,7 @@ input[type="checkbox"] {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     position: absolute;
-    top: 3px;
+    top: -10px;
     right: 3px;
     transform: rotate(-45deg);
   }

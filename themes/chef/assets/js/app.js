@@ -112,41 +112,45 @@ let subscribePopup = document.querySelector(".subscribe-popup");
 let closeSubscribeBtn = document.querySelector(".close-btn_subscribe");
 
 // setTimeout(showSubscribePopup, 5000);
+// showSubscribePopup();
 
-bgCover.addEventListener("click", closeSubscribePopup);
-closeSubscribeBtn.addEventListener("click", closeSubscribePopup);
+let bgCoverSubscribe = document.querySelector(".bgCoverSubscribe");
+if (bgCoverSubscribe)
+  bgCoverSubscribe.addEventListener("click", closeSubscribePopup);
+if (closeSubscribeBtn)
+  closeSubscribeBtn.addEventListener("click", closeSubscribePopup);
 
 function showSubscribePopup() {
   subscribePopup.classList.add("active");
-  bgCover.classList.add("active");
+  bgCoverSubscribe.classList.add("active");
   html.classList.add("stop-scrolling");
 }
 
 function closeSubscribePopup() {
   subscribePopup.classList.remove("active");
-  bgCover.classList.remove("active");
+  bgCoverSubscribe.classList.remove("active");
   html.classList.remove("stop-scrolling");
 }
 
 // QUESTION POPUP
 let qPopup = document.querySelector(".question-popup"),
-  closeBtnQ = document.querySelector(".close-btn_question");
+  closeBtnQ = document.querySelector(".close-btn_question"),
+  bgCoverQuestion = document.querySelector(".bgCoverQuestion");
 
-if (qPopup) setTimeout(showQPopup, 1000);
+// if (qPopup) setTimeout(showQPopup, 1000);
 
-bgCover.addEventListener("click", closeQePopup);
-
+if (bgCoverQuestion) bgCoverQuestion.addEventListener("click", closeQePopup);
 if (closeBtnQ) closeBtnQ.addEventListener("click", closeQePopup);
 
 function showQPopup() {
   qPopup.classList.add("active");
-  bgCover.classList.add("active");
+  bgCoverQuestion.classList.add("active");
   html.classList.add("stop-scrolling");
 }
 
 function closeQePopup() {
   qPopup.classList.remove("active");
-  bgCover.classList.remove("active");
+  bgCoverQuestion.classList.remove("active");
   html.classList.remove("stop-scrolling");
 }
 
@@ -487,10 +491,101 @@ function hideSearchFrom() {
 }
 
 // phone validate
-function phoneValidation(ph) {
-  let regex = /^\d{10}$/;
-  if (ph.value.match(regex)) return 1;
-  else console.log("Nope!");
+let tel = document.querySelector('input[type="tel"]');
+// let tel = document.getElementById("tel");
+if (tel) {
+  function setInputFilter(textbox, inputFilter) {
+    [
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "select",
+      "contextmenu",
+      "drop",
+    ].forEach(function (event) {
+      textbox.addEventListener(event, function () {
+        if (inputFilter(this.value)) {
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.value = this.oldValue;
+          this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+        } else {
+          this.value = "";
+        }
+      });
+    });
+  }
+  setInputFilter(tel, function (value) {
+    return /^\d*$/.test(value);
+  });
 }
-let test = document.querySelector(".wpcf7-tel");
-phoneValidation(test);
+// function phoneValidation(ph) {
+//   let regex = /^\d{10}$/;
+//   if (ph.value.match(regex)) return 1;
+//   else console.log("Nope!");
+// }
+// let test = document.querySelector(".wpcf7-tel");
+// phoneValidation(test);
+
+// cookies to close subscribe popup
+$(document).ready(function () {
+  if (!readCookie("hideSubscribe")) {
+    showSubscribePopup();
+  }
+
+  $(".close-btn_subscribe").click(closeSubsc);
+  $(".bgCoverSubscribe").click(closeSubsc);
+});
+
+function closeSubsc() {
+  $("#subscribe-popup").hide();
+  createCookie("hideSubscribe", true, 1);
+  return false;
+}
+
+function createCookie(name, value, days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    var expires = "; expires=" + date.toGMTString();
+  } else var expires = "";
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+// function eraseCookie(name) {
+//   createCookie(name, "", -1);
+// }
+
+// cookies to close questions popup
+$(document).ready(function () {
+  if (!readCookie("hideQuestion")) {
+    showQPopup();
+  }
+
+  $(".close-btn_question").click(closeQuestion);
+  $(".bgCoverQuestion").click(closeQuestion);
+});
+
+function closeQuestion() {
+  $("#question-popup").hide();
+  createCookie("hideQuestion", true, 1);
+  return false;
+}
+
+////////////////
+import "../js/subscribe";
