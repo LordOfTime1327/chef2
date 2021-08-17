@@ -16,7 +16,7 @@
   }
   .shipping-billing {
     flex: 1;
-    padding-right: 100px !important;
+    padding-left: 100px !important;
   }
 
   .woocommerce-billing-fields__field-wrapper {
@@ -39,6 +39,16 @@
     &:hover {
       background: $popupSubmitHover;
       border-color: $popupSubmitHover;
+    }
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .cart-page .popup-checkout {
+    .shipping-billing {
+      padding-left: 0 !important;
+      padding-right: 100px !important;
     }
   }
 }

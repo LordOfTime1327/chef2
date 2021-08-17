@@ -147,6 +147,7 @@
 }
 
 .cart_totals {
+  float: none !important;
   padding-bottom: 40px;
 }
 .totals {
@@ -241,7 +242,7 @@
 
       &.form-row-first {
         flex: 1;
-        padding-left: 15px;
+        padding-right: 15px;
 
         input[name="coupon_code"] {
           background: transparent;
@@ -303,6 +304,18 @@ html[dir="rtl"],
     &__total-title {
       padding-left: 18px;
       padding-right: 0;
+    }
+  }
+
+  .cart-page {
+    .woocommerce-form-coupon {
+      .form-row {
+        &.form-row-first {
+          flex: 1;
+          padding-right: 0;
+          padding-left: 15px;
+        }
+      }
     }
   }
 }

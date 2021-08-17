@@ -60,7 +60,8 @@
       display: inline-block;
       width: 20px;
       height: 20px;
-      margin-left: 20px;
+      // margin-left: 20px;
+      margin-right: 20px;
     }
   }
   .woocommerce-MyAccount-navigation-link--orders {
@@ -120,7 +121,7 @@
   }
   &__order-date {
     flex: 0 1 50%;
-    text-align: left;
+    text-align: right;
 
     @include font-size(11, 20);
     font-weight: $lightWeight;
@@ -173,7 +174,7 @@
   }
 
   &__order-price {
-    padding-right: 40px;
+    padding-left: 40px;
 
     @include font-size(14, 20);
   }
@@ -278,7 +279,7 @@
     @include font-size(14, 20);
     font-weight: $regularWeight;
     color: #4f4f4f;
-    text-align: right;
+    text-align: initial;
     padding-bottom: 10px;
 
     & > * {
@@ -325,6 +326,30 @@
 
     #shipping_address_2_field {
       display: none;
+    }
+  }
+}
+
+[dir="rtl"],
+.rtl {
+  .my-account {
+    .woocommerce-MyAccount-navigation-link--orders,
+    .woocommerce-MyAccount-navigation-link--edit-address,
+    .woocommerce-MyAccount-navigation-link--edit-account,
+    .woocommerce-MyAccount-navigation-link--customer-logout {
+      &:before {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+    }
+
+    &__order-date {
+      text-align: left;
+    }
+
+    &__order-price {
+      padding-right: 40px;
+      padding-left: 0;
     }
   }
 }

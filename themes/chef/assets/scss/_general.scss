@@ -237,7 +237,7 @@ input[type="radio"] {
     border: 1px solid #ffffff;
     border-radius: 50%;
     background: transparent;
-    margin-left: 15px !important;
+    margin-left: -25px !important;
   }
   &:checked::before {
     background: rgba(255, 255, 255, 0.5);
@@ -315,6 +315,12 @@ input[type="checkbox"] {
     &:before {
       left: auto;
       right: 1.5em;
+    }
+  }
+
+  input[type="radio"] {
+    &::before {
+      margin-left: 15px !important;
     }
   }
 }

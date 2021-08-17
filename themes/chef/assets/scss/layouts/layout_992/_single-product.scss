@@ -27,6 +27,8 @@
     height: inherit;
     order: -1;
     padding: 0;
+    // margin-right: 82px;
+    margin: 0;
     margin-right: 82px;
   }
 
@@ -36,8 +38,10 @@
     height: 11px;
     margin: 0;
     position: absolute;
-    right: 55px;
-    left: auto;
+    // right: 55px;
+    // left: auto;
+    left: 40px;
+    right: auto;
 
     &:after {
       content: "";
@@ -283,6 +287,10 @@
     &__slider-thumbs {
       margin-right: 0;
       margin-left: 82px;
+    }
+    &__slider-arrow {
+      right: 55px;
+      left: auto;
     }
 
     &__info {

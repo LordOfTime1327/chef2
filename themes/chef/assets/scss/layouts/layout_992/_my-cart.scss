@@ -110,7 +110,7 @@
 
     .form-row {
       &.form-row-first {
-        padding-left: 15px;
+        padding-right: 15px;
 
         input[name="coupon_code"] {
           border-bottom: 1px solid rgba($white, 0.3);
@@ -144,6 +144,19 @@
       &__info-box {
         padding-left: 0;
         padding-right: 30px;
+      }
+    }
+  }
+
+  .cart-page {
+    .woocommerce-form-coupon {
+      margin-bottom: 30px !important;
+
+      .form-row {
+        &.form-row-first {
+          padding-right: 0;
+          padding-left: 15px;
+        }
       }
     }
   }

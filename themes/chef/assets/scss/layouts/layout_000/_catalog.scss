@@ -5,4 +5,10 @@
     text-align: center;
     margin-bottom: 25px;
   }
+
+  .products {
+    &__card {
+      height: auto;
+    }
+  }
 }

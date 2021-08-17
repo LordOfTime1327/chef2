@@ -188,7 +188,7 @@ if ( post_password_required() ) {
 					?>
         <div class='allReviews__item'>
           <div class="allReviews__header">
-            <p class='allReviews__rating'><?php echo get_comment_meta( $comment->comment_ID, 'rating', true); ?></p>
+            <div class='allReviews__rating'><?php woocommerce_review_display_rating(); ?></div>
             <p class='allReviews__date'><?php comment_date(); ?></p>
           </div>
           <div class="allReviews__body">

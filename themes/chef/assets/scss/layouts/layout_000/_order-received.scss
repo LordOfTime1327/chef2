@@ -107,13 +107,17 @@
         padding-left: 0 !important;
         padding: 7px 12px !important;
 
+        @include flex(flex-start, center, row, nowrap);
+
         &:last-child {
           padding-bottom: 0 !important;
         }
 
         &::before {
           position: static !important;
+          // margin: 0 !important;
           margin-left: 0 !important;
+          margin-right: 10px !important;
         }
       }
     }
@@ -126,11 +130,13 @@ html[dir="rtl"],
     .woocommerce-customer-details {
       address {
         text-align: right;
-      }
-    }
-    .woocommerce-order-details {
-      .order_details {
-        text-align: right;
+
+        p {
+          &::before {
+            margin-right: 0 !important;
+            margin-left: 10px !important;
+          }
+        }
       }
     }
   }
