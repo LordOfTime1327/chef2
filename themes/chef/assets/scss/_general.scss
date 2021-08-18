@@ -139,7 +139,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 999;
   cursor: pointer;
 
   &.active {
@@ -291,6 +291,47 @@ input[type="checkbox"] {
   }
 }
 
+.wpm-languages {
+  position: relative;
+
+  a[aria-current] {
+    @include flex(flex-start, center, row, nowrap);
+
+    &:after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 7px;
+      margin-right: 10px;
+      background: url(../assets/image/svg/lang-arrow.svg) center center / cover
+        no-repeat;
+      transition: transform 0.2s ease;
+    }
+
+    &.active {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    list-style: none;
+
+    &.active {
+      display: block;
+    }
+
+    .menu-item {
+      padding-bottom: 10px;
+    }
+  }
+}
+
 [dir="rtl"],
 .rtl {
   .woocommerce-pagination {
@@ -321,6 +362,13 @@ input[type="checkbox"] {
   input[type="radio"] {
     &::before {
       margin-left: 15px !important;
+    }
+  }
+
+  .wpm-languages {
+    .sub-menu {
+      right: 0;
+      left: auto;
     }
   }
 }
@@ -426,6 +474,16 @@ input[type="checkbox"] {
       width: 40px;
       height: 40px;
       margin-right: 20px;
+    }
+  }
+
+  .wpm-languages {
+    a[aria-current] {
+      height: 100%;
+    }
+
+    .sub-menu {
+      top: 100%;
     }
   }
 

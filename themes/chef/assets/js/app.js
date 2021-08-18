@@ -591,3 +591,14 @@ function closeQuestion() {
 
 ////////////////
 import "../js/subscribe";
+
+// lang switcher
+let drop = document.querySelector(".wpm-languages a[aria-current] ");
+let dropMenu = document.querySelector(".wpm-languages .sub-menu ");
+
+drop.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  dropMenu.classList.toggle("active");
+  drop.classList.toggle("active");
+});
